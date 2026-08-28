@@ -23,7 +23,7 @@ const copyDefaults = {
 	tagline: 'Undetected {primaryKeyword} — ESP, aimbot, and radar for PC',
 	summary:
 		'{brand} is an undetected {game} cheat package for Windows PC. Includes ESP, soft aim, and radar, with {antiCheat} maintenance after patches.',
-	heroLede: 'Hacks and cheats available — 0% detection.',
+	heroLede: 'Undetected Delta Force cheats for PC — ESP wallhack, soft aim, and 2D radar for Operations & Warfare, with ACE rebuilds after every patch.',
 	blogLabel: '{game} Intel',
 	ctaBuy: 'Buy now',
 	ctaBuyShort: 'Buy',
@@ -35,7 +35,7 @@ const copyDefaults = {
 	supportIntro: 'Need help with {brand}? Email {email} with your order ID.',
 	faqIntro: 'Short answers about delivery, setup, updates, and refunds.',
 	reviewsIntro:
-		'Real feedback on Delta Force cheats and Delta Force hacks — ESP, soft aim, radar, and support from {brand} buyers.',
+		'Real feedback on Delta Force cheats and Delta Force cheats — ESP, soft aim, radar, and support from {brand} buyers.',
 	chipEsp: 'ESP / wallhack',
 	chipAim: 'Soft aim',
 	chipRadar: '2D radar',
@@ -74,7 +74,7 @@ const seoDefaults = {
 		'FAQ for delta force cheats — delivery, setup, undetected status, {antiCheat} updates & pricing on PC. Answers at deltaforcecheats.org before you buy.',
 	reviewsTitle: 'Delta Force Cheats Reviews | Delta Force Hacks & Cheats',
 	reviewsDescription:
-		'Real buyer reviews for Delta Force cheats and Delta Force hacks — ESP, soft aim, radar & {antiCheat} maintenance on PC. See what license holders say at deltaforcecheats.org.',
+		'Real buyer reviews for Delta Force cheats and Delta Force cheats — ESP, soft aim, radar & {antiCheat} maintenance on PC. See what license holders say at deltaforcecheats.org.',
 	blogTitle: 'Delta Force Blog | Guides & Patch Tips | {brand}',
 	blogDescription:
 		'Delta Force guides — ranked tips, ESP & aimbot notes, operator tiers & {antiCheat} updates for PC. Read the blog at deltaforcecheats.org/blog.',

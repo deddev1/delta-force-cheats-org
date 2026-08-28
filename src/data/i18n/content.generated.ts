@@ -52,7 +52,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					accent: "2026 — Undetected ESP, Aimbot & Wallhack",
 					accentShort: "Undetected delta force cheats 2026",
 					title: "Delta Force Cheats",
-					subtitle: "delta force cheats with Delta Force ESP, radar hack and Delta Force Aimbot for Windows PC — ACE maintenance included.",
+					subtitle: "Undetected Delta Force cheats for PC — ESP wallhack, soft aim, and 2D radar for Operations & Warfare, with ACE rebuilds after every patch.",
 					subtitleShort: "Delta Force ESP, radar & aimbot for PC",
 					buyNow: "Buy Delta Force Cheats",
 					seeFeatures: "See Features",
@@ -77,8 +77,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					statusBadge: "Undetected delta force cheats",
 				},
 				reviews: {
-					title: "Delta Force hacks & cheats reviews",
-					subtitle: "Recent Delta Force cheats and Delta Force hacks feedback from buyers",
+					title: "Delta Force cheats & cheats reviews",
+					subtitle: "Recent Delta Force cheats and Delta Force cheats feedback from buyers",
 					outOf: "out of 5",
 					countLabel: "reviews",
 				},
@@ -96,7 +96,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				images: {
 					hero: "Delta Force Cheats hero — ESP and aimbot overlay in Delta Force",
-					espWallhack: "Wallhack outlines showing agents through walls",
+					espWallhack: "Wallhack outlines showing enemy operators through cover",
 					aimbotCombat: "Soft aim assist overlay during a Delta Force match",
 					squadFight: "Delta Force Cheats combat overlay during a team fight",
 					playerEsp: "Player ESP boxes and distance readouts in a Delta Force match",
@@ -104,7 +104,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					hacksPackage: "2D radar threat overlay for Delta Force",
 					raidFight: "Aimbot assist during a Delta Force tactical combat",
 					battleRoyale: "Delta Force Cheats in-session overview for Windows PC",
-					raidMap: "ESP markers for hero skills and POIs in Delta Force",
+					raidMap: "ESP markers for objectives and extraction points in Delta Force",
 				},
 			},
 			pages: {
@@ -913,7 +913,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Mod menu categories for Operations and Warfare matches",
 							paragraphs: [
-								"Separate ESP wallhack categories for players, heroes, hero skills, and loot let you reduce overlay noise during rotations and objectives and extraction points.",
+								"Separate ESP wallhack categories for players, operators, vehicles, and loot let you reduce overlay noise during rotations near objectives and extraction points.",
 								"Radar hack range and Aimbot smoothness adjust from the same mod menu — useful when <a href=\"https://store.steampowered.com/app/2507950/Delta_Force/\" target=\"_blank\" rel=\"noopener noreferrer\">Delta Force</a> seasons change fight distances and mobility.",
 								"Soft tracking players should start with <a href=\"/delta-force-aimbot/\">soft aim</a> profiles before aggressive FOV.",
 							],
@@ -1349,7 +1349,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				images: {
 					hero: "Delta Force Cheats hero — ESP and aimbot overlay in Delta Force",
-					espWallhack: "Wallhack outlines showing agents through walls",
+					espWallhack: "Wallhack outlines showing enemy operators through cover",
 					aimbotCombat: "Soft aim assist overlay during a Delta Force match",
 					squadFight: "Delta Force Cheats combat overlay during a team fight",
 					playerEsp: "Player ESP boxes and distance readouts in a Delta Force match",
@@ -1357,7 +1357,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					hacksPackage: "2D radar threat overlay for Delta Force",
 					raidFight: "Aimbot assist during a Delta Force tactical combat",
 					battleRoyale: "Delta Force Cheats in-session overview for Windows PC",
-					raidMap: "ESP markers for hero skills and POIs in Delta Force",
+					raidMap: "ESP markers for objectives and extraction points in Delta Force",
 				},
 			},
 			pages: {
@@ -2541,7 +2541,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				images: {
 					hero: "Delta Force Cheats hero — ESP and aimbot overlay in Delta Force",
-					espWallhack: "Wallhack outlines showing agents through walls",
+					espWallhack: "Wallhack outlines showing enemy operators through cover",
 					aimbotCombat: "Soft aim assist overlay during a Delta Force match",
 					squadFight: "Delta Force Cheats combat overlay during a team fight",
 					playerEsp: "Player ESP boxes and distance readouts in a Delta Force match",
@@ -2549,7 +2549,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					hacksPackage: "2D radar threat overlay for Delta Force",
 					raidFight: "Aimbot assist during a Delta Force tactical combat",
 					battleRoyale: "Delta Force Cheats in-session overview for Windows PC",
-					raidMap: "ESP markers for hero skills and POIs in Delta Force",
+					raidMap: "ESP markers for objectives and extraction points in Delta Force",
 				},
 			},
 			pages: {
@@ -3733,7 +3733,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				images: {
 					hero: "Delta Force Cheats hero — ESP and aimbot overlay in Delta Force",
-					espWallhack: "Wallhack outlines showing agents through walls",
+					espWallhack: "Wallhack outlines showing enemy operators through cover",
 					aimbotCombat: "Soft aim assist overlay during a Delta Force match",
 					squadFight: "Delta Force Cheats combat overlay during a team fight",
 					playerEsp: "Player ESP boxes and distance readouts in a Delta Force match",
@@ -3741,7 +3741,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					hacksPackage: "2D radar threat overlay for Delta Force",
 					raidFight: "Aimbot assist during a Delta Force tactical combat",
 					battleRoyale: "Delta Force Cheats in-session overview for Windows PC",
-					raidMap: "ESP markers for hero skills and POIs in Delta Force",
+					raidMap: "ESP markers for objectives and extraction points in Delta Force",
 				},
 			},
 			pages: {
@@ -4925,7 +4925,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				images: {
 					hero: "Delta Force Cheats hero — ESP and aimbot overlay in Delta Force",
-					espWallhack: "Wallhack outlines showing agents through walls",
+					espWallhack: "Wallhack outlines showing enemy operators through cover",
 					aimbotCombat: "Soft aim assist overlay during a Delta Force match",
 					squadFight: "Delta Force Cheats combat overlay during a team fight",
 					playerEsp: "Player ESP boxes and distance readouts in a Delta Force match",
@@ -4933,7 +4933,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					hacksPackage: "2D radar threat overlay for Delta Force",
 					raidFight: "Aimbot assist during a Delta Force tactical combat",
 					battleRoyale: "Delta Force Cheats in-session overview for Windows PC",
-					raidMap: "ESP markers for hero skills and POIs in Delta Force",
+					raidMap: "ESP markers for objectives and extraction points in Delta Force",
 				},
 			},
 			pages: {
@@ -6116,7 +6116,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				images: {
 					hero: "Delta Force Cheats hero — ESP and aimbot overlay in Delta Force",
-					espWallhack: "Wallhack outlines showing agents through walls",
+					espWallhack: "Wallhack outlines showing enemy operators through cover",
 					aimbotCombat: "Soft aim assist overlay during a Delta Force match",
 					squadFight: "Delta Force Cheats combat overlay during a team fight",
 					playerEsp: "Player ESP boxes and distance readouts in a Delta Force match",
@@ -6124,7 +6124,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					hacksPackage: "2D radar threat overlay for Delta Force",
 					raidFight: "Aimbot assist during a Delta Force tactical combat",
 					battleRoyale: "Delta Force Cheats in-session overview for Windows PC",
-					raidMap: "ESP markers for hero skills and POIs in Delta Force",
+					raidMap: "ESP markers for objectives and extraction points in Delta Force",
 				},
 			},
 			pages: {
@@ -7307,7 +7307,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				images: {
 					hero: "Delta Force Cheats hero — ESP and aimbot overlay in Delta Force",
-					espWallhack: "Wallhack outlines showing agents through walls",
+					espWallhack: "Wallhack outlines showing enemy operators through cover",
 					aimbotCombat: "Soft aim assist overlay during a Delta Force match",
 					squadFight: "Delta Force Cheats combat overlay during a team fight",
 					playerEsp: "Player ESP boxes and distance readouts in a Delta Force match",
@@ -7315,7 +7315,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					hacksPackage: "2D radar threat overlay for Delta Force",
 					raidFight: "Aimbot assist during a Delta Force tactical combat",
 					battleRoyale: "Delta Force Cheats in-session overview for Windows PC",
-					raidMap: "ESP markers for hero skills and POIs in Delta Force",
+					raidMap: "ESP markers for objectives and extraction points in Delta Force",
 				},
 			},
 			pages: {
@@ -8498,7 +8498,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				images: {
 					hero: "Delta Force Cheats hero — ESP and aimbot overlay in Delta Force",
-					espWallhack: "Wallhack outlines showing agents through walls",
+					espWallhack: "Wallhack outlines showing enemy operators through cover",
 					aimbotCombat: "Soft aim assist overlay during a Delta Force match",
 					squadFight: "Delta Force Cheats combat overlay during a team fight",
 					playerEsp: "Player ESP boxes and distance readouts in a Delta Force match",
@@ -8506,7 +8506,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					hacksPackage: "2D radar threat overlay for Delta Force",
 					raidFight: "Aimbot assist during a Delta Force tactical combat",
 					battleRoyale: "Delta Force Cheats in-session overview for Windows PC",
-					raidMap: "ESP markers for hero skills and POIs in Delta Force",
+					raidMap: "ESP markers for objectives and extraction points in Delta Force",
 				},
 			},
 			pages: {
@@ -9689,7 +9689,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				images: {
 					hero: "Delta Force Cheats hero — ESP and aimbot overlay in Delta Force",
-					espWallhack: "Wallhack outlines showing agents through walls",
+					espWallhack: "Wallhack outlines showing enemy operators through cover",
 					aimbotCombat: "Soft aim assist overlay during a Delta Force match",
 					squadFight: "Delta Force Cheats combat overlay during a team fight",
 					playerEsp: "Player ESP boxes and distance readouts in a Delta Force match",
@@ -9697,7 +9697,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					hacksPackage: "2D radar threat overlay for Delta Force",
 					raidFight: "Aimbot assist during a Delta Force tactical combat",
 					battleRoyale: "Delta Force Cheats in-session overview for Windows PC",
-					raidMap: "ESP markers for hero skills and POIs in Delta Force",
+					raidMap: "ESP markers for objectives and extraction points in Delta Force",
 				},
 			},
 			pages: {
@@ -10880,7 +10880,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				images: {
 					hero: "Delta Force Cheats hero — ESP and aimbot overlay in Delta Force",
-					espWallhack: "Wallhack outlines showing agents through walls",
+					espWallhack: "Wallhack outlines showing enemy operators through cover",
 					aimbotCombat: "Soft aim assist overlay during a Delta Force match",
 					squadFight: "Delta Force Cheats combat overlay during a team fight",
 					playerEsp: "Player ESP boxes and distance readouts in a Delta Force match",
@@ -10888,7 +10888,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					hacksPackage: "2D radar threat overlay for Delta Force",
 					raidFight: "Aimbot assist during a Delta Force tactical combat",
 					battleRoyale: "Delta Force Cheats in-session overview for Windows PC",
-					raidMap: "ESP markers for hero skills and POIs in Delta Force",
+					raidMap: "ESP markers for objectives and extraction points in Delta Force",
 				},
 			},
 			pages: {
@@ -12071,7 +12071,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				images: {
 					hero: "Delta Force Cheats hero — ESP and aimbot overlay in Delta Force",
-					espWallhack: "Wallhack outlines showing agents through walls",
+					espWallhack: "Wallhack outlines showing enemy operators through cover",
 					aimbotCombat: "Soft aim assist overlay during a Delta Force match",
 					squadFight: "Delta Force Cheats combat overlay during a team fight",
 					playerEsp: "Player ESP boxes and distance readouts in a Delta Force match",
@@ -12079,7 +12079,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					hacksPackage: "2D radar threat overlay for Delta Force",
 					raidFight: "Aimbot assist during a Delta Force tactical combat",
 					battleRoyale: "Delta Force Cheats in-session overview for Windows PC",
-					raidMap: "ESP markers for hero skills and POIs in Delta Force",
+					raidMap: "ESP markers for objectives and extraction points in Delta Force",
 				},
 			},
 			pages: {
@@ -13262,7 +13262,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				images: {
 					hero: "Delta Force Cheats hero — ESP and aimbot overlay in Delta Force",
-					espWallhack: "Wallhack outlines showing agents through walls",
+					espWallhack: "Wallhack outlines showing enemy operators through cover",
 					aimbotCombat: "Soft aim assist overlay during a Delta Force match",
 					squadFight: "Delta Force Cheats combat overlay during a team fight",
 					playerEsp: "Player ESP boxes and distance readouts in a Delta Force match",
@@ -13270,7 +13270,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					hacksPackage: "2D radar threat overlay for Delta Force",
 					raidFight: "Aimbot assist during a Delta Force tactical combat",
 					battleRoyale: "Delta Force Cheats in-session overview for Windows PC",
-					raidMap: "ESP markers for hero skills and POIs in Delta Force",
+					raidMap: "ESP markers for objectives and extraction points in Delta Force",
 				},
 			},
 			pages: {
@@ -14453,7 +14453,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				images: {
 					hero: "Delta Force Cheats hero — ESP and aimbot overlay in Delta Force",
-					espWallhack: "Wallhack outlines showing agents through walls",
+					espWallhack: "Wallhack outlines showing enemy operators through cover",
 					aimbotCombat: "Soft aim assist overlay during a Delta Force match",
 					squadFight: "Delta Force Cheats combat overlay during a team fight",
 					playerEsp: "Player ESP boxes and distance readouts in a Delta Force match",
@@ -14461,7 +14461,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					hacksPackage: "2D radar threat overlay for Delta Force",
 					raidFight: "Aimbot assist during a Delta Force tactical combat",
 					battleRoyale: "Delta Force Cheats in-session overview for Windows PC",
-					raidMap: "ESP markers for hero skills and POIs in Delta Force",
+					raidMap: "ESP markers for objectives and extraction points in Delta Force",
 				},
 			},
 			pages: {
@@ -15644,7 +15644,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				images: {
 					hero: "Delta Force Cheats hero — ESP and aimbot overlay in Delta Force",
-					espWallhack: "Wallhack outlines showing agents through walls",
+					espWallhack: "Wallhack outlines showing enemy operators through cover",
 					aimbotCombat: "Soft aim assist overlay during a Delta Force match",
 					squadFight: "Delta Force Cheats combat overlay during a team fight",
 					playerEsp: "Player ESP boxes and distance readouts in a Delta Force match",
@@ -15652,7 +15652,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					hacksPackage: "2D radar threat overlay for Delta Force",
 					raidFight: "Aimbot assist during a Delta Force tactical combat",
 					battleRoyale: "Delta Force Cheats in-session overview for Windows PC",
-					raidMap: "ESP markers for hero skills and POIs in Delta Force",
+					raidMap: "ESP markers for objectives and extraction points in Delta Force",
 				},
 			},
 			pages: {
@@ -16835,7 +16835,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				images: {
 					hero: "Delta Force Cheats hero — ESP and aimbot overlay in Delta Force",
-					espWallhack: "Wallhack outlines showing agents through walls",
+					espWallhack: "Wallhack outlines showing enemy operators through cover",
 					aimbotCombat: "Soft aim assist overlay during a Delta Force match",
 					squadFight: "Delta Force Cheats combat overlay during a team fight",
 					playerEsp: "Player ESP boxes and distance readouts in a Delta Force match",
@@ -16843,7 +16843,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					hacksPackage: "2D radar threat overlay for Delta Force",
 					raidFight: "Aimbot assist during a Delta Force tactical combat",
 					battleRoyale: "Delta Force Cheats in-session overview for Windows PC",
-					raidMap: "ESP markers for hero skills and POIs in Delta Force",
+					raidMap: "ESP markers for objectives and extraction points in Delta Force",
 				},
 			},
 			pages: {
@@ -18026,7 +18026,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				images: {
 					hero: "Delta Force Cheats hero — ESP and aimbot overlay in Delta Force",
-					espWallhack: "Wallhack outlines showing agents through walls",
+					espWallhack: "Wallhack outlines showing enemy operators through cover",
 					aimbotCombat: "Soft aim assist overlay during a Delta Force match",
 					squadFight: "Delta Force Cheats combat overlay during a team fight",
 					playerEsp: "Player ESP boxes and distance readouts in a Delta Force match",
@@ -18034,7 +18034,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					hacksPackage: "2D radar threat overlay for Delta Force",
 					raidFight: "Aimbot assist during a Delta Force tactical combat",
 					battleRoyale: "Delta Force Cheats in-session overview for Windows PC",
-					raidMap: "ESP markers for hero skills and POIs in Delta Force",
+					raidMap: "ESP markers for objectives and extraction points in Delta Force",
 				},
 			},
 			pages: {
@@ -19217,7 +19217,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				images: {
 					hero: "Delta Force Cheats hero — ESP and aimbot overlay in Delta Force",
-					espWallhack: "Wallhack outlines showing agents through walls",
+					espWallhack: "Wallhack outlines showing enemy operators through cover",
 					aimbotCombat: "Soft aim assist overlay during a Delta Force match",
 					squadFight: "Delta Force Cheats combat overlay during a team fight",
 					playerEsp: "Player ESP boxes and distance readouts in a Delta Force match",
@@ -19225,7 +19225,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					hacksPackage: "2D radar threat overlay for Delta Force",
 					raidFight: "Aimbot assist during a Delta Force tactical combat",
 					battleRoyale: "Delta Force Cheats in-session overview for Windows PC",
-					raidMap: "ESP markers for hero skills and POIs in Delta Force",
+					raidMap: "ESP markers for objectives and extraction points in Delta Force",
 				},
 			},
 			pages: {
@@ -20408,7 +20408,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				images: {
 					hero: "Delta Force Cheats hero — ESP and aimbot overlay in Delta Force",
-					espWallhack: "Wallhack outlines showing agents through walls",
+					espWallhack: "Wallhack outlines showing enemy operators through cover",
 					aimbotCombat: "Soft aim assist overlay during a Delta Force match",
 					squadFight: "Delta Force Cheats combat overlay during a team fight",
 					playerEsp: "Player ESP boxes and distance readouts in a Delta Force match",
@@ -20416,7 +20416,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					hacksPackage: "2D radar threat overlay for Delta Force",
 					raidFight: "Aimbot assist during a Delta Force tactical combat",
 					battleRoyale: "Delta Force Cheats in-session overview for Windows PC",
-					raidMap: "ESP markers for hero skills and POIs in Delta Force",
+					raidMap: "ESP markers for objectives and extraction points in Delta Force",
 				},
 			},
 			pages: {
@@ -21599,7 +21599,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				images: {
 					hero: "Delta Force Cheats hero — ESP and aimbot overlay in Delta Force",
-					espWallhack: "Wallhack outlines showing agents through walls",
+					espWallhack: "Wallhack outlines showing enemy operators through cover",
 					aimbotCombat: "Soft aim assist overlay during a Delta Force match",
 					squadFight: "Delta Force Cheats combat overlay during a team fight",
 					playerEsp: "Player ESP boxes and distance readouts in a Delta Force match",
@@ -21607,7 +21607,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					hacksPackage: "2D radar threat overlay for Delta Force",
 					raidFight: "Aimbot assist during a Delta Force tactical combat",
 					battleRoyale: "Delta Force Cheats in-session overview for Windows PC",
-					raidMap: "ESP markers for hero skills and POIs in Delta Force",
+					raidMap: "ESP markers for objectives and extraction points in Delta Force",
 				},
 			},
 			pages: {
@@ -22790,7 +22790,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				images: {
 					hero: "Delta Force Cheats hero — ESP and aimbot overlay in Delta Force",
-					espWallhack: "Wallhack outlines showing agents through walls",
+					espWallhack: "Wallhack outlines showing enemy operators through cover",
 					aimbotCombat: "Soft aim assist overlay during a Delta Force match",
 					squadFight: "Delta Force Cheats combat overlay during a team fight",
 					playerEsp: "Player ESP boxes and distance readouts in a Delta Force match",
@@ -22798,7 +22798,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					hacksPackage: "2D radar threat overlay for Delta Force",
 					raidFight: "Aimbot assist during a Delta Force tactical combat",
 					battleRoyale: "Delta Force Cheats in-session overview for Windows PC",
-					raidMap: "ESP markers for hero skills and POIs in Delta Force",
+					raidMap: "ESP markers for objectives and extraction points in Delta Force",
 				},
 			},
 			pages: {
@@ -23981,7 +23981,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				images: {
 					hero: "Delta Force Cheats hero — ESP and aimbot overlay in Delta Force",
-					espWallhack: "Wallhack outlines showing agents through walls",
+					espWallhack: "Wallhack outlines showing enemy operators through cover",
 					aimbotCombat: "Soft aim assist overlay during a Delta Force match",
 					squadFight: "Delta Force Cheats combat overlay during a team fight",
 					playerEsp: "Player ESP boxes and distance readouts in a Delta Force match",
@@ -23989,7 +23989,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					hacksPackage: "2D radar threat overlay for Delta Force",
 					raidFight: "Aimbot assist during a Delta Force tactical combat",
 					battleRoyale: "Delta Force Cheats in-session overview for Windows PC",
-					raidMap: "ESP markers for hero skills and POIs in Delta Force",
+					raidMap: "ESP markers for objectives and extraction points in Delta Force",
 				},
 			},
 			pages: {
@@ -25172,7 +25172,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				images: {
 					hero: "Delta Force Cheats hero — ESP and aimbot overlay in Delta Force",
-					espWallhack: "Wallhack outlines showing agents through walls",
+					espWallhack: "Wallhack outlines showing enemy operators through cover",
 					aimbotCombat: "Soft aim assist overlay during a Delta Force match",
 					squadFight: "Delta Force Cheats combat overlay during a team fight",
 					playerEsp: "Player ESP boxes and distance readouts in a Delta Force match",
@@ -25180,7 +25180,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					hacksPackage: "2D radar threat overlay for Delta Force",
 					raidFight: "Aimbot assist during a Delta Force tactical combat",
 					battleRoyale: "Delta Force Cheats in-session overview for Windows PC",
-					raidMap: "ESP markers for hero skills and POIs in Delta Force",
+					raidMap: "ESP markers for objectives and extraction points in Delta Force",
 				},
 			},
 			pages: {

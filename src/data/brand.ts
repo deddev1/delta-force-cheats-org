@@ -42,7 +42,7 @@ export const brand = {
 	heroImage: '/images/delta-force-cheats-hero-1199w.webp',
 	/** Product demo clip — lazy-loaded on homepage; fetched only after play */
 	demoVideoUrl: 'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/delta/delta-clip.mp4',
-	demoVideoPoster: '/images/delta-force-screenshot-06.webp',
+	demoVideoPoster: '/images/delta-force-demo-poster.webp',
 
 	plans: [
 		{ id: 'monthly', label: 'Monthly', price: 35, duration: 'P30D' },
@@ -136,7 +136,7 @@ export const brand = {
 			'FAQ for Delta Force cheats — delivery, setup, Operations & Warfare use, {antiCheat} updates & pricing on PC. Answers at deltaforcecheats.org before you buy.',
 		reviewsTitle: 'Delta Force Cheats Reviews | Hacks & Cheats',
 		reviewsDescription:
-			'Real buyer reviews for Delta Force cheats and Delta Force hacks — ESP, soft aim, radar & {antiCheat} maintenance on PC. See license holder feedback at deltaforcecheats.org.',
+			'Real buyer reviews for Delta Force cheats and Delta Force cheats — ESP, soft aim, radar & {antiCheat} maintenance on PC. See license holder feedback at deltaforcecheats.org.',
 		blogTitle: 'Delta Force Blog | Guides & Patch Tips | {brand}',
 		blogDescription:
 			'Delta Force guides — ranked tips, ESP & aimbot notes, operator tiers & {antiCheat} updates for PC. Read patch notes and buyer guides at deltaforcecheats.org/blog.',
@@ -146,7 +146,7 @@ export const brand = {
 	copy: {
 		tagline: 'Undetected {primaryKeyword} — ESP, aimbot, and radar for PC',
 		summary: '{brand} is an undetected {game} cheats package for Windows PC. Includes ESP, soft aim, and radar, with {antiCheat} maintenance after patches.',
-		heroLede: 'Undetected ESP, soft aim, and radar for Delta Force on Windows PC.',
+		heroLede: 'Undetected Delta Force cheats for PC — ESP wallhack, soft aim, and 2D radar for Operations & Warfare, with ACE rebuilds after every patch.',
 		blogLabel: 'Delta Force Intel',
 		ctaBuy: 'Get Access',
 		ctaBuyShort: 'Buy',
@@ -158,7 +158,7 @@ export const brand = {
 		supportIntro: 'Need help with {brand}? Email {email} with your order ID.',
 		faqIntro: 'Short answers about delivery, setup, updates, and refunds.',
 		reviewsIntro:
-			'Real feedback on Delta Force cheats and Delta Force hacks — ESP, soft aim, radar, and support from {brand} buyers.',
+			'Real feedback on Delta Force cheats and Delta Force cheats — ESP, soft aim, radar, and support from {brand} buyers.',
 		chipEsp: 'ESP / wallhack',
 		chipAim: 'Soft aim',
 		chipRadar: '2D radar',
@@ -181,7 +181,7 @@ export const brand = {
 		blogImageTitle: '{brand} blog',
 		blogImageCaption: 'Tips and updates for {primaryKeyword}',
 		reviewsImageTitle: '{brand} reviews',
-		reviewsImageCaption: 'Delta Force cheats & Delta Force hacks — what buyers say about {primaryKeyword}',
+		reviewsImageCaption: 'Delta Force cheats & Delta Force cheats — what buyers say about {primaryKeyword}',
 		images: [
 			{
 				src: '/images/delta-force-screenshot-01.webp',

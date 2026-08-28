@@ -9,7 +9,7 @@ export const primarySeoKeyword = 'delta force cheats';
  */
 export const globalSeoKeywords = [
 	'delta force cheats',
-	'delta force hacks',
+	'delta force cheats',
 	'undetected delta force cheats',
 	'delta force cheats 2026',
 	'best delta force cheats',
@@ -130,9 +130,9 @@ export const pageSeoKeywords: Partial<Record<PageId, readonly string[]>> = {
 /** Meta keywords for /reviews/ and individual review pages (English-only routes). */
 export const reviewsSeoKeywords = [
 	'delta force cheats reviews',
-	'delta force hacks',
 	'delta force cheats',
-	'delta force hacks pc',
+	'delta force cheats',
+	'delta force cheats pc',
 	'delta force esp',
 	'delta force aimbot',
 	'delta force radar hack',

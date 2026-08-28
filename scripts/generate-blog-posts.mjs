@@ -385,7 +385,7 @@ const sources = [
 			{
 				h2: 'A simple 15-minute routine that scales',
 				paragraphs: [
-					'Minutes 1–5: tracking and short bursts on a practice server with agents. Minutes 6–10: ambush practice on common angles — jiggle, counter-strafe, pre-aim head height. Minutes 11–15: one focused aim train or practice server block where you only work one habit, like holding a base or clearing dense cover.',
+					'Minutes 1–5: tracking and short bursts on a practice server with operators. Minutes 6–10: ambush practice on common angles — jiggle, counter-strafe, pre-aim head height. Minutes 11–15: one focused aim train or practice server block where you only work one habit, like holding a lane or clearing dense cover.',
 					'Keep the routine identical for a week so improvements are measurable. Rotate maps later — Map one day, Woods the next — after the habit sticks.',
 				],
 			},
@@ -614,7 +614,7 @@ const sources = [
 			{
 				h2: 'What ESP shows during a real match',
 				paragraphs: [
-					'Player ESP outlines agents through walls and terrain, often with distance. Loot ESP highlights loot or high-value items. Base cues help you avoid camping surprises. That information gap is why people search for Delta Force ESP in the first place.',
+					'Player ESP outlines enemy operators through walls and terrain, often with distance. Loot ESP highlights loot or high-value items. Objective cues help you avoid camping surprises. That information gap is why people search for Delta Force ESP in the first place.',
 					'Read the dedicated pages for <a href="/delta-force-esp/">ESP</a> and <a href="/delta-force-esp/">wallhack</a> if you want category-level detail.',
 				],
 			},

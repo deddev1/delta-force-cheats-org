@@ -17,7 +17,8 @@
     "primaryAria": "Principal",
     "mobileAria": "Móvil",
     "openMenu": "Abrir menú",
-    "closeMenu": "Cerrar menú"
+    "closeMenu": "Cerrar menú",
+    "brandShort": "Delta Force Cheats"
   },
   "hero": {
     "accent": "Trucos Delta Force indetectables",
@@ -308,7 +309,7 @@
       },
       "solo-farmer-and-raider-sessions": {
         "q": "¿Funciona en rondas battle royale y partidas clasificadas?",
-        "a": "Sí. ESP, radar y aimbot están pensados para el flujo de partida de Delta Force: leer héroes enemigos, rastrear loot y soul jades, y mantener conciencia cerca de POIs y zonas de combate en Quick Match y Ranked."
+        "a": "Sí. ESP, radar y aimbot están pensados para el flujo de partida de Delta Force: leer operadores enemigos, rastrear loot y supplies, y mantener conciencia cerca de POIs y zonas de combate en Operations y Warfare."
       },
       "esp-wallhack-radar-or-aimbot": {
         "q": "¿Qué incluye: ESP, wallhack, radar o Aimbot?",
@@ -328,7 +329,7 @@
       },
       "what-is-a-delta-force-wallhack": {
         "q": "¿Qué es un wallhack de Delta Force?",
-        "a": "Un wallhack de Delta Force es un overlay ESP que muestra héroes enemigos a través del terreno. Delta Force Cheats incluye distancias, señales de agarre y ultimate, y categorías configurables."
+        "a": "Un wallhack de Delta Force es un overlay ESP que muestra operadores enemigos a través del terreno. Delta Force Cheats incluye distancias, señales de vehículos y objetivos, y categorías configurables."
       },
       "does-delta-force-cheats-include-radar-hack": {
         "q": "¿Delta Force Cheats incluye radar hack?",
@@ -348,7 +349,7 @@
       },
       "what-is-delta-force-esp-hack": {
         "q": "¿Qué es un ESP hack de Delta Force?",
-        "a": "Un ESP hack de Delta Force es un overlay de visibilidad que muestra héroes enemigos, armas y loot a través de las paredes. Delta Force Cheats ESP incluye cajas de jugador, etiquetas de distancia, señales de agarre y ultimate, y categorías configurables para Quick Match y Ranked."
+        "a": "Un ESP hack de Delta Force es un overlay de visibilidad que muestra operadores enemigos, armas y loot a través de las paredes. Delta Force Cheats ESP incluye cajas de jugador, etiquetas de distancia, señales de vehículos y objetivos, y categorías configurables para Operations y Warfare."
       },
       "what-is-delta-force-aimbot-hack": {
         "q": "¿Qué es un aimbot hack de Delta Force?",
@@ -372,7 +373,7 @@
       },
       "what-is-delta-force-soft-aim": {
         "q": "¿Qué es el soft aim de Delta Force?",
-        "a": "El soft aim de Delta Force guía suavemente la puntería hacia objetivos dentro de un FOV establecido en lugar de bloquear al instante. Delta Force Cheats te permite ajustar suavizado, prioridad de huesos y perfiles por tipo de arma para que la asistencia se sienta controlada en Quick Match y Ranked."
+        "a": "El soft aim de Delta Force guía suavemente la puntería hacia objetivos dentro de un FOV establecido en lugar de bloquear al instante. Delta Force Cheats te permite ajustar suavizado, prioridad de huesos y perfiles por tipo de arma para que la asistencia se sienta controlada en Operations y Warfare."
       },
       "free-delta-force-cheat-download": {
         "q": "Is there a free Delta Force hack download?",
@@ -384,7 +385,7 @@
       },
       "delta-force-cheats-for-ranked": {
         "q": "¿Funcionan los trucos de Delta Force en competitivo clasificado?",
-        "a": "Sí. ESP, radar y soft aim están pensados para Ranked y Quick Match de Delta Force en PC Windows. Usa ajustes conservadores de overlay, lee las notas de mantenimiento tras parches y confirma el estado undetected en la página de Actualizaciones antes de las colas competitivas."
+        "a": "Sí. ESP, radar y soft aim están pensados para Operations y Warfare de Delta Force en PC Windows. Usa ajustes conservadores de overlay, lee las notas de mantenimiento tras parches y confirma el estado undetected en la página de Actualizaciones antes de las colas competitivas."
       },
       "what-is-delta-force-mod-menu": {
         "q": "What is a Delta Force mod menu?",

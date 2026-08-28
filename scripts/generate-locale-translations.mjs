@@ -63,7 +63,7 @@ const EN_FAQ_ITEMS = {
 	},
 	'solo-farmer-and-raider-sessions': {
 		q: 'Does this work in Operations and Warfare matches?',
-		a: 'Yes. ESP, radar, and aimbot are built for Delta Force match flow — reading enemy operators, tracking loot and soul jades, and staying aware near POIs and objectives and extraction points in Quick Match and Ranked.',
+		a: 'Yes. ESP, radar, and aimbot are built for Delta Force match flow — spotting enemy operators, tracking loot and vehicles, and staying aware near objectives and extraction points in Operations, Warfare, and Ranked.',
 	},
 	'esp-wallhack-radar-or-aimbot': {
 		q: 'What is included — ESP, wallhack, radar, or Aimbot?',

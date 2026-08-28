@@ -356,19 +356,19 @@ export const customerReviews = [
 	reviewMeta({
 		handle: 'xKrypt0_DeltaForce',
 		rating: 5,
-		text: 'ngl i tried like 3 diff delta force hacks before this and they all felt way too snappy in ranked. these delta force cheats actually let you tune soft aim so it doesnt look obvious in ranked lobbies on Zero Dam. been grinding a week now, setup took probs 12 min after defender whitelisted the loader. no drama yet tbh',
+		text: 'ngl i tried like 3 diff delta force cheats before this and they all felt way too snappy in ranked. these delta force cheats actually let you tune soft aim so it doesnt look obvious in ranked lobbies on Zero Dam. been grinding a week now, setup took probs 12 min after defender whitelisted the loader. no drama yet tbh',
 		short: 'tried 3 delta force cheats before — these delta force cheats feel human in ranked Warfare once you tune soft aim on Zero Dam',
 		slug: 'delta-force-soft-aim-review-xkrypt0',
 		seoTitle: 'Soft Aim Review by @xKrypt0_DeltaForce — 5/5 | {brand}',
 		seoDescription:
-			'@xKrypt0_DeltaForce rates {brand} delta force cheats soft aim 5/5 after testing Delta Force hacks in ranked Warfare on Windows PC.',
+			'@xKrypt0_DeltaForce rates {brand} delta force cheats soft aim 5/5 after testing Delta Force cheats in ranked Warfare on Windows PC.',
 		date: '2026-07-24',
 		tag: 'Soft aim',
 	}),
 	reviewMeta({
 		handle: 'buildsR4K',
 		rating: 4,
-		text: 'i dont even run aimbot much, the delta force cheats esp is why i bought. seeing who rotated before you third party on Space City is insane info. been on monthly for a few weeks and its worth it. only gripe is menu could look cleaner but as delta force hacks go this package is solid',
+		text: 'i dont even run aimbot much, the delta force cheats esp is why i bought. seeing who rotated before you third party on Space City is insane info. been on monthly for a few weeks and its worth it. only gripe is menu could look cleaner but as delta force cheats go this package is solid',
 		short: 'bought for esp not aimbot — delta force cheats wallhack shows rotations before you third party, huge in ranked on Space City',
 		slug: 'delta-force-esp-operations-review-buildsr4k',
 		seoTitle: 'ESP Review by @buildsR4K — 4/5 | {brand}',
@@ -380,12 +380,12 @@ export const customerReviews = [
 	reviewMeta({
 		handle: 'dma_wizard',
 		rating: 5,
-		text: 'last delta force cheat i had got cooked the day after a ACE update lol. switched to these delta force cheats and loader was back same night they posted the rebuild. running esp + radar on Layali Grove, still clean after 2 weeks. grabbed lifetime cause im done paying monthly for dead delta force hacks',
-		short: 'old delta force hack died on ace patch — these delta force cheats rebuilt same night, still undetected 2 weeks on Layali Grove',
+		text: 'last delta force cheat i had got cooked the day after a ACE update lol. switched to these delta force cheats and loader was back same night they posted the rebuild. running esp + radar on Layali Grove, still clean after 2 weeks. grabbed lifetime cause im done paying monthly for dead delta force cheats',
+		short: 'old delta force cheat died on ace patch — these delta force cheats rebuilt same night, still undetected 2 weeks on Layali Grove',
 		slug: 'delta-force-cloud-dma-review-dma-wizard',
 		seoTitle: 'Update Review by @dma_wizard — 5/5 | {brand}',
 		seoDescription:
-			'@dma_wizard rates {brand} delta force cheats 5/5 after a {antiCheat} update — fast Delta Force hacks rebuild on Windows PC.',
+			'@dma_wizard rates {brand} delta force cheats 5/5 after a {antiCheat} update — fast Delta Force cheats rebuild on Windows PC.',
 		date: '2026-06-27',
 		tag: 'Updates',
 	}),
@@ -409,14 +409,14 @@ export const customerReviews = [
 		slug: 'delta-force-cheat-setup-review-stormchaser07',
 		seoTitle: 'Setup Review by @stormChaser_07 — 3/5 | {brand}',
 		seoDescription:
-			'@stormChaser_07 rates {brand} delta force cheats setup 3/5 — ESP solid after support helped with Delta Force hacks on Windows PC.',
+			'@stormChaser_07 rates {brand} delta force cheats setup 3/5 — ESP solid after support helped with Delta Force cheats on Windows PC.',
 		date: '2026-06-15',
 		tag: 'Setup',
 	}),
 	reviewMeta({
 		handle: 'lootGoblinx',
 		rating: 5,
-		text: 'mainly wanted operator esp and loot tracking for delta force. these delta force cheats show kits and third parties earlier than my brain does lol. duos with friends is way less chaos when you know whos flanking. way better than random free delta force hacks that look sketchy af',
+		text: 'mainly wanted operator esp and loot tracking for delta force. these delta force cheats show kits and third parties earlier than my brain does lol. duos with friends is way less chaos when you know whos flanking. way better than random free delta force cheats that look sketchy af',
 		short: 'operator esp on these delta force cheats catches flanks and loot early — way better than sketchy free delta force cheats',
 		slug: 'delta-force-operator-esp-review-lootgoblinx',
 		seoTitle: 'Operator ESP Review by @lootGoblinx — 5/5 | {brand}',
@@ -428,7 +428,7 @@ export const customerReviews = [
 	reviewMeta({
 		handle: 'rankedGrind42',
 		rating: 4,
-		text: 'using delta force cheats since the new season dropped. per weapon aim profiles help on CQB holds — SMG vs AR actually feels different which is nice. status page was slow after ACE update but build was back next morning. solid delta force hacks for long grind sessions in Warfare',
+		text: 'using delta force cheats since the new season dropped. per weapon aim profiles help on CQB holds — SMG vs AR actually feels different which is nice. status page was slow after ACE update but build was back next morning. solid delta force cheats for long grind sessions in Warfare',
 		short: 'delta force cheats per-weapon aim profiles help CQB holds in Warfare — back online next day after ace patch',
 		slug: 'delta-force-soft-aim-session-review-rankedgrind42',
 		seoTitle: 'Ranked Soft Aim by @rankedGrind42 — 4/5 | {brand}',
@@ -441,7 +441,7 @@ export const customerReviews = [
 		handle: 'vanLifeDeltaForce',
 		rating: 5,
 		text: 'everyone talks esp but the 2d radar on these delta force cheats is cracked. caught a flank on Zero Dam twice in one match without staring at wallhack boxes. esp + radar combo feels like legit tier 1 delta force cheats. running low opacity so it doesnt scream cheat in clips',
-		short: '2d radar on these delta force cheats caught Zero Dam flanks twice — esp + radar combo feels like real delta force hacks',
+		short: '2d radar on these delta force cheats caught Zero Dam flanks twice — esp + radar combo feels like real delta force cheats',
 		slug: 'delta-force-radar-hack-review-vanlifedeltaforce',
 		seoTitle: 'Radar Review by @vanLifeDeltaForce — 5/5 | {brand}',
 		seoDescription:
@@ -453,7 +453,7 @@ export const customerReviews = [
 		handle: 'patchDayMike',
 		rating: 4,
 		text: 'delta force patch day is when half the cheat discords go silent lol. delta force cheats team posted on status in like 3 hrs and i was back in ranked queue next morning. old provider left me waiting 4 days with no loader. not perfect but way better delta force cheats support than im used to',
-		short: 'patch day usually kills delta force hacks — these delta force cheats were back next morning, old provider took 4 days',
+		short: 'patch day usually kills delta force cheats — these delta force cheats were back next morning, old provider took 4 days',
 		slug: 'delta-force-ace-update-review-patchdaymike',
 		seoTitle: 'Status Review by @patchDayMike — 4/5 | {brand}',
 		seoDescription:
@@ -464,7 +464,7 @@ export const customerReviews = [
 	reviewMeta({
 		handle: 'snipezOnly_',
 		rating: 5,
-		text: 'CQB main here. long range soft aim on these delta force cheats with esp callouts is stupid strong if you keep settings lowkey. no bloat loader, simple install on win11. best delta force hacks ive used for ranked sessions on Layali Grove and Space City — just dont crank fov like an idiot',
+		text: 'CQB main here. long range soft aim on these delta force cheats with esp callouts is stupid strong if you keep settings lowkey. no bloat loader, simple install on win11. best delta force cheats ive used for ranked sessions on Layali Grove and Space City — just dont crank fov like an idiot',
 		short: 'CQB main — soft aim + esp on these delta force cheats hits different on Layali Grove/Space City if you keep settings subtle',
 		slug: 'delta-force-operator-soft-aim-review-snipezonly',
 		seoTitle: 'CQB Soft Aim by @snipezOnly_ — 5/5 | {brand}',

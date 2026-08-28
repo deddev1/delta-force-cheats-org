@@ -240,7 +240,7 @@ const GAME_PROFILES = {
 		genre: 'tactical FPS',
 		setting: '5v5 rounds with agent abilities and spike plants',
 		mechanics: ['ability combos', 'crosshair placement', 'economy rounds'],
-		antiCheat: 'Vanguard kernel driver running at boot',
+		antiCheat: 'ACE kernel driver running at boot',
 	},
 	'Gray Zone Warfare': {
 		genre: 'open-world tactical FPS',

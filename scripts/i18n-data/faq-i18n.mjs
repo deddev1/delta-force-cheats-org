@@ -14,7 +14,7 @@ export const FAQ_I18N = {
 		},
 		'solo-farmer-and-raider-sessions': {
 			q: '¿Funciona en matches de base y PvP?',
-			a: 'Sí. ESP, radar y aimbot están pensados para el flujo de match de Delta Force: leer jugadores y agents, detectar loot y mantener conciencia cerca de sitios de bomba y vault sectors.',
+			a: 'Sí. ESP, radar y aimbot están pensados para el flujo de match de Delta Force: leer operadores enemigos, detectar loot y mantener conciencia cerca de objetivos y puntos de extracción.',
 		},
 		'esp-wallhack-radar-or-aimbot': {
 			q: '¿Qué incluye: ESP, wallhack, radar o Aimbot?',
@@ -34,7 +34,7 @@ export const FAQ_I18N = {
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: '¿Qué es un wallhack de Delta Force?',
-			a: 'Un wallhack de Delta Force es un overlay ESP que muestra jugadores, agents y loot a través de las paredes. Delta Force Cheats incluye distancias, señales de match y categorías configurables.',
+			a: 'Un wallhack de Delta Force es un overlay ESP que muestra operadores enemigos y loot a través de las paredes. Delta Force Cheats incluye distancias, señales de vehículos y objetivos, y categorías configurables.',
 		},
 		'does-delta-force-cheats-include-radar-hack': {
 			q: '¿Delta Force Cheats incluye radar hack?',
@@ -60,7 +60,7 @@ export const FAQ_I18N = {
 		},
 		'solo-farmer-and-raider-sessions': {
 			q: 'Est-ce que ça fonctionne en matches de base et en PvP ?',
-			a: "Oui. ESP, radar et aimbot sont conçus pour le flux de match Delta Force — lire les joueurs et agents, repérer le loot et rester vigilant près des bomb sites.",
+			a: "Oui. ESP, radar et aimbot sont conçus pour le flux de match Delta Force — lire les opérateurs ennemis, repérer le loot et rester vigilant près des objectifs et points d'extraction.",
 		},
 		'esp-wallhack-radar-or-aimbot': {
 			q: "Qu'est-ce qui est inclus — ESP, wallhack, radar ou Aimbot ?",
@@ -80,7 +80,7 @@ export const FAQ_I18N = {
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: "Qu'est-ce qu'un wallhack Delta Force ?",
-			a: "Un wallhack Delta Force est un overlay ESP qui affiche joueurs, agents et loot à travers les murs. Delta Force Cheats inclut distances, signaux de match et catégories configurables.",
+			a: "Un wallhack Delta Force est un overlay ESP qui affiche opérateurs ennemis et loot à travers les murs. Delta Force Cheats inclut distances, signaux de véhicules et objectifs, et catégories configurables.",
 		},
 		'does-delta-force-cheats-include-radar-hack': {
 			q: 'Delta Force Cheats inclut-il un radar hack ?',
@@ -106,7 +106,7 @@ export const FAQ_I18N = {
 		},
 		'solo-farmer-and-raider-sessions': {
 			q: 'Funktioniert das bei Basis-Raids und PvP?',
-			a: 'Ja. ESP, Radar und Aimbot sind für den Delta Force-Raid-Flow gebaut — Spieler und agents lesen, Loot erkennen und bei Monumenten wachsam bleiben.',
+			a: 'Ja. ESP, Radar und Aimbot sind für den Delta Force-Match-Flow gebaut — feindliche Operatoren lesen, Loot erkennen und bei Zielen und Extraktionspunkten wachsam bleiben.',
 		},
 		'esp-wallhack-radar-or-aimbot': {
 			q: 'Was ist enthalten — ESP, Wallhack, Radar oder Aimbot?',
@@ -126,7 +126,7 @@ export const FAQ_I18N = {
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: 'Was ist ein Delta Force Wallhack?',
-			a: 'Ein Delta Force Wallhack ist ein ESP-Overlay, das Spieler, agents und Loot durch Wände zeigt. Delta Force Cheats enthält Distanzen, Raid-Hinweise und umschaltbare Kategorien.',
+			a: 'Ein Delta Force Wallhack ist ein ESP-Overlay, das feindliche Operatoren und Loot durch Wände zeigt. Delta Force Cheats enthält Distanzen, Fahrzeug- und Zielhinweise sowie umschaltbare Kategorien.',
 		},
 		'does-delta-force-cheats-include-radar-hack': {
 			q: 'Enthält Delta Force Cheats einen Radar Hack?',

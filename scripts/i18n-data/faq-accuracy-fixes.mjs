@@ -6,15 +6,15 @@ export const FAQ_ACCURACY_FIXES = {
 	en: {
 		'solo-farmer-and-raider-sessions': {
 			q: 'Does this work in Operations and Warfare matches?',
-			a: 'Yes. ESP, radar, and aimbot are built for Delta Force match flow — reading enemy operators, tracking loot and soul jades, and staying aware near POIs and objectives and extraction points in Quick Match and Ranked.',
+			a: 'Yes. ESP, radar, and aimbot are built for Delta Force match flow — reading enemy operators, tracking loot and supplies, and staying aware near objectives and extraction points in Operations and Warfare.',
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: 'What is a Delta Force wallhack?',
-			a: 'A Delta Force wallhack is an ESP overlay that shows enemy operators through terrain. Delta Force Cheats includes distance readouts, grapple and ult cues, and toggleable categories.',
+			a: 'A Delta Force wallhack is an ESP overlay that shows enemy operators through terrain. Delta Force Cheats includes distance readouts, vehicle and objective cues, and toggleable categories.',
 		},
 		'what-is-delta-force-esp-hack': {
 			q: 'What is a Delta Force ESP hack?',
-			a: 'A Delta Force ESP hack is a visibility overlay that shows enemy operators, weapons, and loot through walls. Delta Force Cheats ESP includes player boxes, distance tags, grapple and ult cues, and toggleable categories for Quick Match and Ranked.',
+			a: 'A Delta Force ESP hack is a visibility overlay that shows enemy operators, weapons, and loot through walls. Delta Force Cheats ESP includes player boxes, distance tags, vehicle and objective cues, and toggleable categories for Operations and Warfare.',
 		},
 		'what-is-delta-force-aimbot-hack': {
 			q: 'What is a Delta Force aimbot hack?',
@@ -22,7 +22,7 @@ export const FAQ_ACCURACY_FIXES = {
 		},
 		'what-is-delta-force-soft-aim': {
 			q: 'What is Delta Force soft aim?',
-			a: 'Delta Force soft aim gently guides aim toward targets inside a set FOV instead of snapping instantly. Delta Force Cheats lets you adjust smoothing, bone priority, and per-weapon-type profiles so assist feels controlled in Quick Match and Ranked.',
+			a: 'Delta Force soft aim gently guides aim toward targets inside a set FOV instead of snapping instantly. Delta Force Cheats lets you adjust smoothing, bone priority, and per-weapon-type profiles so assist feels controlled in Operations and Warfare.',
 		},
 		'delta-force-ace-bypass': {
 			q: 'How does ACE bypass work for delta force cheats?',
@@ -30,21 +30,21 @@ export const FAQ_ACCURACY_FIXES = {
 		},
 		'delta-force-cheats-for-ranked': {
 			q: 'Do delta force cheats work in ranked competitive?',
-			a: 'Yes. ESP, radar, and soft aim are built for Ranked and Quick Match Delta Force on Windows PC. Use conservative overlay settings, read maintenance notes after patches, and confirm undetected status on the Updates page before competitive queues.',
+			a: 'Yes. ESP, radar, and soft aim are built for Operations and Warfare Delta Force on Windows PC. Use conservative overlay settings, read maintenance notes after patches, and confirm undetected status on the Updates page before competitive queues.',
 		},
 	},
 	es: {
 		'solo-farmer-and-raider-sessions': {
 			q: '¿Funciona en rondas battle royale y partidas clasificadas?',
-			a: 'Sí. ESP, radar y aimbot están pensados para el flujo de partida de Delta Force: leer héroes enemigos, rastrear loot y soul jades, y mantener conciencia cerca de POIs y zonas de combate en Quick Match y Ranked.',
+			a: 'Sí. ESP, radar y aimbot están pensados para el flujo de partida de Delta Force: leer operadores enemigos, rastrear loot y supplies, y mantener conciencia cerca de POIs y zonas de combate en Operations y Warfare.',
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: '¿Qué es un wallhack de Delta Force?',
-			a: 'Un wallhack de Delta Force es un overlay ESP que muestra héroes enemigos a través del terreno. Delta Force Cheats incluye distancias, señales de agarre y ultimate, y categorías configurables.',
+			a: 'Un wallhack de Delta Force es un overlay ESP que muestra operadores enemigos a través del terreno. Delta Force Cheats incluye distancias, señales de vehículos y objetivos, y categorías configurables.',
 		},
 		'what-is-delta-force-esp-hack': {
 			q: '¿Qué es un ESP hack de Delta Force?',
-			a: 'Un ESP hack de Delta Force es un overlay de visibilidad que muestra héroes enemigos, armas y loot a través de las paredes. Delta Force Cheats ESP incluye cajas de jugador, etiquetas de distancia, señales de agarre y ultimate, y categorías configurables para Quick Match y Ranked.',
+			a: 'Un ESP hack de Delta Force es un overlay de visibilidad que muestra operadores enemigos, armas y loot a través de las paredes. Delta Force Cheats ESP incluye cajas de jugador, etiquetas de distancia, señales de vehículos y objetivos, y categorías configurables para Operations y Warfare.',
 		},
 		'what-is-delta-force-aimbot-hack': {
 			q: '¿Qué es un aimbot hack de Delta Force?',
@@ -52,7 +52,7 @@ export const FAQ_ACCURACY_FIXES = {
 		},
 		'what-is-delta-force-soft-aim': {
 			q: '¿Qué es el soft aim de Delta Force?',
-			a: 'El soft aim de Delta Force guía suavemente la puntería hacia objetivos dentro de un FOV establecido en lugar de bloquear al instante. Delta Force Cheats te permite ajustar suavizado, prioridad de huesos y perfiles por tipo de arma para que la asistencia se sienta controlada en Quick Match y Ranked.',
+			a: 'El soft aim de Delta Force guía suavemente la puntería hacia objetivos dentro de un FOV establecido en lugar de bloquear al instante. Delta Force Cheats te permite ajustar suavizado, prioridad de huesos y perfiles por tipo de arma para que la asistencia se sienta controlada en Operations y Warfare.',
 		},
 		'delta-force-ace-bypass': {
 			q: '¿Cómo funciona el bypass de ACE para los trucos de Delta Force?',
@@ -60,21 +60,21 @@ export const FAQ_ACCURACY_FIXES = {
 		},
 		'delta-force-cheats-for-ranked': {
 			q: '¿Funcionan los trucos de Delta Force en competitivo clasificado?',
-			a: 'Sí. ESP, radar y soft aim están pensados para Ranked y Quick Match de Delta Force en PC Windows. Usa ajustes conservadores de overlay, lee las notas de mantenimiento tras parches y confirma el estado undetected en la página de Actualizaciones antes de las colas competitivas.',
+			a: 'Sí. ESP, radar y soft aim están pensados para Operations y Warfare de Delta Force en PC Windows. Usa ajustes conservadores de overlay, lee las notas de mantenimiento tras parches y confirma el estado undetected en la página de Actualizaciones antes de las colas competitivas.',
 		},
 	},
 	fr: {
 		'solo-farmer-and-raider-sessions': {
 			q: 'Est-ce que ça fonctionne en battle royale et en matchs classés ?',
-			a: "Oui. ESP, radar et aimbot sont conçus pour le flux de match Delta Force — lire les héros ennemis, suivre le loot et les soul jades, et rester vigilant près des POI et zones de combat en Quick Match et Ranked.",
+			a: "Oui. ESP, radar et aimbot sont conçus pour le flux de match Delta Force — lire les opérateurs ennemis, suivre le loot et les supplies, et rester vigilant près des POI et zones de combat en Operations et Warfare.",
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: "Qu'est-ce qu'un wallhack Delta Force ?",
-			a: "Un wallhack Delta Force est un overlay ESP qui affiche les héros ennemis à travers le terrain. Delta Force Cheats inclut distances, signaux de grappin et ultime, et catégories configurables.",
+			a: "Un wallhack Delta Force est un overlay ESP qui affiche les opérateurs ennemis à travers le terrain. Delta Force Cheats inclut distances, signaux de véhicules et objectifs, et catégories configurables.",
 		},
 		'what-is-delta-force-esp-hack': {
 			q: "Qu'est-ce qu'un ESP hack Delta Force ?",
-			a: "Un ESP hack Delta Force est un overlay de visibilité qui affiche héros ennemis, armes et loot à travers les murs. Delta Force Cheats ESP inclut boîtes joueur, étiquettes de distance, signaux de grappin et ultime, et catégories configurables pour Quick Match et Ranked.",
+			a: "Un ESP hack Delta Force est un overlay de visibilité qui affiche opérateurs ennemis, armes et loot à travers les murs. Delta Force Cheats ESP inclut boîtes joueur, étiquettes de distance, signaux de véhicules et objectifs, et catégories configurables pour Operations et Warfare.",
 		},
 		'what-is-delta-force-aimbot-hack': {
 			q: "Qu'est-ce qu'un aimbot hack Delta Force ?",
@@ -82,7 +82,7 @@ export const FAQ_ACCURACY_FIXES = {
 		},
 		'what-is-delta-force-soft-aim': {
 			q: "Qu'est-ce que le soft aim Delta Force ?",
-			a: "Le soft aim Delta Force guide doucement la visée vers les cibles dans un FOV défini au lieu de verrouiller instantanément. Delta Force Cheats permet d'ajuster lissage, priorité d'os et profils par type d'arme pour une assistance contrôlée en Quick Match et Ranked.",
+			a: "Le soft aim Delta Force guide doucement la visée vers les cibles dans un FOV défini au lieu de verrouiller instantanément. Delta Force Cheats permet d'ajuster lissage, priorité d'os et profils par type d'arme pour une assistance contrôlée en Operations et Warfare.",
 		},
 		'delta-force-ace-bypass': {
 			q: 'Comment fonctionne le bypass ACE pour les triches Delta Force ?',
@@ -90,21 +90,21 @@ export const FAQ_ACCURACY_FIXES = {
 		},
 		'delta-force-cheats-for-ranked': {
 			q: 'Les triches Delta Force fonctionnent-elles en compétitif classé ?',
-			a: "Oui. ESP, radar et soft aim sont conçus pour Ranked et Quick Match sur Delta Force en PC Windows. Utilisez des réglages d'overlay conservateurs, lisez les notes de maintenance après les patchs et confirmez le statut undetected sur la page Mises à jour avant les files compétitives.",
+			a: "Oui. ESP, radar et soft aim sont conçus pour Operations et Warfare sur Delta Force en PC Windows. Utilisez des réglages d'overlay conservateurs, lisez les notes de maintenance après les patchs et confirmez le statut undetected sur la page Mises à jour avant les files compétitives.",
 		},
 	},
 	de: {
 		'solo-farmer-and-raider-sessions': {
 			q: 'Funktioniert das in Battle-Royale-Runden und Ranked-Matches?',
-			a: 'Ja. ESP, Radar und Aimbot sind für den Delta Force-Match-Flow gebaut — feindliche Helden lesen, Loot und Soul Jades verfolgen und in Quick Match und Ranked in POIs und Kampfzonen wachsam bleiben.',
+			a: 'Ja. ESP, Radar und Aimbot sind für den Delta Force-Match-Flow gebaut — feindliche Operatoren lesen, Loot und supplies verfolgen und in Operations und Warfare in POIs und Kampfzonen wachsam bleiben.',
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: 'Was ist ein Delta Force Wallhack?',
-			a: 'Ein Delta Force Wallhack ist ein ESP-Overlay, das feindliche Helden durch Gelände zeigt. Delta Force Cheats enthält Distanzanzeigen, Grapple- und Ult-Signale sowie umschaltbare Kategorien.',
+			a: 'Ein Delta Force Wallhack ist ein ESP-Overlay, das feindliche Operatoren durch Gelände zeigt. Delta Force Cheats enthält Distanzanzeigen, Fahrzeug- und Zielsignale sowie umschaltbare Kategorien.',
 		},
 		'what-is-delta-force-esp-hack': {
 			q: 'Was ist ein Delta Force ESP Hack?',
-			a: 'Ein Delta Force ESP Hack ist ein Sichtbarkeits-Overlay, das feindliche Helden, Waffen und Loot durch Wände zeigt. Delta Force Cheats ESP enthält Spielerboxen, Distanz-Tags, Grapple- und Ult-Signale sowie umschaltbare Kategorien für Quick Match und Ranked.',
+			a: 'Ein Delta Force ESP Hack ist ein Sichtbarkeits-Overlay, das feindliche Operatoren, Waffen und Loot durch Wände zeigt. Delta Force Cheats ESP enthält Spielerboxen, Distanz-Tags, Fahrzeug- und Zielsignale sowie umschaltbare Kategorien für Operations und Warfare.',
 		},
 		'what-is-delta-force-aimbot-hack': {
 			q: 'Was ist ein Delta Force Aimbot Hack?',
@@ -112,7 +112,7 @@ export const FAQ_ACCURACY_FIXES = {
 		},
 		'what-is-delta-force-soft-aim': {
 			q: 'Was ist Delta Force Soft Aim?',
-			a: 'Delta Force Soft Aim lenkt die Zielhilfe sanft auf Ziele innerhalb eines festen FOV statt sofort zu snappen. Delta Force Cheats lässt Smoothing, Knochenpriorität und Profile pro Waffentyp anpassen — kontrollierte Hilfe in Quick Match und Ranked.',
+			a: 'Delta Force Soft Aim lenkt die Zielhilfe sanft auf Ziele innerhalb eines festen FOV statt sofort zu snappen. Delta Force Cheats lässt Smoothing, Knochenpriorität und Profile pro Waffentyp anpassen — kontrollierte Hilfe in Operations und Warfare.',
 		},
 		'delta-force-ace-bypass': {
 			q: 'Wie funktioniert der ACE-Bypass für Delta Force Cheats?',
@@ -120,21 +120,21 @@ export const FAQ_ACCURACY_FIXES = {
 		},
 		'delta-force-cheats-for-ranked': {
 			q: 'Funktionieren Delta Force Cheats im Ranked-Wettbewerb?',
-			a: 'Ja. ESP, Radar und Soft Aim sind für Ranked und Quick Match in Delta Force auf Windows PC gebaut. Nutze konservative Overlay-Einstellungen, lies Wartungshinweise nach Patches und bestätige den Undetected-Status auf der Updates-Seite vor kompetitiven Queues.',
+			a: 'Ja. ESP, Radar und Soft Aim sind für Operations und Warfare in Delta Force auf Windows PC gebaut. Nutze konservative Overlay-Einstellungen, lies Wartungshinweise nach Patches und bestätige den Undetected-Status auf der Updates-Seite vor kompetitiven Queues.',
 		},
 	},
 	pt: {
 		'solo-farmer-and-raider-sessions': {
 			q: 'Funciona em rodadas battle royale e partidas ranqueadas?',
-			a: 'Sim. ESP, radar e aimbot são feitos para o fluxo de partida do Delta Force — ler heróis inimigos, rastrear loot e soul jades, e manter consciência perto de POIs e zonas de combate em Quick Match e Ranked.',
+			a: 'Sim. ESP, radar e aimbot são feitos para o fluxo de partida do Delta Force — ler operadores inimigos, rastrear loot e supplies, e manter consciência perto de POIs e zonas de combate em Operations e Warfare.',
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: 'O que é um wallhack de Delta Force?',
-			a: 'Um wallhack de Delta Force é um overlay ESP que mostra heróis inimigos através do terreno. Delta Force Cheats inclui distâncias, sinais de grapple e ultimate, e categorias configuráveis.',
+			a: 'Um wallhack de Delta Force é um overlay ESP que mostra operadores inimigos através do terreno. Delta Force Cheats inclui distâncias, sinais de veículos e objetivos, e categorias configuráveis.',
 		},
 		'what-is-delta-force-esp-hack': {
 			q: 'O que é um ESP hack de Delta Force?',
-			a: 'Um ESP hack de Delta Force é um overlay de visibilidade que mostra heróis inimigos, armas e loot através das paredes. Delta Force Cheats ESP inclui caixas de jogador, tags de distância, sinais de grapple e ultimate, e categorias configuráveis para Quick Match e Ranked.',
+			a: 'Um ESP hack de Delta Force é um overlay de visibilidade que mostra operadores inimigos, armas e loot através das paredes. Delta Force Cheats ESP inclui caixas de jogador, tags de distância, sinais de veículos e objetivos, e categorias configuráveis para Operations e Warfare.',
 		},
 		'what-is-delta-force-aimbot-hack': {
 			q: 'O que é um aimbot hack de Delta Force?',
@@ -142,7 +142,7 @@ export const FAQ_ACCURACY_FIXES = {
 		},
 		'what-is-delta-force-soft-aim': {
 			q: 'O que é soft aim de Delta Force?',
-			a: 'O soft aim de Delta Force guia suavemente a mira para alvos dentro de um FOV definido em vez de travar instantaneamente. Delta Force Cheats permite ajustar suavização, prioridade de ossos e perfis por tipo de arma em Quick Match e Ranked.',
+			a: 'O soft aim de Delta Force guia suavemente a mira para alvos dentro de um FOV definido em vez de travar instantaneamente. Delta Force Cheats permite ajustar suavização, prioridade de ossos e perfis por tipo de arma em Operations e Warfare.',
 		},
 		'delta-force-ace-bypass': {
 			q: 'Como funciona o bypass ACE para delta force cheats?',
@@ -150,21 +150,21 @@ export const FAQ_ACCURACY_FIXES = {
 		},
 		'delta-force-cheats-for-ranked': {
 			q: 'Os delta force cheats funcionam em competitivo ranqueado?',
-			a: 'Sim. ESP, radar e soft aim são feitos para Ranked e Quick Match no Delta Force em PC Windows. Use overlays conservadores, leia notas de manutenção após patches e confirme status undetected na página de Atualizações antes das filas competitivas.',
+			a: 'Sim. ESP, radar e soft aim são feitos para Operations e Warfare no Delta Force em PC Windows. Use overlays conservadores, leia notas de manutenção após patches e confirme status undetected na página de Atualizações antes das filas competitivas.',
 		},
 	},
 	it: {
 		'solo-farmer-and-raider-sessions': {
 			q: 'Funziona nelle round battle royale e nelle partite classificate?',
-			a: 'Sì. ESP, radar e aimbot sono pensati per il flusso di match di Delta Force — leggere eroi nemici, tracciare loot e soul jades, e restare consapevoli vicino a POI e zone di combattimento in Quick Match e Ranked.',
+			a: 'Sì. ESP, radar e aimbot sono pensati per il flusso di match di Delta Force — leggere operatori nemici, tracciare loot e supplies, e restare consapevoli vicino a POI e zone di combattimento in Operations e Warfare.',
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: 'Cos\'è un wallhack Delta Force?',
-			a: 'Un wallhack Delta Force è un overlay ESP che mostra eroi nemici attraverso il terreno. Delta Force Cheats include distanze, segnali di grapple e ultimate, e categorie configurabili.',
+			a: 'Un wallhack Delta Force è un overlay ESP che mostra operatori nemici attraverso il terreno. Delta Force Cheats include distanze, segnali grapple e ultimate, e categorie configurabili.',
 		},
 		'what-is-delta-force-esp-hack': {
 			q: 'Cos\'è un ESP hack Delta Force?',
-			a: 'Un ESP hack Delta Force è un overlay di visibilità che mostra eroi nemici, armi e loot attraverso i muri. Delta Force Cheats ESP include box giocatore, tag distanza, segnali grapple e ultimate, e categorie configurabili per Quick Match e Ranked.',
+			a: 'Un ESP hack Delta Force è un overlay di visibilità che mostra operatori nemici, armi e loot attraverso i muri. Delta Force Cheats ESP include box giocatore, tag distanza, segnali grapple e ultimate, e categorie configurabili per Operations e Warfare.',
 		},
 		'what-is-delta-force-aimbot-hack': {
 			q: 'Cos\'è un aimbot hack Delta Force?',
@@ -172,7 +172,7 @@ export const FAQ_ACCURACY_FIXES = {
 		},
 		'what-is-delta-force-soft-aim': {
 			q: 'Cos\'è il soft aim Delta Force?',
-			a: 'Il soft aim Delta Force guida dolcemente la mira verso i bersagli in un FOV impostato invece di agganciare all\'istante. Delta Force Cheats permette di regolare smoothing, priorità ossa e profili per tipo di arma in Quick Match e Ranked.',
+			a: 'Il soft aim Delta Force guida dolcemente la mira verso i bersagli in un FOV impostato invece di agganciare all\'istante. Delta Force Cheats permette di regolare smoothing, priorità ossa e profili per tipo di arma in Operations e Warfare.',
 		},
 		'delta-force-ace-bypass': {
 			q: 'Come funziona il bypass ACE per i delta force cheats?',
@@ -180,21 +180,21 @@ export const FAQ_ACCURACY_FIXES = {
 		},
 		'delta-force-cheats-for-ranked': {
 			q: 'I delta force cheats funzionano in competitivo classificato?',
-			a: 'Sì. ESP, radar e soft aim sono fatti per Ranked e Quick Match su Delta Force in PC Windows. Usa overlay conservativi, leggi note di manutenzione dopo i patch e conferma lo stato undetected nella pagina Aggiornamenti prima delle code competitive.',
+			a: 'Sì. ESP, radar e soft aim sono fatti per Operations e Warfare su Delta Force in PC Windows. Usa overlay conservativi, leggi note di manutenzione dopo i patch e conferma lo stato undetected nella pagina Aggiornamenti prima delle code competitive.',
 		},
 	},
 	nl: {
 		'solo-farmer-and-raider-sessions': {
 			q: 'Werkt dit in battle royale-rondes en ranked matches?',
-			a: 'Ja. ESP, radar en aimbot zijn gebouwd voor Delta Force-matchflow — vijandelijke helden lezen, loot en soul jades volgen, en bewust blijven bij POI\'s en gevechtszones in Quick Match en Ranked.',
+			a: 'Ja. ESP, radar en aimbot zijn gebouwd voor Delta Force-matchflow — vijandelijke helden lezen, loot en supplies volgen, en bewust blijven bij POI\'s en gevechtszones in Operations en Warfare.',
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: 'Wat is een Delta Force wallhack?',
-			a: 'Een Delta Force wallhack is een ESP-overlay die vijandelijke helden door terrein toont. Delta Force Cheats bevat afstandsweergaven, grapple- en ult-signalen, en schakelbare categorieën.',
+			a: 'Een Delta Force wallhack is een ESP-overlay die vijandelijke helden door terrein toont. Delta Force Cheats bevat afstandsweergaven, vehicle and objective cues-signalen, en schakelbare categorieën.',
 		},
 		'what-is-delta-force-esp-hack': {
 			q: 'Wat is een Delta Force ESP hack?',
-			a: 'Een Delta Force ESP hack is een zichtbaarheidsoverlay die vijandelijke helden, wapens en loot door muren toont. Delta Force Cheats ESP bevat spelerboxen, afstandstags, grapple- en ult-signalen, en schakelbare categorieën voor Quick Match en Ranked.',
+			a: 'Een Delta Force ESP hack is een zichtbaarheidsoverlay die vijandelijke helden, wapens en loot door muren toont. Delta Force Cheats ESP bevat spelerboxen, afstandstags, vehicle and objective cues-signalen, en schakelbare categorieën voor Operations en Warfare.',
 		},
 		'what-is-delta-force-aimbot-hack': {
 			q: 'Wat is een Delta Force aimbot hack?',
@@ -202,7 +202,7 @@ export const FAQ_ACCURACY_FIXES = {
 		},
 		'what-is-delta-force-soft-aim': {
 			q: 'Wat is Delta Force soft aim?',
-			a: 'Delta Force soft aim stuurt zacht richting doelen binnen een ingestelde FOV in plaats van direct te snappen. Delta Force Cheats laat smoothing, botprioriteit en profielen per wapentype aanpassen in Quick Match en Ranked.',
+			a: 'Delta Force soft aim stuurt zacht richting doelen binnen een ingestelde FOV in plaats van direct te snappen. Delta Force Cheats laat smoothing, botprioriteit en profielen per wapentype aanpassen in Operations en Warfare.',
 		},
 		'delta-force-ace-bypass': {
 			q: 'Hoe werkt ACE-bypass voor delta force cheats?',
@@ -216,7 +216,7 @@ export const FAQ_ACCURACY_FIXES = {
 	pl: {
 		'solo-farmer-and-raider-sessions': {
 			q: 'Czy działa w rundach battle royale i meczach rankingowych?',
-			a: 'Tak. ESP, radar i aimbot są zbudowane pod flow meczu Delta Force — czytanie wrogich bohaterów, śledzenie lootu i soul jades oraz świadomość przy POI i strefach walki w Quick Match i Ranked.',
+			a: 'Tak. ESP, radar i aimbot są zbudowane pod flow meczu Delta Force — czytanie wrogich bohaterów, śledzenie lootu i supplies oraz świadomość przy POI i strefach walki w Operations i Warfare.',
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: 'Czym jest wallhack Delta Force?',
@@ -224,7 +224,7 @@ export const FAQ_ACCURACY_FIXES = {
 		},
 		'what-is-delta-force-esp-hack': {
 			q: 'Czym jest ESP hack Delta Force?',
-			a: 'ESP hack Delta Force to overlay widoczności pokazujący wrogich bohaterów, broń i loot przez ściany. Delta Force Cheats ESP zawiera boxy graczy, tagi dystansu, sygnały grapple i ultimate oraz kategorie dla Quick Match i Ranked.',
+			a: 'ESP hack Delta Force to overlay widoczności pokazujący wrogich bohaterów, broń i loot przez ściany. Delta Force Cheats ESP zawiera boxy graczy, tagi dystansu, sygnały grapple i ultimate oraz kategorie dla Operations i Warfare.',
 		},
 		'what-is-delta-force-aimbot-hack': {
 			q: 'Czym jest aimbot hack Delta Force?',
@@ -232,7 +232,7 @@ export const FAQ_ACCURACY_FIXES = {
 		},
 		'what-is-delta-force-soft-aim': {
 			q: 'Czym jest soft aim Delta Force?',
-			a: 'Soft aim Delta Force delikatnie prowadzi celowanie do celów w ustawionym FOV zamiast natychmiastowego snapu. Delta Force Cheats pozwala regulować smoothing, priorytet kości i profile według typu broni w Quick Match i Ranked.',
+			a: 'Soft aim Delta Force delikatnie prowadzi celowanie do celów w ustawionym FOV zamiast natychmiastowego snapu. Delta Force Cheats pozwala regulować smoothing, priorytet kości i profile według typu broni w Operations i Warfare.',
 		},
 		'delta-force-ace-bypass': {
 			q: 'Jak działa bypass ACE dla delta force cheats?',
@@ -246,7 +246,7 @@ export const FAQ_ACCURACY_FIXES = {
 	ru: {
 		'solo-farmer-and-raider-sessions': {
 			q: 'Работает ли это в раундах battle royale и рейтинговых матчах?',
-			a: 'Да. ESP, радар и aimbot созданы под матч-флоу Delta Force — читать вражеских героев, отслеживать лут и soul jades и держать осведомлённость у POI и боевых зон в Quick Match и Ranked.',
+			a: 'Да. ESP, радар и aimbot созданы под матч-флоу Delta Force — читать вражеских героев, отслеживать лут и supplies и держать осведомлённость у POI и боевых зон в Operations и Warfare.',
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: 'Что такое wallhack Delta Force?',
@@ -254,7 +254,7 @@ export const FAQ_ACCURACY_FIXES = {
 		},
 		'what-is-delta-force-esp-hack': {
 			q: 'Что такое ESP hack Delta Force?',
-			a: 'ESP hack Delta Force — оверлей видимости, показывающий вражеских героев, оружие и лут сквозь стены. Delta Force Cheats ESP включает боксы игроков, метки дистанции, сигналы граппла и ульты и категории для Quick Match и Ranked.',
+			a: 'ESP hack Delta Force — оверлей видимости, показывающий вражеских героев, оружие и лут сквозь стены. Delta Force Cheats ESP включает боксы игроков, метки дистанции, сигналы граппла и ульты и категории для Operations и Warfare.',
 		},
 		'what-is-delta-force-aimbot-hack': {
 			q: 'Что такое aimbot hack Delta Force?',
@@ -262,7 +262,7 @@ export const FAQ_ACCURACY_FIXES = {
 		},
 		'what-is-delta-force-soft-aim': {
 			q: 'Что такое soft aim Delta Force?',
-			a: 'Soft aim Delta Force мягко наводит прицел на цели в заданном FOV вместо мгновенного снапа. Delta Force Cheats позволяет настроить сглаживание, приоритет костей и профили по типу оружия в Quick Match и Ranked.',
+			a: 'Soft aim Delta Force мягко наводит прицел на цели в заданном FOV вместо мгновенного снапа. Delta Force Cheats позволяет настроить сглаживание, приоритет костей и профили по типу оружия в Operations и Warfare.',
 		},
 		'delta-force-ace-bypass': {
 			q: 'Как работает ACE bypass для delta force cheats?',
@@ -270,13 +270,13 @@ export const FAQ_ACCURACY_FIXES = {
 		},
 		'delta-force-cheats-for-ranked': {
 			q: 'Работают ли delta force cheats в рейтинговом соревновании?',
-			a: 'Да. ESP, радар и soft aim созданы для Ranked и Quick Match в Delta Force на Windows PC. Используйте умеренные оверлеи, читайте заметки после патчей и подтверждайте undetected-статус на странице Обновления перед соревновательными очередями.',
+			a: 'Да. ESP, радар и soft aim созданы для Operations и Warfare в Delta Force на Windows PC. Используйте умеренные оверлеи, читайте заметки после патчей и подтверждайте undetected-статус на странице Обновления перед соревновательными очередями.',
 		},
 	},
 	tr: {
 		'solo-farmer-and-raider-sessions': {
 			q: 'Battle royale rauntlarında ve ranked maçlarda çalışır mı?',
-			a: 'Evet. ESP, radar ve aimbot Delta Force maç akışı için tasarlandı — düşman kahramanları okumak, loot ve soul jades takip etmek, Quick Match ve Ranked\'de POI ve savaş bölgelerinde farkında kalmak.',
+			a: 'Evet. ESP, radar ve aimbot Delta Force maç akışı için tasarlandı — düşman kahramanları okumak, loot ve supplies takip etmek, Operations ve Warfare\'de POI ve savaş bölgelerinde farkında kalmak.',
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: 'Delta Force wallhack nedir?',
@@ -292,7 +292,7 @@ export const FAQ_ACCURACY_FIXES = {
 		},
 		'what-is-delta-force-soft-aim': {
 			q: 'Delta Force soft aim nedir?',
-			a: 'Delta Force soft aim, anında kilitlenmek yerine belirli bir FOV içindeki hedeflere nişanı yumuşakça yönlendirir. Delta Force Cheats Quick Match ve Ranked\'de kontrollü yardım için yumuşatma, kemik önceliği ve silah tipine göre profiller sunar.',
+			a: 'Delta Force soft aim, anında kilitlenmek yerine belirli bir FOV içindeki hedeflere nişanı yumuşakça yönlendirir. Delta Force Cheats Operations ve Warfare\'de kontrollü yardım için yumuşatma, kemik önceliği ve silah tipine göre profiller sunar.',
 		},
 		'delta-force-ace-bypass': {
 			q: 'Delta Force cheats için ACE bypass nasıl çalışır?',
@@ -306,7 +306,7 @@ export const FAQ_ACCURACY_FIXES = {
 	ar: {
 		'solo-farmer-and-raider-sessions': {
 			q: 'هل يعمل في جولات battle royale والمباريات المصنفة؟',
-			a: 'نعم. ESP والرادار والaimbot مبنية لتدفق مباريات Delta Force — قراءة الأبطال الأعداء، تتبع اللوت وsoul jades، والبقاء واعياً قرب نقاط الاهتمام ومناطق القتال في Quick Match وRanked.',
+			a: 'نعم. ESP والرادار والaimbot مبنية لتدفق مباريات Delta Force — قراءة الأبطال الأعداء، تتبع اللوت وsupplies، والبقاء واعياً قرب نقاط الاهتمام ومناطق القتال في Quick Match وRanked.',
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: 'ما هو wallhack Delta Force؟',
@@ -336,7 +336,7 @@ export const FAQ_ACCURACY_FIXES = {
 	ja: {
 		'solo-farmer-and-raider-sessions': {
 			q: 'バトルロイヤルラウンドとランクマッチで使えますか？',
-			a: 'はい。ESP、レーダー、エイムボットはDelta Forceのマッチフロー向けです — 敵ヒーローの読み、ルートとsoul jadesの追跡、Quick MatchとRankedでPOIと戦闘ゾーン付近の把握。',
+			a: 'はい。ESP、レーダー、エイムボットはDelta Forceのマッチフロー向けです — 敵ヒーローの読み、ルートとsuppliesの追跡、Quick MatchとRankedでPOIと戦闘ゾーン付近の把握。',
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: 'Delta Force wallhackとは？',
@@ -366,7 +366,7 @@ export const FAQ_ACCURACY_FIXES = {
 	ko: {
 		'solo-farmer-and-raider-sessions': {
 			q: '배틀로얄 라운드와 랭크 매치에서 작동하나요?',
-			a: '예. ESP, 레이더, 에임봇은 Delta Force 매치 흐름용입니다 — 적 영웅 읽기, 루트와 soul jades 추적, Quick Match와 Ranked에서 POI 및 전투 구역 인지.',
+			a: '예. ESP, 레이더, 에임봇은 Delta Force 매치 흐름용입니다 — 적 영웅 읽기, 루트와 supplies 추적, Quick Match와 Ranked에서 POI 및 전투 구역 인지.',
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: 'Delta Force wallhack이란?',
@@ -396,7 +396,7 @@ export const FAQ_ACCURACY_FIXES = {
 	zh: {
 		'solo-farmer-and-raider-sessions': {
 			q: '适用于大逃杀回合和排位赛吗？',
-			a: '是的。ESP、雷达和自瞄专为 Delta Force 对局流程设计 — 读取敌方英雄、追踪物资和 soul jades，在 Quick Match 和 Ranked 中关注 POI 与战斗区域。',
+			a: '是的。ESP、雷达和自瞄专为 Delta Force 对局流程设计 — 读取敌方英雄、追踪物资和 supplies，在 Operations和Warfare 中关注 POI 与战斗区域。',
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: '什么是 Delta Force wallhack？',
@@ -404,7 +404,7 @@ export const FAQ_ACCURACY_FIXES = {
 		},
 		'what-is-delta-force-esp-hack': {
 			q: '什么是 Delta Force ESP hack？',
-			a: 'Delta Force ESP hack 是一种可见性覆盖层，可透过墙壁显示敌方英雄、武器和物资。Delta Force Cheats ESP 包含玩家框、距离标签、钩锁与大招提示，以及 Quick Match 和 Ranked 的可切换类别。',
+			a: 'Delta Force ESP hack 是一种可见性覆盖层，可透过墙壁显示敌方英雄、武器和物资。Delta Force Cheats ESP 包含玩家框、距离标签、钩锁与大招提示，以及 Operations和Warfare 的可切换类别。',
 		},
 		'what-is-delta-force-aimbot-hack': {
 			q: '什么是 Delta Force aimbot hack？',
@@ -412,7 +412,7 @@ export const FAQ_ACCURACY_FIXES = {
 		},
 		'what-is-delta-force-soft-aim': {
 			q: '什么是 Delta Force soft aim？',
-			a: 'Delta Force soft aim 在设定 FOV 内温和引导瞄准，而非瞬间吸附。Delta Force Cheats 可调整平滑度、骨骼优先级和按武器类型的配置，在 Quick Match 和 Ranked 中保持可控辅助。',
+			a: 'Delta Force soft aim 在设定 FOV 内温和引导瞄准，而非瞬间吸附。Delta Force Cheats 可调整平滑度、骨骼优先级和按武器类型的配置，在 Operations和Warfare 中保持可控辅助。',
 		},
 		'delta-force-ace-bypass': {
 			q: 'delta force cheats 的 ACE bypass 如何运作？',
@@ -426,7 +426,7 @@ export const FAQ_ACCURACY_FIXES = {
 	hi: {
 		'solo-farmer-and-raider-sessions': {
 			q: 'क्या यह battle royale राउंड और ranked मैच में काम करता है?',
-			a: 'हाँ। ESP, radar और aimbot Delta Force मैच फ्लो के लिए बने हैं — दुश्मन हीरो पढ़ना, loot और soul jades ट्रैक करना, Quick Match और Ranked में POI और objectives and extraction points के पास जागरूक रहना।',
+			a: 'हाँ। ESP, radar और aimbot Delta Force मैच फ्लो के लिए बने हैं — दुश्मन हीरो पढ़ना, loot और supplies ट्रैक करना, Quick Match और Ranked में POI और objectives and extraction points के पास जागरूक रहना।',
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: 'Delta Force wallhack क्या है?',
@@ -456,7 +456,7 @@ export const FAQ_ACCURACY_FIXES = {
 	id: {
 		'solo-farmer-and-raider-sessions': {
 			q: 'Apakah ini bekerja di ronde battle royale dan match ranked?',
-			a: 'Ya. ESP, radar, dan aimbot dibuat untuk alur match Delta Force — membaca hero musuh, melacak loot dan soul jades, serta waspada di POI dan zona pertempuran di Quick Match dan Ranked.',
+			a: 'Ya. ESP, radar, dan aimbot dibuat untuk alur match Delta Force — membaca hero musuh, melacak loot dan supplies, serta waspada di POI dan zona pertempuran di Quick Match dan Ranked.',
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: 'Apa itu wallhack Delta Force?',
@@ -486,7 +486,7 @@ export const FAQ_ACCURACY_FIXES = {
 	th: {
 		'solo-farmer-and-raider-sessions': {
 			q: 'ใช้ได้ในรอบ battle royale และแมตช์ ranked หรือไม่?',
-			a: 'ใช่ ESP เรดาร์และเอมบอทออกแบบสำหรับโฟลว์แมตช์ Delta Force — อ่านฮีโร่ศัตรู ติดตาม loot และ soul jades และตระหนักใกล้ POI และโซนต่อสู้ใน Quick Match และ Ranked',
+			a: 'ใช่ ESP เรดาร์และเอมบอทออกแบบสำหรับโฟลว์แมตช์ Delta Force — อ่านฮีโร่ศัตรู ติดตาม loot และ supplies และตระหนักใกล้ POI และโซนต่อสู้ใน Quick Match และ Ranked',
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: 'Delta Force wallhack คืออะไร?',
@@ -516,7 +516,7 @@ export const FAQ_ACCURACY_FIXES = {
 	vi: {
 		'solo-farmer-and-raider-sessions': {
 			q: 'Có hoạt động trong vòng battle royale và trận ranked không?',
-			a: 'Có. ESP, radar và aimbot được thiết kế cho luồng trận Delta Force — đọc tướng địch, theo dõi loot và soul jades, và giữ nhận thức gần POI và khu chiến đấu trong Quick Match và Ranked.',
+			a: 'Có. ESP, radar và aimbot được thiết kế cho luồng trận Delta Force — đọc tướng địch, theo dõi loot và supplies, và giữ nhận thức gần POI và khu chiến đấu trong Quick Match và Ranked.',
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: 'Wallhack Delta Force là gì?',
@@ -546,7 +546,7 @@ export const FAQ_ACCURACY_FIXES = {
 	uk: {
 		'solo-farmer-and-raider-sessions': {
 			q: 'Чи працює це в раундах battle royale та рейтингових матчах?',
-			a: 'Так. ESP, радар і aimbot створені під матч-флоу Delta Force — читати ворожих героїв, відстежувати лут і soul jades і бути уважним біля POI та бойових зон у Quick Match і Ranked.',
+			a: 'Так. ESP, радар і aimbot створені під матч-флоу Delta Force — читати ворожих героїв, відстежувати лут і supplies і бути уважним біля POI та бойових зон у Quick Match і Ranked.',
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: 'Що таке wallhack Delta Force?',
@@ -576,7 +576,7 @@ export const FAQ_ACCURACY_FIXES = {
 	cs: {
 		'solo-farmer-and-raider-sessions': {
 			q: 'Funguje to v kolech battle royale a ranked zápasech?',
-			a: 'Ano. ESP, radar a aimbot jsou stavěné pro match flow Delta Force — číst nepřátelské hrdiny, sledovat loot a soul jades a být vědomý u POI a bojových zón v Quick Match a Ranked.',
+			a: 'Ano. ESP, radar a aimbot jsou stavěné pro match flow Delta Force — číst nepřátelské hrdiny, sledovat loot a supplies a být vědomý u POI a bojových zón v Quick Match a Ranked.',
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: 'Co je Delta Force wallhack?',
@@ -606,7 +606,7 @@ export const FAQ_ACCURACY_FIXES = {
 	ro: {
 		'solo-farmer-and-raider-sessions': {
 			q: 'Funcționează în runde battle royale și meciuri ranked?',
-			a: 'Da. ESP, radar și aimbot sunt construite pentru fluxul de meci Delta Force — citirea eroilor inamici, urmărirea loot-ului și soul jades, și vigilență lângă POI și zone de luptă în Quick Match și Ranked.',
+			a: 'Da. ESP, radar și aimbot sunt construite pentru fluxul de meci Delta Force — citirea eroilor inamici, urmărirea loot-ului și supplies, și vigilență lângă POI și zone de luptă în Quick Match și Ranked.',
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: 'Ce este un wallhack Delta Force?',
@@ -636,7 +636,7 @@ export const FAQ_ACCURACY_FIXES = {
 	sv: {
 		'solo-farmer-and-raider-sessions': {
 			q: 'Fungerar det i battle royale-rundor och rankade matcher?',
-			a: 'Ja. ESP, radar och aimbot är byggda för Delta Force-matchflöde — läsa fiendehjältar, spåra loot och soul jades, och hålla koll vid POI och stridszoner i Quick Match och Ranked.',
+			a: 'Ja. ESP, radar och aimbot är byggda för Delta Force-matchflöde — läsa fiendehjältar, spåra loot och supplies, och hålla koll vid POI och stridszoner i Operations och Warfare.',
 		},
 		'what-is-a-delta-force-wallhack': {
 			q: 'Vad är en Delta Force wallhack?',
@@ -644,7 +644,7 @@ export const FAQ_ACCURACY_FIXES = {
 		},
 		'what-is-delta-force-esp-hack': {
 			q: 'Vad är en Delta Force ESP hack?',
-			a: 'En Delta Force ESP hack är ett synlighets-overlay som visar fiendehjältar, vapen och loot genom väggar. Delta Force Cheats ESP inkluderar spelarrutor, avståndstaggar, grapple- och ult-signaler, och kategorier för Quick Match och Ranked.',
+			a: 'En Delta Force ESP hack är ett synlighets-overlay som visar fiendehjältar, vapen och loot genom väggar. Delta Force Cheats ESP inkluderar spelarrutor, avståndstaggar, grapple- och ult-signaler, och kategorier för Operations och Warfare.',
 		},
 		'what-is-delta-force-aimbot-hack': {
 			q: 'Vad är en Delta Force aimbot hack?',
@@ -652,7 +652,7 @@ export const FAQ_ACCURACY_FIXES = {
 		},
 		'what-is-delta-force-soft-aim': {
 			q: 'Vad är Delta Force soft aim?',
-			a: 'Delta Force soft aim styr mjukt sikte mot mål inom en inställd FOV istället för omedelbar snap. Delta Force Cheats låter dig justera smoothing, benprioritet och profiler per vapentyp i Quick Match och Ranked.',
+			a: 'Delta Force soft aim styr mjukt sikte mot mål inom en inställd FOV istället för omedelbar snap. Delta Force Cheats låter dig justera smoothing, benprioritet och profiler per vapentyp i Operations och Warfare.',
 		},
 		'delta-force-ace-bypass': {
 			q: 'Hur fungerar ACE-bypass för delta force cheats?',

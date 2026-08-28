@@ -17,7 +17,8 @@
     "primaryAria": "Primary",
     "mobileAria": "Mobile",
     "openMenu": "Open menu",
-    "closeMenu": "Close menu"
+    "closeMenu": "Close menu",
+    "brandShort": "Delta Force Cheats"
   },
   "hero": {
     "accent": "Cheat Delta Force undetected",
@@ -248,7 +249,7 @@
   },
   "images": {
     "hero": "Delta Force Cheats hero — ESP and aimbot overlay in Delta Force",
-    "espWallhack": "Wallhack outlines showing agents through walls",
+    "espWallhack": "Wallhack outlines showing enemy operators through cover",
     "aimbotCombat": "Soft aim assist overlay during a Delta Force match",
     "squadFight": "Delta Force Cheats combat overlay during a team fight",
     "playerEsp": "Player ESP boxes and distance readouts in a Delta Force match",
@@ -256,7 +257,7 @@
     "hacksPackage": "2D radar threat overlay for Delta Force",
     "raidFight": "Aimbot assist during a Delta Force tactical combat",
     "battleRoyale": "Delta Force Cheats in-session overview for Windows PC",
-    "raidMap": "ESP markers for hero skills and POIs in Delta Force"
+    "raidMap": "ESP markers for objectives and extraction points in Delta Force"
   },
   "guides": {
     "hubTitle": "Game Guides Hub",
@@ -264,7 +265,7 @@
     "nativeTitle": "Delta Force Cheats guides",
     "nativeLede": "Our primary guides for ESP, aimbot, radar, setup, and pricing on deltaforcecheats.org.",
     "gameTitle": "Other Games Guides",
-    "gameLede": "Dedicated articles for Fortnite, Tarkov, Warzone, Marvel Rivals, and more — mixed across titles below.",
+    "gameLede": "Dedicated articles for Fortnite, Tarkov, Warzone, Marvel Rivals, and more — grouped by game below.",
     "readGuide": "Read guide",
     "published": "Published",
     "updated": "Updated"
@@ -309,7 +310,7 @@
       },
       "solo-farmer-and-raider-sessions": {
         "q": "Có hoạt động trong vòng battle royale và trận ranked không?",
-        "a": "Có. ESP, radar và aimbot được thiết kế cho luồng trận Delta Force — đọc tướng địch, theo dõi loot và soul jades, và giữ nhận thức gần POI và khu chiến đấu trong Quick Match và Ranked."
+        "a": "Có. ESP, radar và aimbot được thiết kế cho luồng trận Delta Force — đọc tướng địch, theo dõi loot và supplies, và giữ nhận thức gần POI và khu chiến đấu trong Quick Match và Ranked."
       },
       "esp-wallhack-radar-or-aimbot": {
         "q": "¿Qué incluye: ESP, wallhack, radar o Aimbot?",

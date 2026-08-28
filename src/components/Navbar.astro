@@ -246,9 +246,8 @@ const links = [
 		justify-content: flex-start;
 		justify-self: start;
 		flex-shrink: 0;
-		gap: 0.55rem;
 		min-height: 2.5rem;
-		padding: 0.2rem 0.65rem 0.2rem 0.2rem;
+		padding: 0.45rem 0.9rem;
 		border-radius: 999px;
 		border: 1px solid color-mix(in srgb, var(--line) 85%, transparent);
 		background: color-mix(in srgb, var(--bg-panel) 88%, transparent);
@@ -264,14 +263,6 @@ const links = [
 		transform: translateY(-0.5px);
 		border-color: color-mix(in srgb, var(--magenta) 40%, var(--line));
 		background: color-mix(in srgb, var(--bg-hover) 90%, transparent);
-	}
-
-	.site-brand__mark {
-		width: 2rem;
-		height: 2rem;
-		display: block;
-		flex-shrink: 0;
-		object-fit: contain;
 	}
 
 	.site-brand__text {
@@ -541,11 +532,7 @@ const links = [
 
 	@media (max-width: 720px) {
 		.site-brand__text {
-			display: none;
-		}
-
-		.site-brand {
-			padding: 0.2rem;
+			font-size: 0.75rem;
 		}
 	}
 

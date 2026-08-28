@@ -634,7 +634,7 @@ export const guides: GuideDefinition[] = [
 			h2: "Performance, settings, and fair-play context",
 			paragraphs: [
 				"Stable FPS and clean audio matter in Valorant. Cap background apps, use a sensible sensitivity, and keep drivers current so you are not fighting input lag during clutch moments. Small setting tweaks often produce bigger gains than switching gear every month.",
-				"Valorant uses Vanguard kernel driver running at boot. Respect server rules, avoid sketchy downloads, and treat third-party tools as high-risk — policy changes and ban waves can land without warning after major patches."
+				"Valorant uses ACE kernel driver running at boot. Respect server rules, avoid sketchy downloads, and treat third-party tools as high-risk — policy changes and ban waves can land without warning after major patches."
 			]
 		},
 		{
@@ -3716,7 +3716,7 @@ export const guides: GuideDefinition[] = [
 			h2: "Performance, settings, and fair-play context",
 			paragraphs: [
 				"Stable FPS and clean audio matter in Valorant. Cap background apps, use a sensible sensitivity, and keep drivers current so you are not fighting input lag during clutch moments. Small setting tweaks often produce bigger gains than switching gear every month.",
-				"Valorant uses Vanguard kernel driver running at boot. Respect server rules, avoid sketchy downloads, and treat third-party tools as high-risk — policy changes and ban waves can land without warning after major patches."
+				"Valorant uses ACE kernel driver running at boot. Respect server rules, avoid sketchy downloads, and treat third-party tools as high-risk — policy changes and ban waves can land without warning after major patches."
 			]
 		},
 		{
@@ -3900,7 +3900,7 @@ export const guides: GuideDefinition[] = [
 			h2: "Performance, settings, and fair-play context",
 			paragraphs: [
 				"Stable FPS and clean audio matter in Valorant. Cap background apps, use a sensible sensitivity, and keep drivers current so you are not fighting input lag during clutch moments. Small setting tweaks often produce bigger gains than switching gear every month.",
-				"Valorant uses Vanguard kernel driver running at boot. Respect server rules, avoid sketchy downloads, and treat third-party tools as high-risk — policy changes and ban waves can land without warning after major patches."
+				"Valorant uses ACE kernel driver running at boot. Respect server rules, avoid sketchy downloads, and treat third-party tools as high-risk — policy changes and ban waves can land without warning after major patches."
 			]
 		},
 		{

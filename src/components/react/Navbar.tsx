@@ -2,7 +2,6 @@ import { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import I18nProvider from './I18nProvider';
 import LanguageSwitcher, { type LocaleMeta } from './LanguageSwitcher';
-import BrandLogo from './BrandLogo';
 
 type NavLink = {
 	id: string;
@@ -98,7 +97,6 @@ function NavbarInner({
 		<header className={`site-header${scrolled || open ? ' is-scrolled' : ''}${open ? ' is-open' : ''}`} data-nav>
 			<div className="shell site-header__bar">
 				<a href={homeHref} className="site-brand" aria-label={logoAlt}>
-					<BrandLogo className="site-brand__mark" alt={logoAlt} />
 					<span className="site-brand__text">{t('nav.brandShort')}</span>
 				</a>
 

@@ -646,7 +646,7 @@ export const enPages = {
 			),
 			section(
 				'Mod menu categories for Operations and Warfare matches',
-				'Separate ESP wallhack categories for players, heroes, hero skills, and loot let you reduce overlay noise during rotations and objectives and extraction points.',
+				'Separate ESP wallhack categories for players, operators, vehicles, and loot let you reduce overlay noise during rotations near objectives and extraction points.',
 				`Radar hack range and Aimbot smoothness adjust from the same mod menu — useful when ${EXT.game} seasons change fight distances and mobility.`,
 				'Soft tracking players should start with <a href="/delta-force-aimbot/">soft aim</a> profiles before aggressive FOV.',
 			),

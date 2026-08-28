@@ -9,7 +9,7 @@ export const DESCRIPTIVE_IMAGE_ALTS = {
 	hacksPackage: '2D radar threat overlay for Delta Force',
 	raidFight: 'Aimbot assist during a Delta Force tactical combat',
 	battleRoyale: 'Delta Force Cheats in-session overview for Windows PC',
-	raidMap: 'ESP markers for hero skills and POIs in Delta Force',
+	raidMap: 'ESP markers for objectives and extraction points in Delta Force',
 };
 
 /** Page-level image alt by pageId (EN source of truth). */

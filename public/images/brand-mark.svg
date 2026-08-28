@@ -1,14 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Delta Force Cheats">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Delta Force Cheats">
   <defs>
-    <linearGradient id="df-green" x1="96" y1="96" x2="416" y2="416" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#8CCB55"/>
-      <stop offset="1" stop-color="#6FAF45"/>
+    <linearGradient id="df" x1="12" y1="8" x2="52" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#B7BC7A"/>
+      <stop offset="1" stop-color="#A3A86B"/>
     </linearGradient>
   </defs>
-  <rect width="512" height="512" rx="108" fill="#0B110D"/>
-  <rect x="28" y="28" width="456" height="456" rx="92" fill="#111A13" stroke="#26382A" stroke-width="10"/>
-  <path fill="url(#df-green)" d="M256 118 392 360H120Z"/>
-  <path fill="#9FE064" d="M256 176 338 324H174Z" opacity="0.92"/>
-  <path fill="none" stroke="#071007" stroke-width="14" stroke-linecap="round" d="M256 214v74"/>
-  <circle cx="256" cy="214" r="18" fill="#071007"/>
+  <path fill="url(#df)" d="M32 8 56 52H8Z"/>
+  <path fill="#C2C77D" d="M32 20 46.5 46H17.5Z"/>
 </svg>

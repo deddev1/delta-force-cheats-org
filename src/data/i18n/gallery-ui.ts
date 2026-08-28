@@ -15,7 +15,7 @@ export const galleryUi: Record<LocaleCode, GalleryUi> = {
 		eyebrow: 'Delta Force Cheats',
 		title: 'Delta Force Cheats gallery',
 		subtitle: 'Simple delta force cheats visuals — ESP, wallhack, aimbot, and radar for Delta Force on PC.',
-		lead: 'Delta Force Cheats helps you spot players, agents, abilities, and bomb sites with ESP, aimbot, and radar in one license.',
+		lead: 'Delta Force Cheats helps you spot enemy operators, loot, vehicles, and extraction zones with ESP, aimbot, and radar in one license.',
 		highlights: [
 			{ title: 'delta force cheats esp', copy: 'See players through walls with delta force cheats esp and wallhack overlays.' },
 			{ title: 'delta force cheats radar', copy: 'Track nearby threats with delta force cheats radar before you push or rotate.' },
