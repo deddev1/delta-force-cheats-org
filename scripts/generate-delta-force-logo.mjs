@@ -7,7 +7,7 @@ const root = path.resolve(import.meta.dirname, '..');
 const publicDir = path.join(root, 'public');
 const imagesDir = path.join(publicDir, 'images');
 const sourceSvg = path.join(imagesDir, 'delta-force-cheats-logo.svg');
-const BG = { r: 7, g: 11, b: 8, alpha: 1 };
+const BG = { r: 13, g: 15, b: 14, alpha: 1 };
 
 async function main() {
 	await mkdir(imagesDir, { recursive: true });
@@ -49,7 +49,7 @@ async function main() {
 	const svgBase64 = logoPng.toString('base64');
 	await writeFile(
 		path.join(publicDir, 'favicon.svg'),
-		`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"><rect width="512" height="512" fill="#070B08"/><image width="512" height="512" href="data:image/png;base64,${svgBase64}"/></svg>`,
+		`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"><rect width="512" height="512" fill="#0D0F0E"/><image width="512" height="512" href="data:image/png;base64,${svgBase64}"/></svg>`,
 	);
 
 	console.log('Generated Delta Force logo, mark, and favicons.');
