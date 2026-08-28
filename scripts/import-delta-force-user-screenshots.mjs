@@ -1,38 +1,57 @@
 /**
- * Import user-provided Delta Force gameplay screenshots (local PNGs).
+ * Import user-provided Delta Force cheat screenshots from Supabase.
  * Writes /images/delta-force-screenshot-01.webp … 08.webp + -480w / -960w variants
  * and legacy feature aliases. Does not touch hero assets.
+ *
+ * Run: node scripts/import-delta-force-user-screenshots.mjs
  */
-import { copyFile, mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
 const imagesDir = path.join(ROOT, 'public/images');
-const assetsDir = '/home/ubuntu/.cursor/projects/workspace/assets';
+const cacheDir = path.join(ROOT, 'scripts/assets/delta-force-screenshots');
 
-/** User images in display order — cycled for screenshots 01–08. */
+/** User screenshots in display order (screenshot 01–08). */
 const USER_SOURCES = [
 	{
-		file: '8ff52a29-79b1-454f-b22b-dbbc9c47f10f.png',
-		label: 'ESP item and loot box labels through walls',
+		url: 'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/delta/Screenshot%202026-08-28%20125100.png',
+		label: 'Delta Force ESP loot and item labels through walls',
 	},
 	{
-		file: '3ae3180e-dbdb-467a-a109-f9ff03ec7071.png',
-		label: 'ESP loot tags through map geometry',
+		url: 'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/delta/Screenshot%202026-08-28%20125112.png',
+		label: 'Delta Force wallhack ESP with weapon and corpse tags',
 	},
 	{
-		file: 'b1cd963b-a712-4f90-bad0-cdd0fe1756eb.png',
+		url: 'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/delta/Screenshot%202026-08-28%20125158.png',
 		label: 'Delta Force third-person gameplay on Windows PC',
 	},
 	{
-		file: 'fa6b50d9-f928-4111-af7b-55c6d7859393.png',
-		label: 'ESP player tracking with distance readouts',
+		url: 'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/delta/Screenshot%202026-08-28%20125206.png',
+		label: 'Delta Force ESP player tracking with distance readouts',
+	},
+	{
+		url: 'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/delta/Screenshot%202026-08-28%20125220.png',
+		label: 'Delta Force ESP threat and loot markers in match',
+	},
+	{
+		url: 'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/delta/Screenshot%202026-08-28%20125239.png',
+		label: 'Delta Force cheats ESP overlay during combat',
+	},
+	{
+		url: 'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/delta/Screenshot%202026-08-28%20125250.png',
+		label: 'Delta Force wallhack player outlines and corpse tags',
+	},
+	{
+		url: 'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/delta/Screenshot%202026-08-28%20125322.png',
+		label: 'Delta Force ESP loot detection in Operations match',
 	},
 ];
 
-const SCREENSHOT_COUNT = 8;
+const SCREENSHOT_COUNT = USER_SOURCES.length;
 const CONTENT_WIDTHS = [480, 960];
+const MAX_WIDTH = 1280;
 const WEBP = { quality: 82, effort: 6, smartSubsample: true };
 
 const LEGACY_MAP = {
@@ -45,34 +64,44 @@ const LEGACY_MAP = {
 		'delta-force-aimbot-sniper.webp',
 	],
 	'delta-force-screenshot-05': ['delta-force-cheats-radar.webp', 'delta-force-esp-radar.webp'],
-	'delta-force-screenshot-06': ['delta-force-extract-fight.webp', 'delta-force-operations-combat.webp'],
-	'delta-force-screenshot-07': ['delta-force-operations-mode.webp'],
-	'delta-force-screenshot-08': [],
+	'delta-force-screenshot-06': ['delta-force-extract-fight.webp', 'delta-force-growth-run-combat.webp'],
+	'delta-force-screenshot-07': ['delta-force-growth-run-mode.webp', 'delta-force-hero-banner.webp'],
+	'delta-force-screenshot-08': ['delta-force-wallhack-skeleton.webp'],
 };
+
+async function fetchPng(url, destPath) {
+	const res = await fetch(url, {
+		headers: { 'User-Agent': 'delta-force-cheats-org/1.0 (+https://deltaforcecheats.org)' },
+	});
+	if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
+	const buf = Buffer.from(await res.arrayBuffer());
+	await writeFile(destPath, buf);
+	return buf;
+}
 
 async function encodeWebp(input, width, options = WEBP) {
 	const meta = await sharp(input).metadata();
 	const nativeWidth = meta.width ?? width;
 	const targetWidth = Math.min(width, nativeWidth);
-	const height = Math.round(((meta.height ?? 667) / nativeWidth) * targetWidth);
+	const height = Math.round(((meta.height ?? 720) / nativeWidth) * targetWidth);
 	return sharp(input)
 		.resize(targetWidth, height, { fit: 'inside', withoutEnlargement: true })
 		.webp(options)
 		.toBuffer();
 }
 
-async function writeScreenshotSet(pngPath, baseName) {
+async function writeScreenshotSet(pngBuffer, baseName) {
 	const outputs = [];
 	let canonical = null;
 
 	for (const width of CONTENT_WIDTHS) {
 		const file = `${baseName}-${width}w.webp`;
-		const webp = await encodeWebp(pngPath, width);
+		const webp = await encodeWebp(pngBuffer, width);
 		await writeFile(path.join(imagesDir, file), webp);
 		outputs.push({ file, bytes: webp.length });
 	}
 
-	canonical = await encodeWebp(pngPath, 960);
+	canonical = await encodeWebp(pngBuffer, MAX_WIDTH);
 	await writeFile(path.join(imagesDir, `${baseName}.webp`), canonical);
 	outputs.push({ file: `${baseName}.webp`, bytes: canonical.length });
 
@@ -80,15 +109,16 @@ async function writeScreenshotSet(pngPath, baseName) {
 }
 
 await mkdir(imagesDir, { recursive: true });
-await mkdir(path.join(ROOT, 'scripts/assets/delta-force-screenshots'), { recursive: true });
+await mkdir(cacheDir, { recursive: true });
 
-const sourcePaths = [];
+const sourceBuffers = [];
 for (let i = 0; i < USER_SOURCES.length; i += 1) {
-	const src = path.join(assetsDir, USER_SOURCES[i].file);
-	const saved = path.join(ROOT, 'scripts/assets/delta-force-screenshots', `source-${i + 1}.png`);
-	await copyFile(src, saved);
-	sourcePaths.push(saved);
-	console.log(`✓ staged ${USER_SOURCES[i].file}`);
+	const { url, label } = USER_SOURCES[i];
+	const cachePath = path.join(cacheDir, `source-${String(i + 1).padStart(2, '0')}.png`);
+	console.log(`Fetching screenshot ${i + 1}/${USER_SOURCES.length}…`);
+	const buf = await fetchPng(url, cachePath);
+	sourceBuffers.push(buf);
+	console.log(`  ✓ ${label} (${Math.round(buf.length / 1024)}KB PNG)`);
 }
 
 let totalBytes = 0;
@@ -97,10 +127,9 @@ const canonicalBySlot = {};
 for (let n = 1; n <= SCREENSHOT_COUNT; n += 1) {
 	const num = String(n).padStart(2, '0');
 	const base = `delta-force-screenshot-${num}`;
-	const sourceIndex = (n - 1) % USER_SOURCES.length;
-	const png = sourcePaths[sourceIndex];
+	const png = sourceBuffers[n - 1];
 
-	console.log(`Processing ${base} ← source ${sourceIndex + 1}…`);
+	console.log(`Optimizing ${base}…`);
 	const { outputs, canonical } = await writeScreenshotSet(png, base);
 	canonicalBySlot[base] = canonical;
 	for (const { file, bytes } of outputs) {
@@ -117,11 +146,11 @@ for (let n = 1; n <= SCREENSHOT_COUNT; n += 1) {
 const reviewsCanonical = canonicalBySlot['delta-force-screenshot-04'];
 await writeFile(path.join(imagesDir, 'reviews-banner.webp'), reviewsCanonical);
 for (const width of CONTENT_WIDTHS) {
-	const webp = await encodeWebp(sourcePaths[3], width);
+	const webp = await encodeWebp(sourceBuffers[3], width);
 	await writeFile(path.join(imagesDir, `reviews-banner-${width}w.webp`), webp);
 }
 console.log('✓ reviews-banner.webp (+ responsive variants)');
 
 console.log(
-	`\nDone — ${SCREENSHOT_COUNT} screenshots from ${USER_SOURCES.length} user images (~${Math.round(totalBytes / 1024)}KB webp). Hero unchanged.`,
+	`\nDone — ${SCREENSHOT_COUNT} screenshots optimized (~${Math.round(totalBytes / 1024)}KB webp total). Hero unchanged.`,
 );

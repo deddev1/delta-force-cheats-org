@@ -2,14 +2,14 @@ import { siteConfig } from './site';
 
 /** User-provided Supabase originals — kept for provenance; site serves optimized WebP copies. */
 export const PRODUCT_SCREENSHOT_SOURCES = [
-	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/valo/valo%20cheats/Screenshot%202026-08-13%20185425.png',
-	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/valo/valo%20cheats/Screenshot%202026-08-13%20185442.png',
-	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/valo/valo%20cheats/Screenshot%202026-08-13%20185513.png',
-	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/valo/valo%20cheats/Screenshot%202026-08-13%20185527.png',
-	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/valo/valo%20cheats/Screenshot%202026-08-13%20185540.png',
-	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/valo/valo%20cheats/Screenshot%202026-08-13%20185621.png',
-	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/valo/valo%20cheats/Screenshot%202026-08-13%20185635.png',
-	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/valo/valo%20cheats/Screenshot%202026-08-13%20185646.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/delta/Screenshot%202026-08-28%20125100.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/delta/Screenshot%202026-08-28%20125112.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/delta/Screenshot%202026-08-28%20125158.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/delta/Screenshot%202026-08-28%20125206.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/delta/Screenshot%202026-08-28%20125220.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/delta/Screenshot%202026-08-28%20125239.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/delta/Screenshot%202026-08-28%20125250.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/delta/Screenshot%202026-08-28%20125322.png',
 ] as const;
 
 export const PRODUCT_SCREENSHOT_COUNT = PRODUCT_SCREENSHOT_SOURCES.length;
