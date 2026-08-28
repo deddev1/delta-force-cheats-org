@@ -1,16 +1,18 @@
+import { siteConfig } from '../../data/site';
+
 type Props = {
 	/** Accessible label when the logo is decorative inside a named link */
 	alt?: string;
 	className?: string;
 };
 
-/** NC monogram mark — Delta Force Cheats. */
-export default function BrandLogo({ alt = 'Delta Force Cheats logo', className }: Props) {
+/** Delta Force Cheats corner mark — navbar + footer. */
+export default function BrandLogo({ alt = siteConfig.logoAlt, className }: Props) {
 	return (
 		<img
 			className={className}
-			src="/images/delta-force-cheats-logo-mark.webp"
-			srcSet="/images/delta-force-cheats-logo-mark.webp 128w, /images/delta-force-cheats-logo.webp 512w"
+			src={siteConfig.logoMark}
+			srcSet={`${siteConfig.logoMark} 128w, ${siteConfig.logo} 512w`}
 			sizes="40px"
 			width={40}
 			height={40}

@@ -104,6 +104,7 @@ export const siteConfig = {
 	market: brand.market,
 	supportEmail: brand.supportEmail,
 	logo: brand.logo,
+	logoMark: brand.logoMark,
 	logoRaster: brand.logoRaster,
 	logoRasterWidth: brand.logoRasterWidth,
 	logoRasterHeight: brand.logoRasterHeight,

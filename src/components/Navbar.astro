@@ -246,18 +246,27 @@ const links = [
 		justify-content: center;
 		justify-self: start;
 		flex-shrink: 0;
-		width: 2.55rem;
-		height: 2.55rem;
+		width: 2.75rem;
+		height: 2.75rem;
+		padding: 0.3rem;
+		border-radius: var(--radius-md);
+		border: 1px solid var(--line);
+		background: color-mix(in srgb, var(--bg-panel) 92%, transparent);
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
 		color: var(--ink-heading);
 		text-decoration: none;
 		transition:
 			opacity 0.2s ease,
-			transform 0.2s ease;
+			transform 0.2s ease,
+			border-color 0.2s ease,
+			background 0.2s ease;
 	}
 
 	.site-brand:hover {
-		opacity: 0.92;
+		opacity: 1;
 		transform: translateY(-0.5px);
+		border-color: color-mix(in srgb, var(--magenta) 45%, var(--line));
+		background: color-mix(in srgb, var(--bg-hover) 92%, transparent);
 	}
 
 	.site-brand__mark {
