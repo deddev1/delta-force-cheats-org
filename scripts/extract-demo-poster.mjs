@@ -14,12 +14,14 @@ const execFileAsync = promisify(execFile);
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const imagesDir = path.join(ROOT, 'public', 'images');
+const mastersDir = path.join(ROOT, 'scripts', 'assets', 'image-masters');
 const videoUrl =
 	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/delta/delta-clip.mp4';
-const pngOut = path.join(imagesDir, 'delta-force-demo-poster.png');
+const pngOut = path.join(ROOT, 'scripts', 'assets', 'image-masters', 'delta-force-demo-poster.png');
 const webpOut = path.join(imagesDir, 'delta-force-demo-poster.webp');
 
 await mkdir(imagesDir, { recursive: true });
+await mkdir(mastersDir, { recursive: true });
 await execFileAsync('ffmpeg', ['-y', '-ss', '00:00:01.5', '-i', videoUrl, '-vframes', '1', '-update', '1', pngOut], {
 	stdio: 'inherit',
 });

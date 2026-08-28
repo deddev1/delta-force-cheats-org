@@ -23,6 +23,10 @@ export default defineConfig({
 		allowedHosts: true,
 	},
 	integrations: [react()],
+	prefetch: {
+		defaultStrategy: 'hover',
+		prefetchAll: false,
+	},
 	build: {
 		// 'auto' keeps small styles inline but emits the large Tailwind bundle as a
 		// cached external file — 'always' inflated HTML to ~160KB and tanked the

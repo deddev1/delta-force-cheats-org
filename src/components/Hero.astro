@@ -1,10 +1,10 @@
 ---
-import HeroApp from './react/Hero';
 import TrustBar from './TrustBar.astro';
 import type { LocaleCode } from '../data/i18n/locales';
 import { defaultLocale } from '../data/i18n/locales';
 import { productInfo, siteConfig } from '../data/site';
 import { heroWidth, heroHeight, heroSrcSet, heroSizes, heroSrc } from '../lib/responsive-images';
+import { getT } from '../i18n/server';
 
 interface Props {
 	locale?: LocaleCode;
@@ -12,22 +12,110 @@ interface Props {
 
 const locale = Astro.props.locale ?? defaultLocale;
 const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo.plans[0];
+const t = getT(locale);
+const title = t('hero.title');
+const subtitle = t('hero.subtitle');
+const ctaBuy = t('cta.buy');
+const priceFrom = t('hero.priceFrom');
+const priceLabel = priceFrom ? `${priceFrom} $${monthly.price}` : `$${monthly.price}`;
+const imageAlt = t('hero.imageAlt', { brand: siteConfig.name });
+
+const chips = [
+	{ key: 'chipEsp', icon: 'esp' },
+	{ key: 'chipAim', icon: 'aim' },
+	{ key: 'chipRadar', icon: 'radar' },
+	{ key: 'chipUpdates', icon: 'updates' },
+] as const;
 ---
 
 <div class="hero-stage">
-	<HeroApp
-		client:idle
-		locale={locale}
-		siteName={siteConfig.name}
-		checkoutUrl={siteConfig.checkoutUrl}
-		monthlyPrice={monthly.price}
-		heroSrc={heroSrc}
-		heroSrcSet={heroSrcSet}
-		heroSizes={heroSizes}
-		heroWidth={heroWidth}
-		heroHeight={heroHeight}
-		useBrandHero={true}
-	/>
+	<section class="hero" aria-label={title}>
+		<div class="hero__media">
+			<img
+				src={heroSrc}
+				srcset={heroSrcSet}
+				sizes={heroSizes}
+				alt={imageAlt}
+				width={heroWidth}
+				height={heroHeight}
+				fetchpriority="high"
+				loading="eager"
+				decoding="async"
+			/>
+		</div>
+		<div class="hero__veil" aria-hidden="true"></div>
+		<div class="shell hero__content">
+			<div class="hero__copy">
+				<h1 class="hero__brand">{title}</h1>
+				<p class="hero__lede" data-edit="heroLede">{subtitle}</p>
+				<div class="hero__actions">
+					<a class="hero__buy" href={siteConfig.checkoutUrl} rel="noopener noreferrer">
+						<svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+							<path
+								d="M4.5 6.5h2.1l1.2 9.2h9.4l1.8-6.6H8.1M9.2 19.2a.9.9 0 100-1.8.9.9 0 000 1.8zm7.4 0a.9.9 0 100-1.8.9.9 0 000 1.8z"
+								stroke="currentColor"
+								stroke-width="1.7"
+								stroke-linecap="round"
+								stroke-linejoin="round"></path>
+						</svg>
+						<span class="hero__buy-label" data-edit="ctaBuy">{ctaBuy}</span>
+						<span class="hero__buy-price">{priceLabel}</span>
+					</a>
+				</div>
+				<ul class="hero__features">
+					{
+						chips.map((chip) => (
+							<li>
+								<svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+									{chip.icon === 'esp' && (
+										<>
+											<circle cx="12" cy="12" r="7.5" stroke="currentColor" stroke-width="1.6" />
+											<path
+												d="M12 8.5v3.2L14.2 14"
+												stroke="currentColor"
+												stroke-width="1.6"
+												stroke-linecap="round"
+											/>
+										</>
+									)}
+									{chip.icon === 'aim' && (
+										<path
+											d="M12 4.5l1.7 4.8H19l-4 3.1 1.5 4.8L12 14.8 7.5 17.2 9 12.4 5 9.3h5.3L12 4.5z"
+											stroke="currentColor"
+											stroke-width="1.5"
+											stroke-linejoin="round"
+										/>
+									)}
+									{chip.icon === 'radar' && (
+										<>
+											<circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6" />
+											<circle cx="12" cy="12" r="7.5" stroke="currentColor" stroke-width="1.6" />
+											<path
+												d="M12 2.8v2.2M12 19v2.2M2.8 12h2.2M19 12h2.2"
+												stroke="currentColor"
+												stroke-width="1.6"
+												stroke-linecap="round"
+											/>
+										</>
+									)}
+									{chip.icon === 'updates' && (
+										<path
+											d="M5 13.2l4.2 4.2L19 7.6"
+											stroke="currentColor"
+											stroke-width="1.8"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									)}
+								</svg>
+								<span data-edit={chip.key}>{t(`hero.${chip.key}`)}</span>
+							</li>
+						))
+					}
+				</ul>
+			</div>
+		</div>
+	</section>
 	<TrustBar locale={locale} overlay />
 </div>
 
