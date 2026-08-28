@@ -570,7 +570,7 @@ const sources = [
 				h2: 'Start softer than you think you need',
 				paragraphs: [
 					'Begin with a smaller FOV and higher smoothness so the assist helps tracking instead of snapping. Play five matches on Map or high-traffic zones and only then widen FOV. If friends watching a demo say it looks robotic, you went too far.',
-					'Full control docs live on <a href="/delta-force-aimbot/">Delta Force Aimbot</a> and <a href="/delta-force-soft-aim/">soft aim</a>.',
+					'Full control docs live on <a href="/delta-force-aimbot/">Delta Force Aimbot</a> and <a href="/delta-force-aimbot/">soft aim</a>.',
 				],
 			},
 			{

@@ -8,7 +8,8 @@ const title = fillBrandTokens('Page Not Found | {brand}');
 const description = fillBrandTokens(
 	'That {brand} page is missing. Return home or browse features, store, setup, reviews, and the blog.',
 );
-const canonicalPath = Astro.url.pathname;
+/** Static 404.html — self-canonical (not /404/ which has no HTML). */
+const canonicalPath = '/404.html';
 ---
 
 <Layout
