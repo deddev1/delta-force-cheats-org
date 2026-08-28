@@ -137,7 +137,8 @@
     "volumeLabel": "Volume",
     "muteVideo": "Mute video",
     "unmuteVideo": "Unmute video",
-    "seekLabel": "Video progress"
+    "seekLabel": "Video progress",
+    "aboutP2Review": ", review "
   },
   "homeSeo": {
     "eyebrow": "Guides",
