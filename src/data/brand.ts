@@ -63,11 +63,11 @@ export const brand = {
 		panel: '#141618',
 		elevated: '#0E0F11',
 		line: '#303438',
-		ink: '#E6E6E6',
+		ink: '#F2F0EB',
 		inkHeading: '#FFFFFF',
-		inkSecondary: '#C4C7C9',
-		inkMuted: '#AEB3B6',
-		link: '#D6A93A',
+		inkSecondary: '#D6D9DC',
+		inkMuted: '#B5BBC0',
+		link: '#E2BC4E',
 	},
 
 	/**
