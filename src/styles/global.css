@@ -351,7 +351,7 @@
 
 	.g2a-badge--new {
 		background: color-mix(in srgb, var(--ok) 16%, transparent);
-		color: #d5dab0;
+		color: #d8b75b;
 		border: 1px solid color-mix(in srgb, var(--ok) 30%, transparent);
 	}
 
