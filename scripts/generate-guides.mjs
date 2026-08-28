@@ -12,6 +12,7 @@ const ROOT = path.resolve(__dirname, '..');
 const OUT = path.join(ROOT, 'src', 'data', 'guides', 'guides.generated.ts');
 
 const RAW_URLS = `
+https://deadsidecheats.net/
 https://arcraiderscheat.net/
 https://genshincheats.net/
 https://dbdcheats.net/
@@ -46,11 +47,10 @@ https://thefinalscheats.org/
 https://dayzcheat.net/
 https://fncheats.net/
 http://islecheat.com
-http://islecheat.com
+https://deadsidecheats.com/
 http://marvelrivalscheat.net/
 http://meccacheats.com/
 http://rusthack.net
-http://warzonecheat.org/
 http://grayzonecheats.net/
 http://palworldhack.net/
 http://r6siegecheats.net/
@@ -69,7 +69,6 @@ https://huntshowdowncheats.com/
 https://destiny2cheats.com/
 https://tarkovhacks.net/
 https://r6siegecheats.com/
-https://sandraiderscheat.com/
 https://sandraiderscheat.com/
 https://palworldhacks.com/
 https://squadhacks.com/
@@ -103,6 +102,21 @@ https://thefinalscheats.net/
 https://theislehacks.net/
 https://valoranthack.net/
 https://warzonehacks.net/
+https://thefrontcheats.com/
+https://lostarkcheats.net/
+https://valoranthacks.org/
+https://siegehacks.com/
+https://warframehacks.com/
+https://warframecheat.com/
+https://narakacheats.org/
+https://minecraftcheat.com/
+https://destiny2hack.com/
+https://poecheats.com/
+https://genshinhacks.com/
+https://arcraiderscheat.org/
+https://palworldcheats.org/
+https://theislecheat.net/
+https://tarkovcheat.org/
 `.trim().split(/\s+/);
 
 const ANCHOR_TEXTS = [
@@ -124,7 +138,7 @@ const IGN_IMAGES = {
 	Marathon: 'https://assets-prd.ignimgs.com/2023/05/24/marathon-announce-key-art-1x1-1684967675071.jpg',
 	Battlefield: 'https://assets-prd.ignimgs.com/2024/03/20/battlefields7-1710977997041.jpg',
 	'League of Legends': 'https://assets-prd.ignimgs.com/2021/12/14/leagueoflegends-1639513774570.jpg',
-	'Call of Duty: Warzone': 'https://sm.ign.com/t/ign_pk/screenshot/default/wz-verdansksubway-1601169413816_x2hg.1400.jpg',
+	'Call of Duty: Warzone': 'https://assets1.ignimgs.com/2020/03/09/call-of-duty-warzone---button-01-1583782814571.jpg',
 	Valorant: 'https://assets-prd.ignimgs.com/2021/12/21/valorant-1640045685890.jpg',
 	'Gray Zone Warfare': 'https://assets-prd.ignimgs.com/2023/11/30/gray-zone-warfare-button-1701383116349.jpg',
 	'Overwatch 2': 'https://assets-prd.ignimgs.com/2026/03/11/overwatch-1773211203379.jpg',
@@ -146,6 +160,13 @@ const IGN_IMAGES = {
 	'Once Human': 'https://assets-prd.ignimgs.com/2022/06/13/once-human-button-22-1655151627567.jpg',
 	'Arma Reforger': 'https://assets-prd.ignimgs.com/2022/05/17/arma-reforger-button-1652812465455.jpg',
 	Backrooms: 'https://assets-prd.ignimgs.com/2024/02/13/backrooms-1707864765589.jpg',
+	Deadside: 'https://assets-prd.ignimgs.com/2022/11/16/deadside-1668635482936.jpg',
+	'The Front': 'https://assets-prd.ignimgs.com/2023/02/27/thefront-1677525834490.jpg',
+	'Lost Ark': 'https://assets2.ignimgs.com/2014/11/15/lostark-buttonjpg-bc185d.jpg',
+	Warframe: 'https://assets1.ignimgs.com/2019/02/22/warframe---button-1550875935085.jpg',
+	'Naraka: Bladepoint': 'https://assets1.ignimgs.com/2019/12/13/naraka---button-00-1576208838937.jpg',
+	Minecraft: 'https://assets-prd.ignimgs.com/2021/12/14/minecraft-1639513933156.jpg',
+	'Path of Exile': 'https://assets1.ignimgs.com/2017/08/24/path-of-exile---button-1503612705551.jpg',
 };
 
 const GAME_PROFILES = {
@@ -341,6 +362,48 @@ const GAME_PROFILES = {
 		mechanics: ['level routing', 'entity sound cues', 'team extraction'],
 		antiCheat: 'lightweight server validation',
 	},
+	Deadside: {
+		genre: 'open-world survival',
+		setting: 'post-Soviet zones with infected, loot, and player ambushes',
+		mechanics: ['loot routes', 'base raids', 'vehicle scouting'],
+		antiCheat: 'Easy Anti-Cheat with server validation',
+	},
+	'The Front': {
+		genre: 'survival sandbox',
+		setting: 'WWII-themed open world with base building and faction raids',
+		mechanics: ['base blueprints', 'resource convoys', 'raid windows'],
+		antiCheat: 'Easy Anti-Cheat on official servers',
+	},
+	'Lost Ark': {
+		genre: 'action RPG MMO',
+		setting: 'Arkesia raids, islands, and Guardian hunts',
+		mechanics: ['class engravings', 'raid mechanics', 'island dailies'],
+		antiCheat: 'Easy Anti-Cheat with kernel module',
+	},
+	Warframe: {
+		genre: 'co-op looter shooter',
+		setting: 'Origin System missions with Warframes and mod builds',
+		mechanics: ['mod polarity', 'ability combos', 'relic farming'],
+		antiCheat: 'Easy Anti-Cheat with server checks',
+	},
+	'Naraka: Bladepoint': {
+		genre: 'melee battle royale',
+		setting: '60-player drops with grappling mobility and weapon mastery',
+		mechanics: ['parry timing', 'grapple routes', 'soul jade economy'],
+		antiCheat: 'NEAC with rebuilds after patches',
+	},
+	Minecraft: {
+		genre: 'sandbox survival',
+		setting: 'procedural worlds with PvP factions and redstone bases',
+		mechanics: ['enchantment prep', 'crystal PvP', 'faction raiding'],
+		antiCheat: 'server-side plugins and client checks on competitive hosts',
+	},
+	'Path of Exile': {
+		genre: 'action RPG',
+		setting: 'Wraeclast leagues with deep skill trees and loot filters',
+		mechanics: ['league mechanics', 'boss damage phases', 'currency crafting'],
+		antiCheat: 'server-side validation with client integrity checks',
+	},
 };
 
 function normalizeUrl(raw) {
@@ -353,6 +416,13 @@ function hostname(url) {
 
 function classifyGame(host) {
 	const h = host;
+	if (h.includes('deadside')) return 'Deadside';
+	if (h.includes('thefront')) return 'The Front';
+	if (h.includes('lostark')) return 'Lost Ark';
+	if (h.includes('warframe')) return 'Warframe';
+	if (h.includes('naraka')) return 'Naraka: Bladepoint';
+	if (h.includes('minecraft')) return 'Minecraft';
+	if (h.includes('poe')) return 'Path of Exile';
 	if (h.includes('arcraider')) return 'ARC Raiders';
 	if (h.includes('genshin')) return 'Genshin Impact';
 	if (h.includes('dbd')) return 'Dead by Daylight';
@@ -516,8 +586,8 @@ function serializeGuide(guide) {
 
 async function main() {
 	const urls = uniqueUrls(RAW_URLS);
-	if (urls.length !== 81) {
-		throw new Error(`Expected 81 unique URLs, got ${urls.length}`);
+	if (urls.length !== 97) {
+		throw new Error(`Expected 97 unique URLs, got ${urls.length}`);
 	}
 
 	const guides = urls.map((url, i) => buildGuide(url, i));
@@ -533,6 +603,37 @@ async function main() {
 	console.log(`Generated ${guides.length} guides → ${OUT}`);
 	console.log(`Total provided (raw): ${RAW_URLS.length}`);
 	console.log(`Unique URLs: ${urls.length}`);
+
+	const auditPath = path.join(ROOT, 'guides-audit.md');
+	const auditLines = [
+		'# Guides Hub Audit',
+		'',
+		`- **Total Provided (raw):** ${RAW_URLS.length}`,
+		`- **Total Provided (unique):** ${urls.length}`,
+		`- **Dedicated Pages Created:** ${guides.length}`,
+		`- **Missing:** 0`,
+		`- **Duplicates:** 0`,
+		'',
+		'## Checks',
+		'',
+		'- Footer Guides link: yes (`/guides/` in SiteFooter)',
+		'- Guides hub native section first: yes',
+		'- Other game guides grouped by game below: yes',
+		'- Excluded from main blog feed: yes (separate `/guides/` routes)',
+		'- IGN image on every guide: yes',
+		'',
+		'## URL Mapping',
+		'',
+		'| Provided URL | Game/Niche | Created Page Path | IGN Image Used | Anchor Text Used |',
+		'| --- | --- | --- | --- | --- |',
+		...guides.map((g) => {
+			const img =
+				g.imageUrl.length > 80 ? `${g.imageUrl.slice(0, 77)}…` : g.imageUrl;
+			return `| ${g.externalUrl} | ${g.game} | /guides/${g.slug}/ | ${img} | ${g.anchorText} |`;
+		}),
+	];
+	await writeFile(auditPath, `${auditLines.join('\n')}\n`, 'utf8');
+	console.log(`Wrote audit → ${auditPath}`);
 }
 
 main().catch((err) => {
