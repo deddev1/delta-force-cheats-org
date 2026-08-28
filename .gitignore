@@ -6,3 +6,4 @@ dist/
 *.log
 public/images/finals-screenshot-new-*.png
 tmp/finals-screenshots/
+scripts/assets/image-masters/
