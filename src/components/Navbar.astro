@@ -60,8 +60,6 @@ const links = [
 	client:idle
 	locale={locale}
 	checkoutUrl={siteConfig.checkoutUrl}
-	homeHref={getLocalizedPath('home', locale)}
-	logoAlt={siteConfig.logoAlt}
 	currentPath={current}
 	reviewsBasePath={reviewsBasePath}
 	locales={localeMetas}
@@ -233,53 +231,18 @@ const links = [
 	}
 
 	.site-header__bar {
-		display: grid;
-		grid-template-columns: 1fr auto 1fr;
+		display: flex;
 		align-items: center;
+		justify-content: space-between;
 		min-height: var(--header-h);
 		gap: 0.85rem;
-	}
-
-	.site-brand {
-		display: inline-flex;
-		align-items: center;
-		justify-content: flex-start;
-		justify-self: start;
-		flex-shrink: 0;
-		min-height: 2.5rem;
-		padding: 0.45rem 0.9rem;
-		border-radius: 999px;
-		border: 1px solid color-mix(in srgb, var(--line) 85%, transparent);
-		background: color-mix(in srgb, var(--bg-panel) 88%, transparent);
-		color: var(--ink-heading);
-		text-decoration: none;
-		transition:
-			transform 0.2s ease,
-			border-color 0.2s ease,
-			background 0.2s ease;
-	}
-
-	.site-brand:hover {
-		transform: translateY(-0.5px);
-		border-color: color-mix(in srgb, var(--magenta) 40%, var(--line));
-		background: color-mix(in srgb, var(--bg-hover) 90%, transparent);
-	}
-
-	.site-brand__text {
-		font-family: var(--font-display);
-		font-size: 0.8125rem;
-		font-weight: 700;
-		letter-spacing: -0.03em;
-		line-height: 1;
-		color: var(--ink-heading);
-		white-space: nowrap;
 	}
 
 	.site-nav {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		justify-self: center;
+		flex: 1;
 		min-width: 0;
 		gap: 0.1rem;
 		padding: 0.22rem;
@@ -333,7 +296,7 @@ const links = [
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
-		justify-self: end;
+		flex-shrink: 0;
 		gap: 0.45rem;
 		min-width: 0;
 	}
@@ -496,18 +459,11 @@ const links = [
 		}
 
 		.site-header__bar {
-			display: flex;
-			justify-content: space-between;
-			gap: 0.55rem;
-		}
-
-		.site-brand {
-			justify-self: auto;
+			justify-content: flex-end;
 		}
 
 		.site-tools {
-			justify-self: auto;
-			margin-left: auto;
+			margin-left: 0;
 		}
 
 		.site-tools__buy {
@@ -527,12 +483,6 @@ const links = [
 
 		.site-panel {
 			max-height: calc(100dvh - var(--header-h) - var(--safe-top, 0px) - var(--safe-bottom, 0px));
-		}
-	}
-
-	@media (max-width: 720px) {
-		.site-brand__text {
-			font-size: 0.75rem;
 		}
 	}
 

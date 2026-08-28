@@ -13,8 +13,6 @@ type NavLink = {
 type Props = {
 	locale: string;
 	checkoutUrl: string;
-	homeHref: string;
-	logoAlt: string;
 	currentPath: string;
 	reviewsBasePath: string;
 	locales: LocaleMeta[];
@@ -38,8 +36,6 @@ const icons: Record<string, string> = {
 function NavbarInner({
 	locale,
 	checkoutUrl,
-	homeHref,
-	logoAlt,
 	currentPath,
 	reviewsBasePath,
 	locales,
@@ -96,10 +92,6 @@ function NavbarInner({
 	return (
 		<header className={`site-header${scrolled || open ? ' is-scrolled' : ''}${open ? ' is-open' : ''}`} data-nav>
 			<div className="shell site-header__bar">
-				<a href={homeHref} className="site-brand" aria-label={logoAlt}>
-					<span className="site-brand__text">{t('nav.brandShort')}</span>
-				</a>
-
 				<nav className="site-nav" aria-label={t('nav.primaryAria')}>
 					{navLinks.map((item) => (
 						<a key={item.id} href={item.href} className={item.active ? 'is-active' : undefined}>
