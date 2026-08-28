@@ -5,29 +5,30 @@
 	--font-sans: "Inter Variable", "Inter", ui-sans-serif, system-ui, sans-serif;
 	--font-display: "Syne Variable", "Syne", ui-sans-serif, sans-serif;
 
-	/* Delta Force dark canvas — red accent surface ladder */
-	--bg: #07090a;
-	--bg-panel: #0e1113;
-	--bg-elevated: #15191b;
-	--bg-hover: #1a1f22;
-	--line: #252a2c;
-	--line-soft: #1c2022;
-	--line-strong: #303638;
-	--ink: #f1f3f3;
-	--ink-heading: #ffffff;
-	--ink-secondary: #c5caca;
-	--ink-muted: #8d9698;
-	--ink-faint: #6f787a;
-	--link: #e50920;
+	/* Delta Force dark canvas — tactical olive-green palette */
+	--bg: #0b0d0c;
+	--bg-panel: #181d18;
+	--bg-elevated: #121612;
+	--bg-hover: #1e241e;
+	--line: #2a3227;
+	--line-soft: #1f261d;
+	--line-strong: #354032;
+	--ink: #f1f3ec;
+	--ink-heading: #f1f3ec;
+	--ink-secondary: #9ca49a;
+	--ink-muted: #7a8278;
+	--ink-faint: #636b62;
+	--link: #8faf3d;
 
-	/* Brand accent — red */
-	--magenta: #e50920;
-	--magenta-soft: #ffffff;
-	--magenta-deep: #8f0715;
+	/* Brand accent — tactical green */
+	--magenta: #8faf3d;
+	--magenta-soft: #b4d94a;
+	--magenta-deep: #6b8530;
 	--accent: var(--magenta);
-	--accent-hover: #ff1f35;
-	--ok: #34d399;
-	--warn: #f43f5e;
+	--accent-hover: #b4d94a;
+	--ok: #8faf3d;
+	--warn: #d99a32;
+	--error: #c94a45;
 
 	/* Legacy aliases */
 	--tone-void: #050505;
@@ -47,14 +48,14 @@
 
 	--accent-orange: #ff6b2c;
 	--accent-coral: #ff6b2c;
-	--accent-amber: #fbbf24;
+	--accent-amber: #d99a32;
 	--accent-magenta: var(--magenta);
 	--accent-violet: var(--magenta-deep);
 	--accent-indigo: var(--magenta);
 	--accent-teal: var(--ok);
 	--accent-sky: var(--magenta-soft);
 	--accent-emerald: var(--ok);
-	--accent-rose: var(--warn);
+	--accent-rose: var(--error);
 
 	--g2a-black: var(--bg);
 	--g2a-dark: var(--bg);
@@ -70,7 +71,7 @@
 	--g2a-blue: var(--magenta-soft);
 	--g2a-purple: var(--magenta-deep);
 	--g2a-green: var(--ok);
-	--g2a-red: var(--warn);
+	--g2a-red: var(--error);
 
 	--plum-search-bg: #f4f4f5;
 	--plum-search-text: #09090b;
@@ -330,13 +331,13 @@
 
 	.g2a-badge--hot {
 		background: color-mix(in srgb, var(--warn) 18%, transparent);
-		color: #fda4af;
+		color: #f0c878;
 		border: 1px solid color-mix(in srgb, var(--warn) 35%, transparent);
 	}
 
 	.g2a-badge--new {
 		background: color-mix(in srgb, var(--ok) 16%, transparent);
-		color: #6ee7b7;
+		color: #c8db8a;
 		border: 1px solid color-mix(in srgb, var(--ok) 30%, transparent);
 	}
 

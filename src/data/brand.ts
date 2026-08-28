@@ -55,19 +55,19 @@ export const brand = {
 	 * Edit in Brand Studio → Colors (tones are fully customizable).
 	 */
 	theme: {
-		accent: '#4ADE80',
-		bg: '#07090A',
-		soft: '#FFFFFF',
-		deep: '#166534',
-		hover: '#22C55E',
-		panel: '#0E1113',
-		elevated: '#15191B',
-		line: '#252A2C',
-		ink: '#F1F3F3',
-		inkHeading: '#FFFFFF',
-		inkSecondary: '#C5CACA',
-		inkMuted: '#8D9698',
-		link: '#4ADE80',
+		accent: '#8FAF3D',
+		bg: '#0B0D0C',
+		soft: '#B4D94A',
+		deep: '#6B8530',
+		hover: '#B4D94A',
+		panel: '#181D18',
+		elevated: '#121612',
+		line: '#2A3227',
+		ink: '#F1F3EC',
+		inkHeading: '#F1F3EC',
+		inkSecondary: '#9CA49A',
+		inkMuted: '#7A8278',
+		link: '#8FAF3D',
 	},
 
 	/**

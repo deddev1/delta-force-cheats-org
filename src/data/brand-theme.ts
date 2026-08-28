@@ -43,6 +43,7 @@ export type BrandThemeResolved = {
 	link: string;
 	ok: string;
 	warn: string;
+	error: string;
 	toneVoid: string;
 };
 
@@ -53,7 +54,7 @@ export const themeDefaults: BrandThemeInput = {
 
 export const themePresets: { id: string; label: string; accent: string; bg: string }[] = [
 	{ id: 'magenta', label: 'Magenta', accent: '#c026d3', bg: '#08090a' },
-	{ id: 'delta-force', label: 'Delta Force', accent: '#4ADE80', bg: '#07090A' },
+	{ id: 'delta-force', label: 'Delta Force', accent: '#8FAF3D', bg: '#0B0D0C' },
 	{ id: 'fortnite', label: 'Fortnite', accent: '#2b9dff', bg: '#0a0e17' },
 	{ id: 'apex', label: 'Apex', accent: '#ff6b2c', bg: '#0c0d10' },
 	{ id: 'teal', label: 'Teal', accent: '#14b8a6', bg: '#071012' },
@@ -265,6 +266,7 @@ export function brandThemeCssMap(theme: BrandThemeResolved = brandTheme): Record
 		'--accent-hover': theme.accentHover,
 		'--ok': theme.ok,
 		'--warn': theme.warn,
+		'--error': theme.error,
 		'--tone-void': theme.toneVoid,
 		'--tone-night': theme.bg,
 		'--tone-body': theme.bg,
@@ -288,7 +290,7 @@ export function brandThemeCssMap(theme: BrandThemeResolved = brandTheme): Record
 		'--accent-teal': theme.ok,
 		'--accent-sky': theme.accentSoft,
 		'--accent-emerald': theme.ok,
-		'--accent-rose': theme.warn,
+		'--accent-rose': theme.error,
 		'--g2a-black': theme.bg,
 		'--g2a-dark': theme.bg,
 		'--g2a-white': theme.bgPanel,
@@ -303,7 +305,7 @@ export function brandThemeCssMap(theme: BrandThemeResolved = brandTheme): Record
 		'--g2a-blue': theme.accentSoft,
 		'--g2a-purple': theme.accentDeep,
 		'--g2a-green': theme.ok,
-		'--g2a-red': theme.warn,
+		'--g2a-red': theme.error,
 		'--plum-link': theme.link,
 		'--color-midnight': theme.bg,
 		'--color-surface': theme.bgPanel,
