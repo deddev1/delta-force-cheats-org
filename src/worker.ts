@@ -3,7 +3,7 @@
  * Locale cannibal 301s live in functions/cannibal-redirects.json (not _redirects)
  * to stay under Cloudflare's 100 dynamic _redirects rule limit.
  */
-import { applySecurityHeaders } from './lib/security-headers.js';
+import { applySecurityHeaders, applySitemapHeaders } from './lib/security-headers.js';
 import { isBrandStudioPath, resolvePathRedirect } from './worker-redirects.js';
 import {
 	CANONICAL_HOST,
@@ -63,24 +63,32 @@ function canonicalHostRedirect(request: Request, url: URL): Response | null {
 	return redirectResponse(target.toString());
 }
 
-async function fetchSitemapAsset(env: Env, pathname: string): Promise<Response> {
+async function fetchSitemapAsset(env: Env, request: Request, pathname: string): Promise<Response> {
 	// Pathname-only fetch — hostname is ignored by the ASSETS binding.
-	const assetRequest = new Request(new URL(pathname, 'https://assets.local'));
+	const assetRequest = new Request(new URL(pathname, 'https://assets.local'), {
+		method: request.method === 'HEAD' ? 'HEAD' : 'GET',
+	});
 	const response = await env.ASSETS.fetch(assetRequest);
 	const upstreamType = response.headers.get('Content-Type') || '';
 
 	if (!response.ok || upstreamType.includes('text/html')) {
 		const headers = new Headers();
 		headers.set('Content-Type', 'text/plain; charset=utf-8');
-		applySecurityHeaders(headers, { html: false });
+		headers.set('Cache-Control', 'no-store');
 		return new Response('Sitemap not found', { status: 404, headers });
 	}
 
 	// Fresh headers — do not copy ASSETS/_headers (duplicate Content-Type breaks browsers + GSC).
 	const headers = new Headers();
-	headers.set('Content-Type', 'application/xml; charset=utf-8');
-	headers.set('Cache-Control', 'public, max-age=3600');
-	applySecurityHeaders(headers, { html: false });
+	applySitemapHeaders(headers);
+
+	if (request.method === 'HEAD') {
+		return new Response(null, {
+			status: response.status,
+			statusText: response.statusText,
+			headers,
+		});
+	}
 
 	const xml = rewriteLegacyOriginsInSitemapXml(await response.text());
 	return new Response(xml, {
@@ -112,7 +120,7 @@ export default {
 		}
 
 		if (isSitemapPath(url.pathname)) {
-			return fetchSitemapAsset(env, url.pathname);
+			return fetchSitemapAsset(env, request, url.pathname);
 		}
 
 		const response = await env.ASSETS.fetch(request);

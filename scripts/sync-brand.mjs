@@ -58,6 +58,7 @@ writeFileSync(
 	`User-agent: *
 Allow: /
 Allow: /images/
+Allow: /sitemap
 Disallow: /brand-studio/
 Disallow: /brand-studio
 Disallow: /__brand/

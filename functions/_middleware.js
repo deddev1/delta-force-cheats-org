@@ -179,6 +179,13 @@ function applySecurityHeaders(headers, { html = false } = {}) {
 	}
 }
 
+/** Minimal headers for XML sitemaps — GSC/Bing fetchers reject heavy CSP/CORP on non-HTML. */
+function applySitemapHeaders(headers) {
+	headers.set('Content-Type', 'application/xml; charset=utf-8');
+	headers.set('Cache-Control', 'public, max-age=3600, no-transform');
+	headers.set('Strict-Transport-Security', SECURITY_HEADERS['Strict-Transport-Security']);
+}
+
 /** /sitemap.xml and /sitemap-*.xml */
 const SITEMAP_PATH = /^\/sitemap(?:-[a-z0-9-]+)?\.xml$/;
 
@@ -270,9 +277,14 @@ export async function onRequest(context) {
 	}
 
 	if (isSitemap) {
-		headers.set('Content-Type', 'application/xml; charset=utf-8');
-		headers.set('Cache-Control', 'public, max-age=3600');
-		applySecurityHeaders(headers, { html: false });
+		applySitemapHeaders(headers);
+		if (context.request.method === 'HEAD') {
+			return new Response(null, {
+				status: response.status,
+				statusText: response.statusText,
+				headers,
+			});
+		}
 		const xml = rewriteLegacyOriginsInSitemapXml(await response.text());
 		return new Response(xml, {
 			status: response.status,

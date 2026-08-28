@@ -64,3 +64,13 @@ export function applySecurityHeaders(headers, { html = false, dev = false } = {}
 		headers.set('Cloudflare-CDN-Cache-Control', 'public, s-maxage=600, stale-while-revalidate=86400');
 	}
 }
+
+/**
+ * Machine-readable XML sitemaps — keep headers minimal for Google Search Console / Bing fetchers.
+ * Do not attach CSP, CORP, COEP, or nosniff to sitemap responses (GSC "Couldn't fetch" risk).
+ */
+export function applySitemapHeaders(headers) {
+	headers.set('Content-Type', 'application/xml; charset=utf-8');
+	headers.set('Cache-Control', 'public, max-age=3600, no-transform');
+	headers.set('Strict-Transport-Security', SECURITY_HEADERS['Strict-Transport-Security']);
+}
