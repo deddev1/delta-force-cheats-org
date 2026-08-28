@@ -204,15 +204,18 @@ const included = [
 	}
 
 	.plan__cta--solid {
-		border-color: transparent;
-		background: var(--magenta);
-		color: var(--btn-text);
+		border-color: var(--cta-border);
+		background: var(--cta-surface);
+		color: var(--cta-text);
+		box-shadow: var(--cta-shadow);
+		font-weight: 700;
 	}
 
 	.plan__cta--solid:hover {
-		background: var(--magenta-soft);
-		border-color: transparent;
-		color: var(--btn-text);
+		background: var(--cta-surface-hover);
+		border-color: var(--magenta-soft);
+		color: var(--cta-text);
+		box-shadow: var(--cta-shadow-hover);
 	}
 
 	@media (max-width: 720px) {

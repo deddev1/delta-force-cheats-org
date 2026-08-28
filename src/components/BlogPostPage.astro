@@ -274,24 +274,27 @@ function pageTitle(headline: string): string {
 		justify-content: center;
 		margin-top: 1rem;
 		padding: 0.75rem 1.25rem;
+		border: 2px solid var(--cta-border);
 		border-radius: 999px;
-		background: var(--magenta);
-		color: #fff;
+		background: var(--cta-surface);
+		color: var(--cta-text);
 		font-size: 0.9rem;
 		font-weight: 700;
 		text-decoration: none;
-		box-shadow: 0 8px 22px color-mix(in srgb, var(--magenta) 35%, transparent);
+		box-shadow: var(--cta-shadow);
 		transition:
 			transform 0.2s ease,
 			background 0.2s ease,
+			border-color 0.2s ease,
 			box-shadow 0.2s ease;
 	}
 
 	.post__buy:hover {
 		transform: translateY(-1px);
-		background: var(--accent-hover);
-		box-shadow: 0 12px 28px color-mix(in srgb, var(--magenta) 42%, transparent);
-		color: #fff;
+		background: var(--cta-surface-hover);
+		border-color: var(--magenta-soft);
+		box-shadow: var(--cta-shadow-hover);
+		color: var(--cta-text);
 	}
 
 	.post__hero {

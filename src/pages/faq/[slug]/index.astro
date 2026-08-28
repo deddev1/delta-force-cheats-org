@@ -236,21 +236,27 @@ const extraGraph: Record<string, unknown>[] = [
 		align-items: center;
 		justify-content: center;
 		padding: 0.8rem 1.35rem;
+		border: 2px solid var(--cta-border);
 		border-radius: 0.75rem;
-		background: var(--magenta);
-		color: #fff;
+		background: var(--cta-surface);
+		color: var(--cta-text);
 		font-size: 0.95rem;
 		font-weight: 700;
 		text-decoration: none;
+		box-shadow: var(--cta-shadow);
 		transition:
 			transform 0.2s ease,
-			background 0.2s ease;
+			background 0.2s ease,
+			border-color 0.2s ease,
+			box-shadow 0.2s ease;
 	}
 
 	.faq-detail__buy:hover {
 		transform: translateY(-1px);
-		background: var(--accent-hover);
-		color: #fff;
+		background: var(--cta-surface-hover);
+		border-color: var(--magenta-soft);
+		box-shadow: var(--cta-shadow-hover);
+		color: var(--cta-text);
 	}
 
 	.faq-detail__link {
