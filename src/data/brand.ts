@@ -40,7 +40,7 @@ export const brand = {
 	defaultOgImage: '/images/delta-force-cheats-hero-1199w.webp',
 	heroImage: '/images/delta-force-cheats-hero-1199w.webp',
 	/** Product demo clip — lazy-loaded on homepage; fetched only after play */
-	demoVideoUrl: 'https://deltaforcecheats.org/videos/hero.webm',
+	demoVideoUrl: 'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/delta/delta-clip.mp4',
 	demoVideoPoster: '/images/delta-force-screenshot-06.webp',
 
 	plans: [

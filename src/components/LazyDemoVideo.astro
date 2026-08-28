@@ -1,6 +1,6 @@
 ---
 interface Props {
-	/** Video URL (WebM/MP4) — not fetched until the user presses play */
+	/** Video URL (MP4/WebM) — not fetched until the user presses play */
 	src: string;
 	poster: string;
 	playLabel: string;
@@ -147,6 +147,8 @@ const videoId = `demo-video-${Math.random().toString(36).slice(2, 9)}`;
 			const ensureSrc = () => {
 				if (!video.getAttribute('src')) {
 					video.setAttribute('src', src);
+					if (src.includes('.mp4')) video.setAttribute('type', 'video/mp4');
+					else if (src.includes('.webm')) video.setAttribute('type', 'video/webm');
 					video.load();
 				}
 			};
