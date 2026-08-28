@@ -14,8 +14,11 @@ export type BrandThemeInput = {
 	deep?: string;
 	hover?: string;
 	panel?: string;
+	panelHover?: string;
 	elevated?: string;
 	line?: string;
+	price?: string;
+	btnText?: string;
 	ink?: string;
 	inkHeading?: string;
 	inkSecondary?: string;
@@ -32,6 +35,8 @@ export type BrandThemeResolved = {
 	bgPanel: string;
 	bgElevated: string;
 	bgHover: string;
+	price: string;
+	btnText: string;
 	line: string;
 	lineSoft: string;
 	lineStrong: string;
@@ -54,7 +59,7 @@ export const themeDefaults: BrandThemeInput = {
 
 export const themePresets: { id: string; label: string; accent: string; bg: string }[] = [
 	{ id: 'magenta', label: 'Magenta', accent: '#c026d3', bg: '#08090a' },
-	{ id: 'delta-force', label: 'Delta Force', accent: '#D6A93A', bg: '#08090A' },
+	{ id: 'delta-force', label: 'Delta Force', accent: '#6FAF45', bg: '#070B08' },
 	{ id: 'fortnite', label: 'Fortnite', accent: '#2b9dff', bg: '#0a0e17' },
 	{ id: 'apex', label: 'Apex', accent: '#ff6b2c', bg: '#0c0d10' },
 	{ id: 'teal', label: 'Teal', accent: '#14b8a6', bg: '#071012' },
@@ -166,9 +171,13 @@ export function deriveBrandTheme(input: Partial<BrandThemeInput> = {}): BrandThe
 	const bgPanel = normalizeHex(input.panel) ?? panelAuto;
 	const bgElevated =
 		normalizeHex(input.elevated) ?? (deepIsDarkSurface ? deepIn! : mixHex(bg, '#ffffff', 0.07));
-	const bgHover = normalizeHex(input.panel)
-		? mixHex(bgPanel, '#ffffff', 0.042)
-		: mixHex(bgElevated, '#ffffff', 0.06);
+	const bgHover =
+		normalizeHex(input.panelHover) ??
+		(normalizeHex(input.panel)
+			? mixHex(bgPanel, '#ffffff', 0.042)
+			: mixHex(bgElevated, '#ffffff', 0.06));
+	const price = normalizeHex(input.price) ?? '#9FE064';
+	const btnText = normalizeHex(input.btnText) ?? '#071007';
 	const lineSoft = normalizeHex(input.line) ? mixHex(input.line!, bg, 0.45) : mixHex(bg, '#ffffff', 0.08);
 	const line = normalizeHex(input.line) ?? mixHex(bg, '#ffffff', 0.12);
 	const lineStrong = normalizeHex(input.line) ? mixHex(input.line!, '#ffffff', 0.22) : mixHex(bg, '#ffffff', 0.18);
@@ -191,6 +200,8 @@ export function deriveBrandTheme(input: Partial<BrandThemeInput> = {}): BrandThe
 		bgPanel,
 		bgElevated,
 		bgHover,
+		price,
+		btnText,
 		line,
 		lineSoft,
 		lineStrong,
@@ -200,8 +211,8 @@ export function deriveBrandTheme(input: Partial<BrandThemeInput> = {}): BrandThe
 		inkMuted,
 		inkFaint,
 		link,
-		ok: '#8BC34A',
-		warn: '#D6A93A',
+		ok: '#8CCB55',
+		warn: '#9FE064',
 		error: '#D45B52',
 		toneVoid,
 	};
@@ -229,8 +240,11 @@ export const brandTheme: BrandThemeResolved = deriveBrandTheme({
 	deep: raw.theme?.deep,
 	hover: raw.theme?.hover,
 	panel: raw.theme?.panel,
+	panelHover: raw.theme?.panelHover,
 	elevated: raw.theme?.elevated,
 	line: raw.theme?.line,
+	price: raw.theme?.price,
+	btnText: raw.theme?.btnText,
 	ink: raw.theme?.ink,
 	inkHeading: raw.theme?.inkHeading,
 	inkSecondary: raw.theme?.inkSecondary,
@@ -262,7 +276,8 @@ export function brandThemeCssMap(theme: BrandThemeResolved = brandTheme): Record
 		'--ink-muted': theme.inkMuted,
 		'--ink-faint': theme.inkFaint,
 		'--link': theme.link,
-		'--price': '#FFD15C',
+		'--price': theme.price,
+		'--btn-text': theme.btnText,
 		'--magenta': theme.accent,
 		'--magenta-soft': theme.accentSoft,
 		'--magenta-deep': theme.accentDeep,
