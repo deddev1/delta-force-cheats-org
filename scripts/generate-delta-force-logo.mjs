@@ -24,7 +24,10 @@ async function main() {
 	);
 	await writeFile(
 		path.join(imagesDir, 'delta-force-cheats-logo-mark.webp'),
-		await sharp(logoPng).resize(128, 128).webp({ quality: 90, effort: 6 }).toBuffer(),
+		await sharp(path.join(imagesDir, 'delta-force-cheats-logo-mark.svg'))
+			.resize(128, 128)
+			.webp({ quality: 90, effort: 6 })
+			.toBuffer(),
 	);
 
 	const faviconSizes = [

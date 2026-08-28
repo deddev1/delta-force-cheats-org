@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Delta Force Cheats">
+  <defs>
+    <linearGradient id="df" x1="12" y1="8" x2="52" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#B7BC7A"/>
+      <stop offset="1" stop-color="#A3A86B"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#df)" d="M32 8 56 52H8Z"/>
+  <path fill="#C2C77D" d="M32 20 46.5 46H17.5Z"/>
+</svg>

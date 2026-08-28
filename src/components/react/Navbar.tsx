@@ -99,6 +99,7 @@ function NavbarInner({
 			<div className="shell site-header__bar">
 				<a href={homeHref} className="site-brand" aria-label={logoAlt}>
 					<BrandLogo className="site-brand__mark" alt={logoAlt} />
+					<span className="site-brand__text">{t('nav.brandShort')}</span>
 				</a>
 
 				<nav className="site-nav" aria-label={t('nav.primaryAria')}>

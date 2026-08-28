@@ -6,16 +6,14 @@ type Props = {
 	className?: string;
 };
 
-/** Delta Force Cheats corner mark — navbar + footer. */
+/** Delta Force Cheats corner mark — crisp SVG for navbar. */
 export default function BrandLogo({ alt = siteConfig.logoAlt, className }: Props) {
 	return (
 		<img
 			className={className}
 			src={siteConfig.logoMark}
-			srcSet={`${siteConfig.logoMark} 128w, ${siteConfig.logo} 512w`}
-			sizes="40px"
-			width={40}
-			height={40}
+			width={32}
+			height={32}
 			alt={alt}
 			decoding="async"
 			fetchPriority="high"

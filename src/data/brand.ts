@@ -33,7 +33,7 @@ export const brand = {
 	antiCheat: 'ACE',
 
 	logo: '/images/delta-force-cheats-logo.webp',
-	logoMark: '/images/delta-force-cheats-logo-mark.webp',
+	logoMark: '/images/delta-force-cheats-logo-mark.svg',
 	logoRaster: '/images/delta-force-cheats-logo.png',
 	logoRasterWidth: 512,
 	logoRasterHeight: 512,
