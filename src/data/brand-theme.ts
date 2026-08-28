@@ -24,6 +24,9 @@ export type BrandThemeInput = {
 	inkSecondary?: string;
 	inkMuted?: string;
 	link?: string;
+	ok?: string;
+	warn?: string;
+	error?: string;
 };
 
 export type BrandThemeResolved = {
@@ -59,7 +62,7 @@ export const themeDefaults: BrandThemeInput = {
 
 export const themePresets: { id: string; label: string; accent: string; bg: string }[] = [
 	{ id: 'magenta', label: 'Magenta', accent: '#c026d3', bg: '#08090a' },
-	{ id: 'delta-force', label: 'Delta Force', accent: '#C5A24A', bg: '#090A0B' },
+	{ id: 'delta-force', label: 'Delta Force', accent: '#00CFA3', bg: '#080D12' },
 	{ id: 'fortnite', label: 'Fortnite', accent: '#2b9dff', bg: '#0a0e17' },
 	{ id: 'apex', label: 'Apex', accent: '#ff6b2c', bg: '#0c0d10' },
 	{ id: 'teal', label: 'Teal', accent: '#14b8a6', bg: '#071012' },
@@ -211,9 +214,9 @@ export function deriveBrandTheme(input: Partial<BrandThemeInput> = {}): BrandThe
 		inkMuted,
 		inkFaint,
 		link,
-		ok: '#79A85A',
-		warn: '#E5C76A',
-		error: '#D45A52',
+		ok: normalizeHex(input.ok) ?? '#00CFA3',
+		warn: normalizeHex(input.warn) ?? '#19E6C1',
+		error: normalizeHex(input.error) ?? '#E6382F',
 		toneVoid,
 	};
 }
@@ -250,6 +253,8 @@ export const brandTheme: BrandThemeResolved = deriveBrandTheme({
 	inkSecondary: raw.theme?.inkSecondary,
 	inkMuted: raw.theme?.inkMuted,
 	link: raw.theme?.link,
+	ok: raw.theme?.ok,
+	error: raw.theme?.error,
 });
 
 /** Inline style for <html> — overrides @theme defaults site-wide. */

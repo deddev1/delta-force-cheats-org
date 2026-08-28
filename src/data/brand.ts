@@ -52,26 +52,28 @@ export const brand = {
 	platforms: ['Windows PC'] as const,
 
 	/**
-	 * Site color tones — tactical gold on dark canvas.
+	 * Site color tones — tactical teal on dark canvas.
 	 * Edit in Brand Studio → Colors (tones are fully customizable).
 	 */
 	theme: {
-		accent: '#C5A24A',
-		bg: '#090A0B',
-		soft: '#D8B75B',
-		deep: '#9A7D38',
-		hover: '#D8B75B',
-		panel: '#141619',
-		panelHover: '#1A1C20',
-		elevated: '#0D0F10',
-		line: '#292C30',
-		ink: '#D1D2D0',
-		inkHeading: '#F5F5F3',
-		inkSecondary: '#B8BAB8',
-		inkMuted: '#92969A',
-		link: '#C5A24A',
-		price: '#E5C76A',
-		btnText: '#090A0B',
+		accent: '#00CFA3',
+		bg: '#080D12',
+		soft: '#19E6C1',
+		deep: '#00A884',
+		hover: '#19E6C1',
+		panel: '#11191E',
+		panelHover: '#172126',
+		elevated: '#0D151A',
+		line: '#26363A',
+		ink: '#F5F7F6',
+		inkHeading: '#F5F7F6',
+		inkSecondary: '#A8B3B1',
+		inkMuted: '#8A9593',
+		link: '#00CFA3',
+		price: '#00CFA3',
+		btnText: '#080D12',
+		ok: '#00CFA3',
+		error: '#E6382F',
 	},
 
 	/**
