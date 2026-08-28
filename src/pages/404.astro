@@ -2,7 +2,6 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import SiteFooter from '../components/SiteFooter.astro';
-import { getSelfHreflangAlternates } from '../data/i18n/routing';
 import { fillBrandTokens, productInfo, siteConfig } from '../data/site';
 
 const title = fillBrandTokens('Page Not Found | {brand}');
@@ -10,14 +9,12 @@ const description = fillBrandTokens(
 	'That {brand} page is missing. Return home or browse features, store, setup, reviews, and the blog.',
 );
 const canonicalPath = Astro.url.pathname;
-const hreflangAlternates = getSelfHreflangAlternates(canonicalPath);
 ---
 
 <Layout
 	title={title}
 	description={description}
 	canonicalPath={canonicalPath}
-	hreflangAlternates={hreflangAlternates}
 	noindex={true}
 >
 	<Navbar />

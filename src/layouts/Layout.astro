@@ -71,7 +71,8 @@ const twitterCard = ogImageIsLogo ? 'summary' : 'summary_large_image';
 const robots = noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large';
 const siteDescription = `${productInfo.tagline}. ${productInfo.summary}`;
 const localeMeta = localeMap[locale];
-const ogLocaleAlternateLocales = ogLocaleAlternates ? locales.filter((l) => l.code !== locale) : [];
+const ogLocaleAlternateLocales =
+	!noindex && ogLocaleAlternates ? locales.filter((l) => l.code !== locale) : [];
 const schemaLanguage = localeMeta.ogLocale.replace('_', '-');
 const schemaLanguages = locales.map((l) => l.ogLocale.replace('_', '-'));
 const worldwidePlace = { '@type': 'Place' as const, name: siteConfig.market };
@@ -225,9 +226,10 @@ if (aboutNode) {
 				)
 			)
 		}
-		{pageId && <I18nHead pageId={pageId} locale={locale} />}
+		{!noindex && pageId && <I18nHead pageId={pageId} locale={locale} />}
 		{
-			!pageId &&
+			!noindex &&
+				!pageId &&
 				hreflangAlternates?.map((alt) => (
 					<link rel="alternate" hreflang={alt.hreflang} href={alt.href} />
 				))

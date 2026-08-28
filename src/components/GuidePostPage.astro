@@ -33,8 +33,10 @@ const articleBodyText = [
 ].join(' ');
 const wordCount = countWords(articleBodyText);
 const articleUrl = absoluteGuideUrl(guide.slug);
-const hreflangAlternates = getSelfHreflangAlternates(guide.canonicalPath);
 const guideNoindex = isLegacyGuideSlug(guide.slug);
+const hreflangAlternates = guideNoindex
+	? undefined
+	: getSelfHreflangAlternates(guide.canonicalPath);
 const articleSchema = {
 	'@type': 'Article',
 	'@id': `${articleUrl}#article`,
