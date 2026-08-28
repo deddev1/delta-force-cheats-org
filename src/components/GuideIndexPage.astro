@@ -6,7 +6,7 @@ import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { getAllGuides, getGuidesBasePath, getGuidesByGame, absoluteGuideUrl } from '../data/guides/helpers';
 import { nativeGuides } from '../data/guides/native-guides';
 import { siteConfig } from '../data/site';
-import { getLocalizedPath } from '../data/i18n/routing';
+import { getLocalizedPath, getSelfHreflangAlternates } from '../data/i18n/routing';
 import { getT } from '../i18n/server';
 
 interface Props {
@@ -18,6 +18,7 @@ const t = getT(locale);
 const guides = getAllGuides();
 const guidesByGame = getGuidesByGame();
 const canonicalPath = getGuidesBasePath();
+const hreflangAlternates = getSelfHreflangAlternates(canonicalPath);
 const homeHref = getLocalizedPath('home', locale);
 
 const pageTitle = 'Game Guides Hub | Delta Force Cheats';
@@ -48,6 +49,7 @@ const collectionSchema = {
 	title={pageTitle}
 	description={pageDescription}
 	canonicalPath={canonicalPath}
+	hreflangAlternates={hreflangAlternates}
 	locale={locale}
 	ogLocaleAlternates={false}
 	ogImage={siteConfig.defaultOgImage}

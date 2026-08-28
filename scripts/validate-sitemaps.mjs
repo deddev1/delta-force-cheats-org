@@ -54,10 +54,11 @@ const IMAGE_SITEMAP_ENTRIES = countBrandSitemapImages();
 
 const BLOG_PAGES = 18; // /blog/ index + 17 posts
 const REVIEW_PAGES = 11; // /reviews/ index + 10 review detail pages
-const FAQ_PAGES = 26; // standalone FAQ answer pages (index is in product pages)
+const FAQ_PAGES = 26; // standalone FAQ answer pages in sitemap-en.xml
+const FAQ_HTML_PAGES = 27; // built /faq/{slug}/ HTML (one legacy slug omitted from sitemap)
 const GUIDE_SITEMAP_PAGES = 1; // /guides/ hub only (competitor guide posts are noindex)
-const GUIDE_HTML_PAGES = 82; // /guides/ hub + 81 posts (all built)
-const STANDALONE_PAGES = 3; // /about/ /compare/ /write-for-us/
+const GUIDE_HTML_PAGES = 98; // /guides/ hub + 97 posts (all built)
+const STANDALONE_PAGES = 3; // /about/ /compare/ /write-for-us/ (included in ENGLISH_HTML_PRODUCT below)
 /** Product pages in sitemap — excludes cannibal EN URLs that 301 to stronger pillars */
 const ENGLISH_PRODUCT_PAGES = 18;
 const ENGLISH_PAGES =
@@ -69,8 +70,10 @@ const BLOG_PAGES_PER_LOCALE = 0; // Locale blog URLs 301 to EN; not in sitemaps
 const PAGES_PER_LOCALE = PRODUCT_PAGES_PER_LOCALE + BLOG_PAGES_PER_LOCALE;
 const I18N_URLS = I18N_LOCALES * PAGES_PER_LOCALE;
 const TOTAL_PAGES = ENGLISH_PAGES + I18N_URLS;
-/** Full EN HTML may still emit redirect stubs for cannibal URLs; sitemaps omit them */
-const ENGLISH_HTML_PAGES = 25 + BLOG_PAGES + REVIEW_PAGES + FAQ_PAGES + GUIDE_HTML_PAGES + STANDALONE_PAGES;
+/** Full EN HTML includes redirect stubs for cannibal URLs; sitemaps omit them */
+const ENGLISH_HTML_PRODUCT = 27; // home + 18 sitemap product + 3 standalone + 6 redirect stubs
+const ENGLISH_HTML_PAGES =
+	ENGLISH_HTML_PRODUCT + BLOG_PAGES + REVIEW_PAGES + FAQ_HTML_PAGES + GUIDE_HTML_PAGES;
 /** Locale HTML = product pages + blog redirect stubs (index + 17 posts) that are omitted from sitemaps */
 const LOCALE_BLOG_REDIRECT_PAGES = 18;
 const TOTAL_HTML_PAGES =

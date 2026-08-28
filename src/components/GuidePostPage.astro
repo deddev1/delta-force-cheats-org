@@ -6,7 +6,7 @@ import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { absoluteGuideUrl, getGuidesBasePath, isDeltaForceGuide } from '../data/guides/helpers';
 import type { ResolvedGuide } from '../data/guides/types';
 import { siteConfig } from '../data/site';
-import { getLocalizedPath } from '../data/i18n/routing';
+import { getLocalizedPath, getSelfHreflangAlternates } from '../data/i18n/routing';
 import { getT } from '../i18n/server';
 
 interface Props {
@@ -33,6 +33,7 @@ const articleBodyText = [
 ].join(' ');
 const wordCount = countWords(articleBodyText);
 const articleUrl = absoluteGuideUrl(guide.slug);
+const hreflangAlternates = getSelfHreflangAlternates(guide.canonicalPath);
 const guideNoindex = !isDeltaForceGuide(guide);
 
 const articleSchema = {
@@ -73,6 +74,7 @@ function pageTitle(headline: string): string {
 	title={pageTitle(guide.title)}
 	description={guide.metaDescription}
 	canonicalPath={guide.canonicalPath}
+	hreflangAlternates={hreflangAlternates}
 	locale={locale}
 	noindex={guideNoindex}
 	ogLocaleAlternates={false}
