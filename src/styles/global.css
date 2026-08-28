@@ -5,27 +5,27 @@
 	--font-sans: "Inter Variable", "Inter", ui-sans-serif, system-ui, sans-serif;
 	--font-display: "Syne Variable", "Syne", ui-sans-serif, sans-serif;
 
-	/* Delta Force — olive delta canvas, high readability */
-	--bg: #0d0f0e;
-	--bg-panel: #171a18;
-	--bg-elevated: #111412;
-	--bg-hover: #1d211e;
-	--line: #2b302c;
-	--line-soft: #232824;
-	--line-strong: #353a36;
-	--ink: #d2d3cc;
-	--ink-heading: #f4f4ef;
-	--ink-secondary: #aeb0a8;
-	--ink-muted: #92958d;
-	--ink-faint: #7a7d76;
-	--link: #b7bc7a;
-	--price: #c2c77d;
-	--btn-text: #10120f;
+	/* Delta Force — tactical gold on dark canvas */
+	--bg: #090a0b;
+	--bg-panel: #141619;
+	--bg-elevated: #0d0f10;
+	--bg-hover: #1a1c20;
+	--line: #292c30;
+	--line-soft: #1f2125;
+	--line-strong: #35383d;
+	--ink: #d1d2d0;
+	--ink-heading: #f5f5f3;
+	--ink-secondary: #b8bab8;
+	--ink-muted: #92969a;
+	--ink-faint: #7a7e82;
+	--link: #c5a24a;
+	--price: #e5c76a;
+	--btn-text: #090a0b;
 
-	/* Primary purchase CTA — warm white surface + olive accent */
-	--cta-surface: #f4f4ef;
+	/* Primary purchase CTA — warm white surface + gold accent */
+	--cta-surface: #f5f5f3;
 	--cta-surface-hover: #ffffff;
-	--cta-text: #2c3025;
+	--cta-text: #090a0b;
 	--cta-border: var(--magenta);
 	--cta-shadow:
 		0 4px 16px rgba(0, 0, 0, 0.28),
@@ -34,15 +34,15 @@
 		0 8px 24px rgba(0, 0, 0, 0.34),
 		0 0 0 1px color-mix(in srgb, var(--magenta-soft) 40%, transparent);
 
-	/* Brand accent — delta olive */
-	--magenta: #a3a86b;
-	--magenta-soft: #b7bc7a;
-	--magenta-deep: #8a8f5a;
+	/* Brand accent — primary gold */
+	--magenta: #c5a24a;
+	--magenta-soft: #d8b75b;
+	--magenta-deep: #9a7d38;
 	--accent: var(--magenta);
-	--accent-hover: #b7bc7a;
-	--ok: #b7bc7a;
-	--warn: #c2c77d;
-	--error: #d45b52;
+	--accent-hover: #d8b75b;
+	--ok: #79a85a;
+	--warn: #e5c76a;
+	--error: #d45a52;
 
 	/* Legacy aliases */
 	--tone-void: #050505;
@@ -345,7 +345,7 @@
 
 	.g2a-badge--hot {
 		background: color-mix(in srgb, var(--warn) 18%, transparent);
-		color: #e0e4b8;
+		color: #e5c76a;
 		border: 1px solid color-mix(in srgb, var(--warn) 35%, transparent);
 	}
 

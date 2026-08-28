@@ -59,7 +59,7 @@ export const themeDefaults: BrandThemeInput = {
 
 export const themePresets: { id: string; label: string; accent: string; bg: string }[] = [
 	{ id: 'magenta', label: 'Magenta', accent: '#c026d3', bg: '#08090a' },
-	{ id: 'delta-force', label: 'Delta Force', accent: '#A3A86B', bg: '#0D0F0E' },
+	{ id: 'delta-force', label: 'Delta Force', accent: '#C5A24A', bg: '#090A0B' },
 	{ id: 'fortnite', label: 'Fortnite', accent: '#2b9dff', bg: '#0a0e17' },
 	{ id: 'apex', label: 'Apex', accent: '#ff6b2c', bg: '#0c0d10' },
 	{ id: 'teal', label: 'Teal', accent: '#14b8a6', bg: '#071012' },
@@ -211,9 +211,9 @@ export function deriveBrandTheme(input: Partial<BrandThemeInput> = {}): BrandThe
 		inkMuted,
 		inkFaint,
 		link,
-		ok: '#B7BC7A',
-		warn: '#C2C77D',
-		error: '#D45B52',
+		ok: '#79A85A',
+		warn: '#E5C76A',
+		error: '#D45A52',
 		toneVoid,
 	};
 }
