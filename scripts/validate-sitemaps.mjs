@@ -70,19 +70,19 @@ const BLOG_PAGES_PER_LOCALE = 0; // Locale blog URLs 301 to EN; not in sitemaps
 const PAGES_PER_LOCALE = PRODUCT_PAGES_PER_LOCALE + BLOG_PAGES_PER_LOCALE;
 const I18N_URLS = I18N_LOCALES * PAGES_PER_LOCALE;
 const TOTAL_PAGES = ENGLISH_PAGES + I18N_URLS;
-/** Full EN HTML includes redirect stubs for cannibal URLs; sitemaps omit them */
-const ENGLISH_HTML_PRODUCT = 27; // home + 18 sitemap product + 3 standalone + 6 redirect stubs
+/** EN product HTML — cannibal URLs 301 via Worker only (no redirect stubs in dist) */
+const ENGLISH_HTML_PRODUCT = 20; // home + 18 sitemap product + 3 standalone
 const ENGLISH_HTML_PAGES =
 	ENGLISH_HTML_PRODUCT + BLOG_PAGES + REVIEW_PAGES + FAQ_HTML_PAGES + GUIDE_HTML_PAGES;
-/** Locale blog HTML redirect stubs removed — Worker 301s via locale-blog-redirects.json */
+/** Locale blog + EN cannibal URLs 301 at runtime — no HTML redirect stubs in dist */
 const LOCALE_BLOG_REDIRECT_PAGES = 0;
 const TOTAL_HTML_PAGES =
 	ENGLISH_HTML_PAGES + I18N_LOCALES * (PRODUCT_PAGES_PER_LOCALE + LOCALE_BLOG_REDIRECT_PAGES);
 const HREFLANG_PER_URL = 23;
 const SITEMAP_INDEX_ENTRIES = 1 + I18N_LOCALES + 1; // EN + locales + images
 
-/** Built HTML that intentionally 301s — allowed to be absent from sitemaps */
-const REDIRECT_ONLY_PATHS = new Set([
+/** EN cannibal URLs — 301 via Worker; omitted from sitemaps and dist HTML */
+const CANNIBAL_EN_PATHS = new Set([
 	'/delta-force-aimbot-hack/',
 	'/delta-force-esp-hack/',
 	'/delta-force-mod-menu/',
@@ -376,9 +376,9 @@ async function main() {
 		ok('Image sitemap hosts Features, Store (/pricing/), and Status (/updates/)');
 	}
 
-	// English path coverage (skip intentional 301 stubs)
+	// English path coverage (cannibal URLs are Worker 301s — not in sitemaps or dist)
 	for (const p of ENGLISH_PATHS) {
-		if (REDIRECT_ONLY_PATHS.has(p)) continue;
+		if (CANNIBAL_EN_PATHS.has(p)) continue;
 		const full = `${SITE}${p === '/' ? '/' : p}`;
 		if (!enLocs.includes(full)) {
 			fail(`Missing English URL in sitemap-en.xml: ${full}`);
@@ -541,7 +541,7 @@ async function main() {
 
 	const htmlSet = new Set(htmlPaths);
 	const missingFromSitemap = [...htmlSet].filter((p) => {
-		if (sitemapPaths.has(p) || REDIRECT_ONLY_PATHS.has(p) || SITEMAP_OMIT_PATHS.has(p)) return false;
+		if (sitemapPaths.has(p) || SITEMAP_OMIT_PATHS.has(p)) return false;
 		// Locale blog 301s are Worker-only (no HTML stubs in dist)
 		if (/^\/[a-z]{2}\/blog(\/|$)/.test(p)) return false;
 		// Legacy guide slugs stay noindex and out of sitemaps
@@ -562,7 +562,7 @@ async function main() {
 	if (htmlSet.size !== TOTAL_HTML_PAGES) {
 		fail(`Built HTML pages: expected ${TOTAL_HTML_PAGES}, got ${htmlSet.size}`);
 		bump();
-	} else ok(`${TOTAL_HTML_PAGES} HTML pages built (${REDIRECT_ONLY_PATHS.size} EN redirect-only omitted from sitemaps)`);
+	} else ok(`${TOTAL_HTML_PAGES} HTML pages built (EN cannibal + locale blog URLs are Worker 301s only)`);
 
 	if (missingFromSitemap.length > 0) {
 		fail(`HTML pages missing from sitemaps: ${missingFromSitemap.slice(0, 5).join(', ')}${missingFromSitemap.length > 5 ? '…' : ''}`);
