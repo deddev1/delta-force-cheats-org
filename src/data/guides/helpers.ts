@@ -36,20 +36,35 @@ export function getGuidesByGame(): Map<string, ResolvedGuide[]> {
 
 /** Interleave guides from each game so same-game articles are not grouped together. */
 export function getMixedGuides(): ResolvedGuide[] {
-	const byGame = [...getGuidesByGame().values()];
+	const buckets = [...getGuidesByGame().values()].map((guidesForGame) => [...guidesForGame]);
 	const mixed: ResolvedGuide[] = [];
-	let index = 0;
-	let hasMore = true;
+	let lastGame: string | null = null;
+	const total = getAllGuides().length;
 
-	while (hasMore) {
-		hasMore = false;
-		for (const guidesForGame of byGame) {
-			if (index < guidesForGame.length) {
-				mixed.push(guidesForGame[index]);
-				hasMore = true;
+	while (mixed.length < total) {
+		buckets.sort((a, b) => b.length - a.length);
+
+		let picked: ResolvedGuide | undefined;
+		for (const bucket of buckets) {
+			if (bucket.length === 0) continue;
+			if (bucket[0].game !== lastGame) {
+				picked = bucket.shift();
+				break;
 			}
 		}
-		index++;
+
+		if (!picked) {
+			for (const bucket of buckets) {
+				if (bucket.length > 0) {
+					picked = bucket.shift();
+					break;
+				}
+			}
+		}
+
+		if (!picked) break;
+		mixed.push(picked);
+		lastGame = picked.game;
 	}
 
 	return mixed;

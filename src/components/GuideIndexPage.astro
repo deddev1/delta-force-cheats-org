@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from './Navbar.astro';
 import SiteFooter from './SiteFooter.astro';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
-import { getAllGuides, getGuidesBasePath, getGuidesByGame, absoluteGuideUrl } from '../data/guides/helpers';
+import { getAllGuides, getGuidesBasePath, getMixedGuides, absoluteGuideUrl } from '../data/guides/helpers';
 import { nativeGuides } from '../data/guides/native-guides';
 import { siteConfig } from '../data/site';
 import { getLocalizedPath, getSelfHreflangAlternates } from '../data/i18n/routing';
@@ -16,7 +16,7 @@ interface Props {
 const { locale } = Astro.props;
 const t = getT(locale);
 const guides = getAllGuides();
-const guidesByGame = getGuidesByGame();
+const otherGameGuides = getMixedGuides();
 const canonicalPath = getGuidesBasePath();
 const hreflangAlternates = getSelfHreflangAlternates(canonicalPath);
 const homeHref = getLocalizedPath('home', locale);
@@ -91,33 +91,29 @@ const collectionSchema = {
 					<h2 id="game-guides-title">{t('guides.gameTitle')}</h2>
 					<p>{t('guides.gameLede')}</p>
 				</div>
-				{
-					[...guidesByGame.entries()].map(([game, gameGuides]) => (
-						<div class="guides-hub__game-group">
-							<h3 class="guides-hub__game-title">{game}</h3>
-							<ul class="guides-hub__grid">
-								{gameGuides.map((guide) => (
-									<li>
-										<a class="guides-hub__card" href={guide.canonicalPath}>
-											<img
-												src={guide.imageUrl}
-												alt={guide.imageAlt}
-												width="640"
-												height="360"
-												loading="lazy"
-												decoding="async"
-											/>
-											<div class="guides-hub__card-copy">
-												<h4>{guide.h1}</h4>
-												<p>{guide.metaDescription}</p>
-											</div>
-										</a>
-									</li>
-								))}
-							</ul>
-						</div>
-					))
-				}
+				<ul class="guides-hub__grid">
+					{
+						otherGameGuides.map((guide) => (
+							<li>
+								<a class="guides-hub__card" href={guide.canonicalPath}>
+									<img
+										src={guide.imageUrl}
+										alt={guide.imageAlt}
+										width="640"
+										height="360"
+										loading="lazy"
+										decoding="async"
+									/>
+									<div class="guides-hub__card-copy">
+										<p class="guides-hub__card-game">{guide.game}</p>
+										<h3>{guide.h1}</h3>
+										<p>{guide.metaDescription}</p>
+									</div>
+								</a>
+							</li>
+						))
+					}
+				</ul>
 			</section>
 		</div>
 	</main>
@@ -188,22 +184,6 @@ const collectionSchema = {
 	.guides-hub__external {
 		padding-top: 0.5rem;
 		border-top: 1px solid var(--line-soft);
-		display: grid;
-		gap: 2rem;
-	}
-
-	.guides-hub__game-group {
-		display: grid;
-		gap: 1rem;
-	}
-
-	.guides-hub__game-title {
-		margin: 0;
-		font-family: var(--font-display);
-		font-size: 1.15rem;
-		font-weight: 800;
-		color: var(--ink-heading);
-		letter-spacing: -0.02em;
 	}
 
 	.guides-hub__grid {
@@ -258,6 +238,15 @@ const collectionSchema = {
 		font-weight: 700;
 		line-height: 1.3;
 		color: var(--ink);
+	}
+
+	.guides-hub__card-game {
+		margin: 0 0 0.35rem;
+		font-size: 0.7rem;
+		font-weight: 700;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		color: var(--magenta-soft);
 	}
 
 	.guides-hub__card p {
