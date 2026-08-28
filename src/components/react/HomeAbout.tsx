@@ -19,7 +19,7 @@ function HomeAboutInner() {
 					<a href="/delta-force-cheats/">{t('home.aboutPillar')}</a>
 					{t('home.aboutP2Mid')}
 					<a href="/delta-force-esp/">{t('home.aboutEsp')}</a>
-					{t('home.aboutP2Mid')}
+					{t('home.aboutP2Review')}
 					<a href="/delta-force-aimbot/">{t('home.aboutAimbot')}</a>
 					{t('home.aboutP2Or')}
 					<a href="/updates/">{t('home.aboutUndetected')}</a>
