@@ -1,36 +1,36 @@
 import type { NativeGuideLink } from './types';
 
-/** Naraka Cheats native product guides — shown above the fold on /guides/. */
+/** Delta Force Cheats native product guides — shown above the fold on /guides/. */
 export const nativeGuides: NativeGuideLink[] = [
 	{
-		slug: 'naraka-cheats',
-		href: '/naraka-cheats/',
-		title: 'Naraka Cheats Overview',
-		description: 'Full pillar guide to ESP, aimbot, radar, and undetected status for Naraka on Windows PC.',
+		slug: 'delta-force-cheats',
+		href: '/delta-force-cheats/',
+		title: 'Delta Force Cheats Overview',
+		description: 'Full pillar guide to ESP, aimbot, radar, and undetected status for Delta Force on Windows PC.',
 	},
 	{
-		slug: 'naraka-esp',
-		href: '/naraka-esp/',
-		title: 'Naraka ESP & Wallhack',
-		description: 'How ESP overlays work in Naraka — hero markers, threat cues, and distance readouts.',
+		slug: 'delta-force-esp',
+		href: '/delta-force-esp/',
+		title: 'Delta Force ESP & Wallhack',
+		description: 'How ESP overlays work in Delta Force — operator markers, threat cues, and distance readouts.',
 	},
 	{
-		slug: 'naraka-aimbot',
-		href: '/naraka-aimbot/',
-		title: 'Naraka Aimbot & Soft Aim',
-		description: 'Aimbot controls, smoothing, and FOV tuning for competitive Naraka matches.',
+		slug: 'delta-force-aimbot',
+		href: '/delta-force-aimbot/',
+		title: 'Delta Force Aimbot & Soft Aim',
+		description: 'Aimbot controls, smoothing, and FOV tuning for competitive Delta Force matches.',
 	},
 	{
-		slug: 'naraka-radar-hack',
-		href: '/naraka-radar-hack/',
-		title: 'Naraka Radar Hack',
+		slug: 'delta-force-radar-hack',
+		href: '/delta-force-radar-hack/',
+		title: 'Delta Force Radar Hack',
 		description: '2D radar overlays for flanks, rotates, and zone awareness.',
 	},
 	{
 		slug: 'setup',
 		href: '/setup/',
 		title: 'Setup Guide',
-		description: 'Step-by-step install, NEAC notes, and first-launch checklist.',
+		description: 'Step-by-step install, ACE notes, and first-launch checklist.',
 	},
 	{
 		slug: 'features',
@@ -42,12 +42,12 @@ export const nativeGuides: NativeGuideLink[] = [
 		slug: 'pricing',
 		href: '/pricing/',
 		title: 'Store & Pricing',
-		description: 'Compare monthly and lifetime Naraka Cheats plans before checkout.',
+		description: 'Compare monthly and lifetime Delta Force Cheats plans before checkout.',
 	},
 	{
 		slug: 'updates',
 		href: '/updates/',
 		title: 'Undetected Status',
-		description: 'How NEAC maintenance works and where to check live status.',
+		description: 'How ACE maintenance works and where to check live status.',
 	},
 ];

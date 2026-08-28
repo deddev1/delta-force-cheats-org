@@ -17,9 +17,9 @@ function HomeSeoInner({ faqs }: Props) {
 			hintKey: 'homeSeo.catFeaturesHint',
 			links: [
 				{ href: '/features/', labelKey: 'homeSeo.linkAllFeatures' },
-				{ href: '/naraka-esp/', labelKey: 'homeSeo.linkEsp' },
-				{ href: '/naraka-aimbot/', labelKey: 'homeSeo.linkAimbot' },
-				{ href: '/naraka-radar-hack/', labelKey: 'homeSeo.linkRadar' },
+				{ href: '/delta-force-esp/', labelKey: 'homeSeo.linkEsp' },
+				{ href: '/delta-force-aimbot/', labelKey: 'homeSeo.linkAimbot' },
+				{ href: '/delta-force-radar-hack/', labelKey: 'homeSeo.linkRadar' },
 			],
 		},
 		{

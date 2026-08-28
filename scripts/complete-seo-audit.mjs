@@ -41,9 +41,9 @@ const LEGACY_TERMS = [
 ];
 
 const BRAND_DRIFT = [
-  'naraka cheats org',
-  'naraka-cheats.org',
-  'naraka cheats .org',
+  'delta force cheats org',
+  'delta-force-cheats.org',
+  'delta force cheats .org',
 ];
 
 function walkHtml(dir, files = []) {

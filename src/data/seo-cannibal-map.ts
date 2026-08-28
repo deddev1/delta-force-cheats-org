@@ -1,17 +1,17 @@
 /**
  * Near-duplicate pageIds → stronger pillars (301 in production via Worker + path-redirects).
  *
- * Long-tail URLs (/naraka-wallhack/, /naraka-mod-menu/, /naraka-cheat-download/, etc.)
+ * Long-tail URLs (/delta-force-wallhack/, /delta-force-mod-menu/, /delta-force-cheat-download/, etc.)
  * stay on 301 — not thin indexable stubs — to consolidate link equity on pillar pages
- * and avoid SERP cannibalization against /naraka-esp/, /naraka-aimbot/, /, and /naraka-cheats/.
+ * and avoid SERP cannibalization against /delta-force-esp/, /delta-force-aimbot/, /, and /delta-force-cheats/.
  */
 export const cannibalRedirectTargets = {
 	'mod-menu': 'home',
 	'unlock-all': 'home',
-	'aimbot-hack': 'naraka-aimbot',
-	'soft-aim': 'naraka-aimbot',
-	'esp-hack': 'naraka-esp',
-	wallhack: 'naraka-esp',
+	'aimbot-hack': 'delta-force-aimbot',
+	'soft-aim': 'delta-force-aimbot',
+	'esp-hack': 'delta-force-esp',
+	wallhack: 'delta-force-esp',
 	'cheat-download': 'setup',
 } as const;
 

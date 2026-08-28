@@ -172,7 +172,7 @@ const REPLACEMENTS = [
 	['eac-anti-cheat-and-rust-cheats', 'eac-anti-cheat-and-finals-cheats'],
 	['buy-undetected-rust-cheats-windows-pc', 'buy-undetected-finals-cheats-windows-pc'],
 	['rust-soft-aim-review', 'finals-soft-aim-review'],
-	['rust-esp-farming-run-review', 'finals-esp-cashout-review'],
+	['rust-esp-operations-review', 'finals-esp-cashout-review'],
 	['rust-cloud-dma-review', 'finals-cloud-dma-review'],
 	['rust-cheat-setup-review', 'finals-cheat-setup-review'],
 	['rust-loot-esp-review', 'finals-vault-esp-review'],

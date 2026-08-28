@@ -1,6 +1,6 @@
 /**
- * SVG overlay generators for naraka cheats marketing images.
- * Composited on top of IGN Naraka gameplay screenshots.
+ * SVG overlay generators for delta force cheats marketing images.
+ * Composited on top of IGN Delta Force gameplay screenshots.
  */
 
 const PURPLE = '#c084fc';

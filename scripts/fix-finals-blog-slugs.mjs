@@ -13,7 +13,7 @@ const SLUG_MAP = {
 	'rust-patch-notes-guide': 'finals-patch-notes-guide',
 	'rust-skin-leaks-guide': 'finals-cosmetics-guide',
 	'rust-player-tier-list': 'finals-weapon-tier-list',
-	'rust-farming-run-aggressive-strategies': 'finals-loot-run-strategies',
+	'rust-operations-aggressive-strategies': 'finals-loot-run-strategies',
 	'rust-competitive-meta-guide': 'finals-competitive-meta-guide',
 	'rust-loot-routes-guide': 'finals-cashout-routes-guide',
 	'rust-pro-settings-guide': 'finals-pro-settings-guide',
@@ -21,18 +21,18 @@ const SLUG_MAP = {
 };
 
 const KEYWORD_REPLACEMENTS = [
-	[/\bthe rust patch notes\b/gi, 'Naraka patch notes'],
-	[/\brust major update\b/gi, 'Naraka major update'],
+	[/\bthe rust patch notes\b/gi, 'Delta Force patch notes'],
+	[/\brust major update\b/gi, 'Delta Force major update'],
 	[/\brust intel\b/gi, 'Finals intel'],
-	[/\brust skins\b/gi, 'Naraka cosmetics'],
-	[/\brust cosmetics\b/gi, 'Naraka cosmetics'],
-	[/\bthe rust skins\b/gi, 'Naraka cosmetics'],
-	[/\brust player tier\b/gi, 'Naraka weapon tier'],
-	[/\brust loot routes\b/gi, 'Naraka grapple routes'],
-	[/\brust warmup\b/gi, 'Naraka warmup'],
-	[/\brust pro settings\b/gi, 'Naraka pro settings'],
-	[/\brust competitive meta\b/gi, 'Naraka competitive meta'],
-	[/\brust farming run\b/gi, 'Naraka loot run'],
+	[/\brust skins\b/gi, 'Delta Force cosmetics'],
+	[/\brust cosmetics\b/gi, 'Delta Force cosmetics'],
+	[/\bthe rust skins\b/gi, 'Delta Force cosmetics'],
+	[/\brust player tier\b/gi, 'Delta Force weapon tier'],
+	[/\brust loot routes\b/gi, 'Delta Force extract routes'],
+	[/\brust warmup\b/gi, 'Delta Force warmup'],
+	[/\brust pro settings\b/gi, 'Delta Force pro settings'],
+	[/\brust competitive meta\b/gi, 'Delta Force competitive meta'],
+	[/\brust farming run\b/gi, 'Delta Force loot run'],
 	[/\bmonument edges\b/gi, 'arena edges'],
 	[/\bmonument\b/gi, 'arena'],
 	[/\brouble floor\b/gi, 'credit floor'],
@@ -75,8 +75,8 @@ writeFileSync(redirectsPath, `${JSON.stringify(redirects, null, 2)}\n`, 'utf8');
 
 const cannibalPath = join(ROOT, 'functions', 'cannibal-redirects.json');
 const cannibal = JSON.parse(readFileSync(cannibalPath, 'utf8'));
-cannibal['/fr/meilleures-triches-finals/'] = '/fr/meilleures-triches-naraka/';
-cannibal['/fr/meilleures-triches-finals'] = '/fr/meilleures-triches-naraka/';
+cannibal['/fr/meilleures-triches-finals/'] = '/fr/meilleures-triches-delta-force/';
+cannibal['/fr/meilleures-triches-finals'] = '/fr/meilleures-triches-delta-force/';
 delete cannibal['/fr/meilleures-triches-rust/'];
 delete cannibal['/fr/meilleures-triches-rust'];
 writeFileSync(cannibalPath, `${JSON.stringify(cannibal, null, 2)}\n`, 'utf8');

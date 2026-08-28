@@ -20,15 +20,15 @@
     "closeMenu": "Close menu"
   },
   "hero": {
-    "accent": "غش Naraka غير مكتشف",
-    "accentShort": "Naraka Cheats",
-    "title": "Naraka Cheats",
-    "subtitle": "ESP wallhack ورadar hack وAimbot لـ Naraka على Windows PC — صيانة NEAC مشمولة.",
-    "subtitleShort": "ESP ورadar وAimbot لـ Naraka PC",
+    "accent": "غش Delta Force غير مكتشف",
+    "accentShort": "Delta Force Cheats",
+    "title": "Delta Force Cheats",
+    "subtitle": "ESP wallhack ورadar hack وAimbot لـ Delta Force على Windows PC — صيانة ACE مشمولة.",
+    "subtitleShort": "ESP ورadar وAimbot لـ Delta Force PC",
     "buyNow": "اشترِ الآن",
     "seeFeatures": "عرض الميزات",
     "priceFrom": "from",
-    "imageAlt": "{{brand}} — Naraka ESP and aimbot overlay",
+    "imageAlt": "{{brand}} — Delta Force ESP and aimbot overlay",
     "chipEsp": "ESP / wallhack",
     "chipAim": "Soft aim",
     "chipRadar": "2D radar",
@@ -40,20 +40,20 @@
   },
   "trust": {
     "status": "متصل",
-    "statusNote": "حزمة Naraka Cheats نشطة لـ Naraka على Windows PC.",
+    "statusNote": "حزمة Delta Force Cheats نشطة لـ Delta Force على Windows PC.",
     "statusShort": "نشط",
     "delivery": "تسليم رقمي فوري",
     "platform": "Windows 10 و11",
-    "antiCheat": "دعم صيانة NEAC",
-    "antiCheatShort": "دعم NEAC"
+    "antiCheat": "دعم صيانة ACE",
+    "antiCheatShort": "دعم ACE"
   },
   "product": {
-    "title": "Naraka Cheats",
+    "title": "Delta Force Cheats",
     "addToCart": "أضف إلى السلة",
     "monthly": "شهري",
     "lifetime": "مدى الحياة",
     "available": "متوفر الآن",
-    "gameBadge": "Naraka",
+    "gameBadge": "Delta Force",
     "platformBadge": "Windows PC",
     "statusBadge": "حزمة غير مكتشفة",
     "days30": "30",
@@ -66,18 +66,18 @@
   },
   "reviews": {
     "title": "ماذا يقول اللاعبون",
-    "subtitle": "آراء حديثة من مشتري Naraka Cheats",
+    "subtitle": "آراء حديثة من مشتري Delta Force Cheats",
     "outOf": "من 5",
     "countLabel": "مراجعات",
     "eyebrow": "ماذا يقول اللاعبون",
-    "homeTitle": "Naraka Cheats ماذا يقول اللاعبون",
+    "homeTitle": "Delta Force Cheats ماذا يقول اللاعبون",
     "buyerReviews": "مراجعات",
     "averageAria": "ماذا يقول اللاعبون",
     "outOfFiveAria": "من 5",
     "readAll": "→"
   },
   "common": {
-    "buyNow": "Buy Naraka Cheats",
+    "buyNow": "Buy Delta Force Cheats",
     "readGuide": "Read guide",
     "language": "Language",
     "officialLanguageNote": "English is official; other locales are translated.",
@@ -117,23 +117,23 @@
   "footer": {
     "explore": "استكشف",
     "help": "المساعدة والقانون",
-    "tagline": "ESP وwallhack ورadar وAimbot غير مكتشف لـ Naraka — الدفع عبر Zadeyo."
+    "tagline": "ESP وwallhack ورadar وAimbot غير مكتشف لـ Delta Force — الدفع عبر Zadeyo."
   },
   "home": {
-    "aboutTitle": "غش غير مكتشف لـ Naraka",
-    "aboutP1": "حزمة undetected لـ Naraka على Windows PC: ESP wallhack ورadar وAimbot مع صيانة NEAC. الأسعار · التحديثات.",
+    "aboutTitle": "غش غير مكتشف لـ Delta Force",
+    "aboutP1": "حزمة undetected لـ Delta Force على Windows PC: ESP wallhack ورadar وAimbot مع صيانة ACE. الأسعار · التحديثات.",
     "aboutPricingCta": "قارن الأسعار",
     "aboutP2Before": "ابدأ بـ",
-    "aboutPillar": "دليل Naraka Cheats",
+    "aboutPillar": "دليل Delta Force Cheats",
     "aboutEsp": "دليل ESP",
     "aboutAimbot": "ضوابط Aimbot",
     "aboutUndetected": "حالة عدم الاكتشاف",
     "aboutP2Mid": "، ",
     "aboutP2Or": "، أو ",
     "aboutP2After": " إذا كنت لا تزال تقارن الأدوات.",
-    "playDemoVideo": "Play Naraka cheats demo video",
-    "pauseDemoVideo": "Pause Naraka cheats demo video",
-    "demoVideoCaption": "Naraka Cheats — ESP, aimbot & radar in match",
+    "playDemoVideo": "Play Delta Force cheats demo video",
+    "pauseDemoVideo": "Pause Delta Force cheats demo video",
+    "demoVideoCaption": "Delta Force Cheats — ESP, aimbot & radar in match",
     "volumeLabel": "Volume",
     "muteVideo": "Mute video",
     "unmuteVideo": "Unmute video",
@@ -157,11 +157,11 @@
     "linkRadar": "Radar",
     "linkLiveStatus": "التحديثات",
     "linkUndetected": "حزمة غير مكتشفة",
-    "linkNEAC": "NEAC",
+    "linkACE": "ACE",
     "linkSetup": "التثبيت",
     "linkPlans": "الأسعار",
     "linkReviews": "ماذا يقول اللاعبون",
-    "linkFinalsCheats": "Naraka Cheats",
+    "linkFinalsCheats": "Delta Force Cheats",
     "linkFaq": "الأسئلة",
     "linkSupport": "Support",
     "linkSetupGuide": "التثبيت",
@@ -200,11 +200,11 @@
     "blog": "Blog"
   },
   "internalLinks": {
-    "relatedLede": "Naraka Cheats — صفحات ذات صلة.",
+    "relatedLede": "Delta Force Cheats — صفحات ذات صلة.",
     "topicsTitle": "الميزات",
     "topicsLabel": "الميزات",
     "topicsLede": "ESP, Aimbot, الأسعار, التثبيت, التحديثات.",
-    "overview": "Naraka Cheats",
+    "overview": "Delta Force Cheats",
     "esp": "ESP & wallhack",
     "aimbot": "Aimbot",
     "radar": "Radar",
@@ -225,43 +225,43 @@
     "pillsTitle": "Guías oficiales del juego y recursos",
     "pillsLabel": "Guías oficiales del juego y recursos",
     "steam": {
-      "label": "Naraka en PC",
+      "label": "Delta Force en PC",
       "note": "Página oficial de la tienda, requisitos y reseñas."
     },
     "patch": {
-      "label": "Parches y noticias de Naraka",
+      "label": "Parches y noticias de Delta Force",
       "note": "Lee actualizaciones oficiales antes de cambiar tu loadout."
     },
     "official": {
-      "label": "Sitio oficial de Naraka",
-      "note": "Resumen del juego de 24 Entertainment."
+      "label": "Sitio oficial de Delta Force",
+      "note": "Resumen del juego de Team Jade."
     },
     "wiki": {
-      "label": "Wiki de Naraka (Fandom)",
+      "label": "Wiki de Delta Force (Fandom)",
       "note": "Estadísticas, mapas y mecánicas de supervivencia."
     },
     "community": {
-      "label": "Hub de Naraka community",
+      "label": "Hub de Delta Force community",
       "note": "Anuncios y debates de la comunidad."
     }
   },
   "images": {
-    "hero": "Naraka Cheats hero — ESP and aimbot overlay in Naraka",
+    "hero": "Delta Force Cheats hero — ESP and aimbot overlay in Delta Force",
     "espWallhack": "Wallhack outlines showing agents through walls",
-    "aimbotCombat": "Soft aim assist overlay during a Naraka match",
-    "squadFight": "Naraka Cheats combat overlay during a team fight",
-    "playerEsp": "Player ESP boxes and distance readouts in a Naraka match",
-    "headerArt": "Aimbot view and bone priority controls for Naraka",
-    "hacksPackage": "2D radar threat overlay for Naraka",
-    "raidFight": "Aimbot assist during a Naraka melee combat",
-    "battleRoyale": "Naraka Cheats in-session overview for Windows PC",
-    "raidMap": "ESP markers for hero skills and POIs in Naraka"
+    "aimbotCombat": "Soft aim assist overlay during a Delta Force match",
+    "squadFight": "Delta Force Cheats combat overlay during a team fight",
+    "playerEsp": "Player ESP boxes and distance readouts in a Delta Force match",
+    "headerArt": "Aimbot view and bone priority controls for Delta Force",
+    "hacksPackage": "2D radar threat overlay for Delta Force",
+    "raidFight": "Aimbot assist during a Delta Force tactical combat",
+    "battleRoyale": "Delta Force Cheats in-session overview for Windows PC",
+    "raidMap": "ESP markers for hero skills and POIs in Delta Force"
   },
   "guides": {
     "hubTitle": "Game Guides Hub",
-    "hubIntro": "Naraka Cheats product guides sit at the top. Scroll down for dedicated PC game guides — each with its own article and resources.",
-    "nativeTitle": "Naraka Cheats guides",
-    "nativeLede": "Our primary guides for ESP, aimbot, radar, setup, and pricing on narakacheats.org.",
+    "hubIntro": "Delta Force Cheats product guides sit at the top. Scroll down for dedicated PC game guides — each with its own article and resources.",
+    "nativeTitle": "Delta Force Cheats guides",
+    "nativeLede": "Our primary guides for ESP, aimbot, radar, setup, and pricing on deltaforcecheats.org.",
     "gameTitle": "Other Games Guides",
     "gameLede": "Dedicated articles for Fortnite, Tarkov, Warzone, Marvel Rivals, and more — mixed across titles below.",
     "readGuide": "Read guide",
@@ -269,143 +269,143 @@
     "updated": "Updated"
   },
   "blog": {
-    "blogTitle": "Naraka Cheats Blog | Guides & Patch Tips",
-    "blogDescription": "Naraka guides — battle royale tips, ESP, aimbot notes, grapple routes, and NEAC update coverage. English blog at narakacheats.org/blog/.",
-    "blogH1": "Naraka Cheats Intel",
-    "blogIntro": "Actionable Naraka guides for ranked and Quick Match sessions — meta breakdowns, grapple routes, hero tiers, and pro warmup routines. Pair these tips with our Naraka Cheats pages for ESP, soft aim, and radar when you need in-match tools.",
+    "blogTitle": "Delta Force Cheats Blog | Guides & Patch Tips",
+    "blogDescription": "Delta Force guides — tactical FPS tips, ESP, aimbot notes, extract routes, and ACE update coverage. English blog at deltaforcecheats.org/blog/.",
+    "blogH1": "Delta Force Cheats Intel",
+    "blogIntro": "Actionable Delta Force guides for ranked and Quick Match sessions — meta breakdowns, extract routes, operator tiers, and pro warmup routines. Pair these tips with our Delta Force Cheats pages for ESP, soft aim, and radar when you need in-match tools.",
     "readMore": "Read guide",
     "published": "Published",
     "updated": "Updated",
-    "relatedPosts": "Related Naraka guides",
+    "relatedPosts": "Related Delta Force guides",
     "allPosts": "All blog posts",
-    "home": "Naraka Cheats home",
+    "home": "Delta Force Cheats home",
     "language": "Language",
-    "label": "Naraka Intel"
+    "label": "Delta Force Intel"
   },
   "gallery": {
-    "eyebrow": "Naraka Cheats",
-    "title": "Naraka Cheats gallery",
-    "subtitle": "Naraka Cheats visuals — ESP, wallhack, aimbot, and radar for Naraka on PC.",
-    "lead": "Naraka Cheats helps you spot enemy heroes, loot, and high-traffic POIs with ESP, aimbot, and radar in one license.",
-    "highlightEspTitle": "Naraka Cheats ESP",
-    "highlightEspCopy": "See enemy heroes through walls with Naraka Cheats ESP and wallhack overlays.",
-    "highlightRadarTitle": "Naraka Cheats radar",
-    "highlightRadarCopy": "Track nearby threats with Naraka Cheats radar before you push or rotate.",
-    "highlightAimbotTitle": "Naraka Cheats aimbot",
-    "highlightAimbotCopy": "Use soft aim and aimbot controls tuned for Naraka matches on Windows PC.",
-    "updatesLabel": "Naraka Cheats updates",
+    "eyebrow": "Delta Force Cheats",
+    "title": "Delta Force Cheats gallery",
+    "subtitle": "Delta Force Cheats visuals — ESP, wallhack, aimbot, and radar for Delta Force on PC.",
+    "lead": "Delta Force Cheats helps you spot enemy operators, loot, and high-traffic POIs with ESP, aimbot, and radar in one license.",
+    "highlightEspTitle": "Delta Force Cheats ESP",
+    "highlightEspCopy": "See enemy operators through walls with Delta Force Cheats ESP and wallhack overlays.",
+    "highlightRadarTitle": "Delta Force Cheats radar",
+    "highlightRadarCopy": "Track nearby threats with Delta Force Cheats radar before you push or rotate.",
+    "highlightAimbotTitle": "Delta Force Cheats aimbot",
+    "highlightAimbotCopy": "Use soft aim and aimbot controls tuned for Delta Force matches on Windows PC.",
+    "updatesLabel": "Delta Force Cheats updates",
     "updatesShort": "Updates"
   },
   "faq": {
     "items": {
-      "what-are-naraka-cheats": {
-        "q": "¿Qué es Naraka Cheats?",
-        "a": "Naraka Cheats es un paquete de cheats undetected para Naraka en PC Windows. Incluye ESP wallhack, radar 2D y controles de aimbot, con mantenimiento NEAC y soporte de instalación."
+      "what-are-delta-force-cheats": {
+        "q": "¿Qué es Delta Force Cheats?",
+        "a": "Delta Force Cheats es un paquete de cheats undetected para Delta Force en PC Windows. Incluye ESP wallhack, radar 2D y controles de aimbot, con mantenimiento ACE y soporte de instalación."
       },
-      "are-naraka-cheats-undetected-in-2026": {
-        "q": "¿Los Naraka Cheats son undetected en 2026?",
-        "a": "Naraka Cheats se mantiene para Naraka con reconstrucciones tras parches de NEAC y del juego. Revisa la الحالة antes de entrar en match. Ningún cheat puede garantizar indetectabilidad permanente."
+      "are-delta-force-cheats-undetected-in-2026": {
+        "q": "¿Los Delta Force Cheats son undetected en 2026?",
+        "a": "Delta Force Cheats se mantiene para Delta Force con reconstrucciones tras parches de ACE y del juego. Revisa la الحالة antes de entrar en match. Ningún cheat puede garantizar indetectabilidad permanente."
       },
       "solo-farmer-and-raider-sessions": {
         "q": "هل يعمل في جولات battle royale والمباريات المصنفة؟",
-        "a": "نعم. ESP والرادار والaimbot مبنية لتدفق مباريات Naraka — قراءة الأبطال الأعداء، تتبع اللوت وsoul jades، والبقاء واعياً قرب نقاط الاهتمام ومناطق القتال في Quick Match وRanked."
+        "a": "نعم. ESP والرادار والaimbot مبنية لتدفق مباريات Delta Force — قراءة الأبطال الأعداء، تتبع اللوت وsoul jades، والبقاء واعياً قرب نقاط الاهتمام ومناطق القتال في Quick Match وRanked."
       },
       "esp-wallhack-radar-or-aimbot": {
         "q": "¿Qué incluye: ESP, wallhack, radar o Aimbot?",
-        "a": "Naraka Cheats agrupa ESP wallhack, marcadores de loot, radar 2D y Aimbot configurable en una licencia. Consulta الميزات para la lista completa."
+        "a": "Delta Force Cheats agrupa ESP wallhack, marcadores de loot, radar 2D y Aimbot configurable en una licencia. Consulta الميزات para la lista completa."
       },
       "how-are-licenses-delivered": {
         "q": "¿Cómo se entregan las licencias?",
         "a": "Tras confirmar el pago, los datos de la licencia se entregan digitalmente en el checkout. El tiempo puede variar según el método de pago. Guarda la confirmación del pedido si contactas soporte."
       },
       "where-to-check-updates": {
-        "q": "¿Dónde reviso actualizaciones tras un parche de Naraka o NEAC?",
+        "q": "¿Dónde reviso actualizaciones tras un parche de Delta Force o ACE?",
         "a": "Las notas de mantenimiento se publican en la الحالة cuando un parche afecta al paquete. Es el lugar más rápido para confirmar si hay una nueva build."
       },
       "how-to-contact-support": {
         "q": "¿Cómo contacto soporte?",
-        "a": "Usa la página de الدعم o escribe a support@narakacheats.org. Incluye los datos del pedido y una descripción clara del problema de instalación."
+        "a": "Usa la página de الدعم o escribe a support@deltaforcecheats.org. Incluye los datos del pedido y una descripción clara del problema de instalación."
       },
-      "what-is-a-naraka-wallhack": {
-        "q": "ما هو wallhack Naraka؟",
-        "a": "wallhack Naraka هو overlay ESP يعرض الأبطال الأعداء عبر التضاريس. Naraka Cheats يتضمن قراءات المسافة وإشارات الgrapple والultimate وفئات قابلة للتبديل."
+      "what-is-a-delta-force-wallhack": {
+        "q": "ما هو wallhack Delta Force؟",
+        "a": "wallhack Delta Force هو overlay ESP يعرض الأبطال الأعداء عبر التضاريس. Delta Force Cheats يتضمن قراءات المسافة وإشارات الgrapple والultimate وفئات قابلة للتبديل."
       },
-      "does-naraka-cheats-include-radar-hack": {
-        "q": "¿Naraka Cheats incluye radar hack?",
-        "a": "Sí. Naraka Cheats incluye overlays de radar 2D que resaltan amenazas cercanas fuera de tu campo de visión, útil para flancos y zonas de zone."
+      "does-delta-force-cheats-include-radar-hack": {
+        "q": "¿Delta Force Cheats incluye radar hack?",
+        "a": "Sí. Delta Force Cheats incluye overlays de radar 2D que resaltan amenazas cercanas fuera de tu campo de visión, útil para flancos y zonas de zone."
       },
-      "neac-anti-cheat-and-naraka-cheats": {
-        "q": "¿Cómo afecta NEAC a los Naraka Cheats?",
-        "a": "NEAC monitoriza Naraka en PC Windows. Naraka Cheats publica notas de mantenimiento tras parches que pueden requerir una nueva build. Revisa Estado antes de jugar."
+      "ace-anti-cheat-and-delta-force-cheats": {
+        "q": "¿Cómo afecta ACE a los Delta Force Cheats?",
+        "a": "ACE monitoriza Delta Force en PC Windows. Delta Force Cheats publica notas de mantenimiento tras parches que pueden requerir una nueva build. Revisa Estado antes de jugar."
       },
-      "buy-undetected-naraka-cheats-windows-pc": {
-        "q": "¿Puedo comprar trucos undetected de Naraka para PC Windows?",
-        "a": "Sí: Naraka Cheats vende licencias mensuales y de por vida para PC Windows con ESP, radar y aimbot en un solo paquete. Compara planes en la المتجر antes del checkout."
+      "buy-undetected-delta-force-cheats-windows-pc": {
+        "q": "¿Puedo comprar trucos undetected de Delta Force para PC Windows?",
+        "a": "Sí: Delta Force Cheats vende licencias mensuales y de por vida para PC Windows con ESP, radar y aimbot en un solo paquete. Compara planes en la المتجر antes del checkout."
       },
-      "how-much-do-naraka-cheats-cost": {
-        "q": "How much do naraka cheats cost in 2026?",
-        "a": "Naraka Cheats is $35 per month or $150 lifetime USD on Windows PC. Both plans include ESP wallhack, 2D radar, soft aim, and NEAC maintenance rebuilds. See Pricing for the latest plan details before checkout."
+      "how-much-do-delta-force-cheats-cost": {
+        "q": "How much do delta force cheats cost in 2026?",
+        "a": "Delta Force Cheats is $35 per month or $150 lifetime USD on Windows PC. Both plans include ESP wallhack, 2D radar, soft aim, and ACE maintenance rebuilds. See Pricing for the latest plan details before checkout."
       },
-      "what-is-naraka-esp-hack": {
-        "q": "ما هو ESP hack Naraka؟",
-        "a": "ESP hack Naraka هو overlay رؤية يعرض الأبطال الأعداء والأسلحة واللوت عبر الجدران. Naraka Cheats ESP يتضمن صناديق اللاعبين وعلامات المسافة وإشارات grapple وultimate وفئات لـ Quick Match وRanked."
+      "what-is-delta-force-esp-hack": {
+        "q": "ما هو ESP hack Delta Force؟",
+        "a": "ESP hack Delta Force هو overlay رؤية يعرض الأبطال الأعداء والأسلحة واللوت عبر الجدران. Delta Force Cheats ESP يتضمن صناديق اللاعبين وعلامات المسافة وإشارات grapple وultimate وفئات لـ Quick Match وRanked."
       },
-      "what-is-naraka-aimbot-hack": {
-        "q": "ما هو aimbot hack Naraka؟",
-        "a": "aimbot hack Naraka يوفر مساعدة تصويب مع FOV وتنعيم وأولوية عظام قابلة للضبط. Naraka Cheats يستخدم ملفات soft aim طبيعية في معارك الفريق والمبارزات — اضبط الإعدادات في قائمة mod قبل طوابير Ranked."
+      "what-is-delta-force-aimbot-hack": {
+        "q": "ما هو aimbot hack Delta Force؟",
+        "a": "aimbot hack Delta Force يوفر مساعدة تصويب مع FOV وتنعيم وأولوية عظام قابلة للضبط. Delta Force Cheats يستخدم ملفات soft aim طبيعية في معارك الفريق والمبارزات — اضبط الإعدادات في قائمة mod قبل طوابير Ranked."
       },
-      "how-to-install-naraka-cheats": {
-        "q": "How do I install naraka cheats on Windows PC?",
-        "a": "After checkout, follow the Setup guide: download the loader, disable conflicting overlays, launch Naraka Cheats, and enable ESP, radar, or aimbot toggles in the mod menu. Most buyers finish first launch in under 15 minutes. Email support@narakacheats.org if activation fails."
+      "how-to-install-delta-force-cheats": {
+        "q": "How do I install delta force cheats on Windows PC?",
+        "a": "After checkout, follow the Setup guide: download the loader, disable conflicting overlays, launch Delta Force Cheats, and enable ESP, radar, or aimbot toggles in the mod menu. Most buyers finish first launch in under 15 minutes. Email support@deltaforcecheats.org if activation fails."
       },
-      "best-naraka-cheats-in-2026": {
-        "q": "What are the best naraka cheats in 2026?",
-        "a": "Top naraka cheats in 2026 combine undetected ESP, soft aim, 2D radar, and fast NEAC maintenance after patches. Naraka Cheats bundles all three in one license with status notes, setup support, and monthly or lifetime pricing — compare Features and Reviews before you buy."
+      "best-delta-force-cheats-in-2026": {
+        "q": "What are the best delta force cheats in 2026?",
+        "a": "Top delta force cheats in 2026 combine undetected ESP, soft aim, 2D radar, and fast ACE maintenance after patches. Delta Force Cheats bundles all three in one license with status notes, setup support, and monthly or lifetime pricing — compare Features and Reviews before you buy."
       },
-      "monthly-vs-lifetime-naraka-cheats": {
-        "q": "Should I buy monthly or lifetime naraka cheats?",
-        "a": "Choose monthly ($35) if you want a lower entry cost or only play a few seasons. Choose lifetime ($150) if you plan long-term Naraka play and want one payment for ESP, radar, aimbot, and future maintenance rebuilds. Both plans ship the same feature set."
+      "monthly-vs-lifetime-delta-force-cheats": {
+        "q": "Should I buy monthly or lifetime delta force cheats?",
+        "a": "Choose monthly ($35) if you want a lower entry cost or only play a few seasons. Choose lifetime ($150) if you plan long-term Delta Force play and want one payment for ESP, radar, aimbot, and future maintenance rebuilds. Both plans ship the same feature set."
       },
-      "naraka-cheats-windows-11": {
-        "q": "Do naraka cheats work on Windows 11?",
-        "a": "Yes. Naraka Cheats supports Windows 10 and Windows 11 on PC. Use a clean install path from the Setup guide, keep NEAC status green on the Updates page, and avoid running outdated builds after major patches."
+      "delta-force-cheats-windows-11": {
+        "q": "Do delta force cheats work on Windows 11?",
+        "a": "Yes. Delta Force Cheats supports Windows 10 and Windows 11 on PC. Use a clean install path from the Setup guide, keep ACE status green on the Updates page, and avoid running outdated builds after major patches."
       },
-      "what-is-naraka-soft-aim": {
-        "q": "ما هو soft aim Naraka؟",
-        "a": "soft aim Naraka يوجه التصويب بلطف نحو الأهداف داخل FOV محدد بدلاً من الالتصاق الفوري. Naraka Cheats يتيح ضبط التنعيم وأولوية العظام وملفات حسب نوع السلاح في Quick Match وRanked."
+      "what-is-delta-force-soft-aim": {
+        "q": "ما هو soft aim Delta Force؟",
+        "a": "soft aim Delta Force يوجه التصويب بلطف نحو الأهداف داخل FOV محدد بدلاً من الالتصاق الفوري. Delta Force Cheats يتيح ضبط التنعيم وأولوية العظام وملفات حسب نوع السلاح في Quick Match وRanked."
       },
-      "free-naraka-cheat-download": {
-        "q": "Is there a free Naraka hack download?",
-        "a": "Naraka Cheats is a paid license — there is no official free download. Avoid random “free naraka cheat” sites; they often ship malware or detected loaders. Compare monthly and lifetime plans on Pricing for legitimate ESP, radar, and aimbot access with support."
+      "free-delta-force-cheat-download": {
+        "q": "Is there a free Delta Force hack download?",
+        "a": "Delta Force Cheats is a paid license — there is no official free download. Avoid random “free delta force cheat” sites; they often ship malware or detected loaders. Compare monthly and lifetime plans on Pricing for legitimate ESP, radar, and aimbot access with support."
       },
-      "naraka-neac-bypass": {
-        "q": "كيف يعمل bypass NEAC لـ naraka cheats؟",
-        "a": "لا يوجد bypass دائم لـ NEAC. Naraka Cheats يُصان بإعادة بناء بعد تصحيحات Naraka وNEAC — راجع صفحة التحديثات قبل اللعب. الإعدادات المسؤولة وأحدث build أهم من أي ادعاء «bypass»."
+      "delta-force-ace-bypass": {
+        "q": "كيف يعمل bypass ACE لـ delta force cheats؟",
+        "a": "لا يوجد bypass دائم لـ ACE. Delta Force Cheats يُصان بإعادة بناء بعد تصحيحات Delta Force وACE — راجع صفحة التحديثات قبل اللعب. الإعدادات المسؤولة وأحدث build أهم من أي ادعاء «bypass»."
       },
-      "naraka-cheats-for-ranked": {
-        "q": "هل تعمل naraka cheats في التنافس المصنف؟",
-        "a": "نعم. ESP والرادار وsoft aim مبنية لـ Ranked وQuick Match في Naraka على Windows PC. استخدم إعدادات overlay محافظة واقرأ ملاحظات الصيانة بعد التصحيحات وأكد حالة undetected في صفحة التحديثات قبل الطوابير التنافسية."
+      "delta-force-cheats-for-ranked": {
+        "q": "هل تعمل delta force cheats في التنافس المصنف؟",
+        "a": "نعم. ESP والرادار وsoft aim مبنية لـ Ranked وQuick Match في Delta Force على Windows PC. استخدم إعدادات overlay محافظة واقرأ ملاحظات الصيانة بعد التصحيحات وأكد حالة undetected في صفحة التحديثات قبل الطوابير التنافسية."
       },
-      "what-is-naraka-mod-menu": {
-        "q": "What is a Naraka mod menu?",
-        "a": "A Naraka mod menu is an in-game overlay to toggle ESP wallhack, radar, aimbot, and visual settings without alt-tabbing. Naraka Cheats ships a lightweight mod menu for Windows PC — see Features for the full toggle list."
+      "what-is-delta-force-mod-menu": {
+        "q": "What is a Delta Force mod menu?",
+        "a": "A Delta Force mod menu is an in-game overlay to toggle ESP wallhack, radar, aimbot, and visual settings without alt-tabbing. Delta Force Cheats ships a lightweight mod menu for Windows PC — see Features for the full toggle list."
       },
-      "external-vs-internal-naraka-cheats": {
-        "q": "What is the difference between external and internal naraka cheats?",
-        "a": "External hacks read game memory from outside the client; internal hooks run inside the process. Naraka Cheats is built as an external-style package for easier setup on Windows PC, bundling ESP, radar, and soft aim with NEAC maintenance after patches."
+      "external-vs-internal-delta-force-cheats": {
+        "q": "What is the difference between external and internal delta force cheats?",
+        "a": "External hacks read game memory from outside the client; internal hooks run inside the process. Delta Force Cheats is built as an external-style package for easier setup on Windows PC, bundling ESP, radar, and soft aim with ACE maintenance after patches."
       },
-      "how-long-naraka-cheat-setup-takes": {
-        "q": "How long does naraka cheats setup take?",
-        "a": "Most buyers finish Naraka Cheats setup in 10–20 minutes on Windows PC: install the loader, activate the license, and enable ESP or aimbot in the mod menu. If Windows Defender or another AV blocks the loader, follow Setup troubleshooting or email support@narakacheats.org with your order ID."
+      "how-long-delta-force-cheat-setup-takes": {
+        "q": "How long does delta force cheats setup take?",
+        "a": "Most buyers finish Delta Force Cheats setup in 10–20 minutes on Windows PC: install the loader, activate the license, and enable ESP or aimbot in the mod menu. If Windows Defender or another AV blocks the loader, follow Setup troubleshooting or email support@deltaforcecheats.org with your order ID."
       },
-      "does-naraka-cheats-include-triggerbot": {
-        "q": "Does Naraka Cheats include triggerbot?",
-        "a": "Naraka Cheats focuses on ESP wallhack, 2D radar, and soft aim profiles. Triggerbot is not advertised as a standalone module — review the Features page for the current toggle list before checkout."
+      "does-delta-force-cheats-include-triggerbot": {
+        "q": "Does Delta Force Cheats include triggerbot?",
+        "a": "Delta Force Cheats focuses on ESP wallhack, 2D radar, and soft aim profiles. Triggerbot is not advertised as a standalone module — review the Features page for the current toggle list before checkout."
       }
     }
   },
   "media": {
-    "demoVideoTitle": "Naraka Cheats ESP, Aimbot demo",
+    "demoVideoTitle": "Delta Force Cheats ESP, Aimbot demo",
     "playVideo": "Play video"
   }
 }

@@ -51,7 +51,7 @@ function localizeSection(enSection, locale, pageKey, sectionIndex) {
 function localizeMeta(enPage, locale, pageKey) {
 	const p = phrases[locale];
 	const home = PAGE_META_HOME[locale];
-	const meta = PAGE_META_TAILS[pageKey] ?? { suffix: 'Naraka Cheats', focus: pageKey };
+	const meta = PAGE_META_TAILS[pageKey] ?? { suffix: 'Delta Force Cheats', focus: pageKey };
 	const suffix = SUFFIX_I18N[locale]?.[pageKey] ?? meta.suffix;
 	const focus = FOCUS_I18N[locale]?.[pageKey] ?? meta.focus;
 	const topicName = TOPIC_NAMES[pageKey]?.[locale] ?? TOPIC_NAMES[pageKey]?.en ?? pageKey;
@@ -60,12 +60,12 @@ function localizeMeta(enPage, locale, pageKey) {
 		title: clampTitle(stripZadeyoFromMeta(`${topicName} | ${suffix}`)),
 		description: clampDesc(
 			stripZadeyoFromMeta(
-				`${topicName} for Naraka Bladepoint ranked & Showdown on Windows PC — ${focus}. ${p.delivery}. ${p.undetected}. Official naraka cheats at narakacheats.org.`,
+				`${topicName} for Delta Force Operations & Warfare on Windows PC — ${focus}. ${p.delivery}. ${p.undetected}. Official delta force cheats at deltaforcecheats.org.`,
 			),
 		),
 		h1: `${topicName} — ${suffix}`,
 		intro: p.s1(`${topicName}. ${focus}.`),
-		imageAlt: PAGE_IMAGE_ALTS[pageKey] || `${topicName} — Naraka Cheats`,
+		imageAlt: PAGE_IMAGE_ALTS[pageKey] || `${topicName} — Delta Force Cheats`,
 		galleryTitle: topicName,
 		ctaPrimary: p.buy,
 		ctaSecondary: home?.cta2 ?? p.buy,
@@ -98,16 +98,16 @@ function localizeRichPage(enPage, locale, pageKey) {
 /** Optional native h2 overrides for rich pages. */
 const RICH_SECTION_H2 = {
 	es: {
-		'naraka-esp': ['Qué resuelve el ESP en matches', 'Categorías ESP jugador, apex y loot', 'ESP indetectable con mantenimiento EAC', 'ESP — siguientes pasos'],
-		hacks: ['¿Qué son los trucos de Naraka?', 'Qué incluye Naraka Cheats', 'Estado indetectable y NEAC', 'Primeros pasos'],
+		'delta-force-esp': ['Qué resuelve el ESP en matches', 'Categorías ESP jugador, apex y loot', 'ESP indetectable con mantenimiento EAC', 'ESP — siguientes pasos'],
+		hacks: ['¿Qué son los trucos de Delta Force?', 'Qué incluye Delta Force Cheats', 'Estado indetectable y ACE', 'Primeros pasos'],
 	},
 	fr: {
-		'naraka-esp': ['Ce que l\'ESP résout en match', 'Catégories ESP joueur, apex et loot', 'ESP indétectable avec maintenance EAC', 'ESP — prochaines étapes'],
-		hacks: ['Que sont les triches Naraka ?', 'Ce que Naraka Cheats inclut', 'Statut indétectable et NEAC', 'Premiers pas'],
+		'delta-force-esp': ['Ce que l\'ESP résout en match', 'Catégories ESP joueur, apex et loot', 'ESP indétectable avec maintenance EAC', 'ESP — prochaines étapes'],
+		hacks: ['Que sont les triches Delta Force ?', 'Ce que Delta Force Cheats inclut', 'Statut indétectable et ACE', 'Premiers pas'],
 	},
 	de: {
-		'naraka-esp': ['Was ESP in matches löst', 'Spieler-, Apex- und Loot-ESP-Kategorien', 'Undetected ESP mit EAC-Wartung', 'ESP — nächste Schritte'],
-		hacks: ['Was sind Naraka Cheats?', 'Was Naraka Cheats enthält', 'Undetected-Status und NEAC', 'Erste Schritte'],
+		'delta-force-esp': ['Was ESP in matches löst', 'Spieler-, Apex- und Loot-ESP-Kategorien', 'Undetected ESP mit EAC-Wartung', 'ESP — nächste Schritte'],
+		hacks: ['Was sind Delta Force Cheats?', 'Was Delta Force Cheats enthält', 'Undetected-Status und ACE', 'Erste Schritte'],
 	},
 };
 

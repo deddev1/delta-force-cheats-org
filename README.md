@@ -1,6 +1,6 @@
-# Naraka Cheats — Marketing Site
+# Delta Force Cheats — Marketing Site
 
-Static Astro 7 site for [narakacheats.org](https://narakacheats.org). Primary SEO keyword: **naraka cheats** (secondary: naraka esp, naraka aimbot, naraka wallhack).
+Static Astro 7 site for [deltaforcecheats.org](https://deltaforcecheats.org). Primary SEO keyword: **delta force cheats** (secondary: delta force esp, delta force aimbot, delta force wallhack).
 
 ## Stack
 
@@ -18,4 +18,4 @@ npm run localhost
 
 ## Deploy
 
-See [DEPLOY.md](./DEPLOY.md) for Cloudflare Workers Builds setup targeting **narakacheats.org**.
+See [DEPLOY.md](./DEPLOY.md) for Cloudflare Workers Builds setup targeting **deltaforcecheats.org**.

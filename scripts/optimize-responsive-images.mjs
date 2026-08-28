@@ -12,18 +12,18 @@ const CONTENT_WIDTHS = [480, 960];
 
 const SKIP_PATTERNS = [
 	/-\d+w\.webp$/i,
-	/naraka-cheats-logo/i,
+	/delta-force-cheats-logo/i,
 	/favicon/i,
 ];
 
 async function optimizeHero() {
-	const source = path.join(imagesDir, 'naraka-esp-player-tags.webp');
+	const source = path.join(imagesDir, 'delta-force-esp-player-tags.webp');
 	const meta = await sharp(source).metadata();
 	const results = [];
 
 	for (const width of HERO_WIDTHS) {
 		if (meta.width && width > meta.width) continue;
-		const file = `naraka-esp-player-tags-${width}w.webp`;
+		const file = `delta-force-esp-player-tags-${width}w.webp`;
 		const dest = path.join(imagesDir, file);
 		const quality = width <= 480 ? 56 : width <= 640 ? 70 : 78;
 		const buffer = await sharp(source)
@@ -44,7 +44,7 @@ async function optimizeContentImages() {
 		(file) =>
 			file.endsWith('.webp') &&
 			!SKIP_PATTERNS.some((pattern) => pattern.test(file)) &&
-			file !== 'naraka-esp-player-tags.webp',
+			file !== 'delta-force-esp-player-tags.webp',
 	);
 
 	const results = [];

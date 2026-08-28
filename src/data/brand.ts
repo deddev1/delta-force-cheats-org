@@ -5,43 +5,43 @@
  */
 export const brand = {
 	/** Public brand name (nav, footer, H1 hero, schema Organization) */
-	name: 'Naraka Cheats',
+	name: 'Delta Force Cheats',
 	/** Short product label if needed */
-	shortName: 'Naraka Cheats',
+	shortName: 'Delta Force Cheats',
 	/** Canonical origin — no trailing slash */
-	url: 'https://narakacheats.org',
+	url: 'https://deltaforcecheats.org',
 	locale: 'en',
 	market: 'Worldwide',
-	supportEmail: 'support@narakacheats.org',
-	checkoutUrl: 'https://zadeyo.com/go/QRH?to=%2Fproducts%2Fnaraka-bladepoint-novaxware',
+	supportEmail: 'support@deltaforcecheats.org',
+	checkoutUrl: 'https://zadeyo.com/go/QRH?to=%2Fproducts%2Fdelta-force-novaxware',
 
 	/** Public profiles for Organization sameAs + Twitter cards (edit in Brand Studio). */
 	social: {
-		twitterSite: '@narakacheats',
+		twitterSite: '@deltaforcecheats',
 		sameAs: [
-			'https://x.com/narakacheats',
-			'https://www.reddit.com/r/NARAKA/',
-			'https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/',
+			'https://x.com/deltaforcecheats',
+			'https://www.reddit.com/r/DeltaForceGame/',
+			'https://store.steampowered.com/app/2507950/Delta_Force/',
 		],
 	} as const,
 
 	/** Game this template instance targets */
-	game: 'Naraka',
+	game: 'Delta Force',
 	/** Official game page — linked from the hero image */
-	gameUrl: 'https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/',
+	gameUrl: 'https://store.steampowered.com/app/2507950/Delta_Force/',
 	/** Anti-cheat name used in Status / FAQ copy */
-	antiCheat: 'NEAC',
+	antiCheat: 'ACE',
 
-	logo: '/images/naraka-cheats-logo.webp',
-	logoRaster: '/images/naraka-cheats-logo.png',
+	logo: '/images/delta-force-cheats-logo.webp',
+	logoRaster: '/images/delta-force-cheats-logo.png',
 	logoRasterWidth: 512,
 	logoRasterHeight: 512,
-	logoAlt: 'Naraka Cheats logo',
-	defaultOgImage: '/images/naraka-cheats-hero-1199w.webp',
-	heroImage: '/images/naraka-cheats-hero-1199w.webp',
+	logoAlt: 'Delta Force Cheats logo',
+	defaultOgImage: '/images/delta-force-cheats-hero-1199w.webp',
+	heroImage: '/images/delta-force-cheats-hero-1199w.webp',
 	/** Product demo clip — lazy-loaded on homepage; fetched only after play */
-	demoVideoUrl: 'https://narakacheats.net/videos/hero.webm',
-	demoVideoPoster: '/images/naraka-screenshot-06.webp',
+	demoVideoUrl: 'https://deltaforcecheats.org/videos/hero.webm',
+	demoVideoPoster: '/images/delta-force-screenshot-06.webp',
 
 	plans: [
 		{ id: 'monthly', label: 'Monthly', price: 35, duration: 'P30D' },
@@ -55,11 +55,11 @@ export const brand = {
 	 * Edit in Brand Studio → Colors (tones are fully customizable).
 	 */
 	theme: {
-		accent: '#E50920',
+		accent: '#4ADE80',
 		bg: '#07090A',
 		soft: '#FFFFFF',
-		deep: '#8F0715',
-		hover: '#FF1F35',
+		deep: '#166534',
+		hover: '#22C55E',
 		panel: '#0E1113',
 		elevated: '#15191B',
 		line: '#252A2C',
@@ -67,7 +67,7 @@ export const brand = {
 		inkHeading: '#FFFFFF',
 		inkSecondary: '#C5CACA',
 		inkMuted: '#8D9698',
-		link: '#E50920',
+		link: '#4ADE80',
 	},
 
 	/**
@@ -75,29 +75,29 @@ export const brand = {
 	 * Page-specific targeting lives in src/data/seo-keywords.ts
 	 */
 	keywords: {
-		primary: 'naraka cheats',
+		primary: 'delta force cheats',
 		list: [
-			'naraka cheats',
-			'undetected naraka cheats',
-			'naraka cheats 2026',
-			'best naraka cheats',
-			'buy naraka cheats',
-			'naraka esp',
-			'naraka wallhack',
-			'naraka aimbot',
-			'naraka soft aim',
-			'naraka radar hack',
-			'naraka neac bypass',
-			'naraka cheats pc',
-			'naraka cheat download',
-			'naraka mod menu',
-			'undetected naraka cheats',
-			'naraka cheats undetected',
-			'naraka aimbot hack',
-			'naraka esp hack',
-			'best naraka cheats 2026',
-			'naraka cheats for ranked',
-			'naraka external cheat',
+			'delta force cheats',
+			'undetected delta force cheats',
+			'delta force cheats 2026',
+			'best delta force cheats',
+			'buy delta force cheats',
+			'delta force esp',
+			'delta force wallhack',
+			'delta force aimbot',
+			'delta force soft aim',
+			'delta force radar hack',
+			'delta force ace bypass',
+			'delta force cheats pc',
+			'delta force cheat download',
+			'delta force mod menu',
+			'undetected delta force cheats',
+			'delta force cheats undetected',
+			'delta force aimbot hack',
+			'delta force esp hack',
+			'best delta force cheats 2026',
+			'delta force cheats for ranked',
+			'delta force external cheat',
 		] as const,
 	},
 
@@ -106,55 +106,55 @@ export const brand = {
 	 * Aim ~50–60 chars titles, ~140–160 chars descriptions.
 	 */
 	seo: {
-		homeTitle: 'Naraka Bladepoint Cheats 2026 | ESP, Aimbot & Radar',
+		homeTitle: 'Delta Force Cheats 2026 | ESP, Aimbot & Radar',
 		homeDescription:
-			'Buy undetected Naraka Bladepoint cheats — ESP, aimbot, wallhack & radar for ranked & Showdown on PC. NEAC updates included. Plans from $35/month.',
-		featuresTitle: 'Naraka Bladepoint Cheats Features | ESP & Aimbot',
+			'Buy undetected Delta Force cheats — ESP, aimbot, wallhack & radar for Operations & Warfare on PC. ACE updates included. Plans from $35/month.',
+		featuresTitle: 'Delta Force Cheats Features | ESP & Aimbot',
 		featuresDescription:
-			'Full Naraka Bladepoint cheats feature list — ESP wallhack, soft aim, 2D radar & toggles for ranked & Showdown on PC. NEAC maintenance at narakacheats.org.',
-		storeTitle: 'Naraka Bladepoint Cheats Pricing | $35/mo Lifetime',
+			'Full Delta Force cheats feature list — ESP wallhack, soft aim, 2D radar & toggles for Operations & Warfare on PC. ACE maintenance at deltaforcecheats.org.',
+		storeTitle: 'Delta Force Cheats Pricing | $35/mo Lifetime',
 		storeDescription:
-			'Buy Naraka Bladepoint cheats — $35/month or $150 lifetime. ESP, aimbot & radar for ranked & Showdown on PC. Instant digital delivery worldwide.',
-		statusTitle: 'Naraka Status | Undetected {antiCheat} Updates',
+			'Buy Delta Force cheats — $35/month or $150 lifetime. ESP, aimbot & radar for Operations & Warfare on PC. Instant digital delivery worldwide.',
+		statusTitle: 'Delta Force Status | Undetected {antiCheat} Updates',
 		statusDescription:
-			'Live status after {game} & {antiCheat} patches. Check undetected ESP, aimbot & radar rebuilds on PC before you queue. Status updated at narakacheats.org.',
-		previewTitle: 'Naraka Bladepoint Cheats | ESP, Aimbot & Radar Guide',
+			'Live status after {game} & {antiCheat} patches. Check undetected ESP, aimbot & radar rebuilds on PC before you queue. Status updated at deltaforcecheats.org.',
+		previewTitle: 'Delta Force Cheats | ESP, Aimbot & Radar Guide',
 		previewDescription:
-			'Naraka Bladepoint cheats guide — undetected ESP wallhack, soft aim, radar & {antiCheat} rebuilds for ranked & Showdown on PC. Buy from $35 at narakacheats.org.',
-		setupTitle: 'Naraka Cheats Setup | Windows PC Install Guide',
+			'Delta Force cheats guide — undetected ESP wallhack, soft aim, radar & {antiCheat} rebuilds for Operations & Warfare on PC. Buy from $35 at deltaforcecheats.org.',
+		setupTitle: 'Delta Force Cheats Setup | Windows PC Install Guide',
 		setupDescription:
-			'Install {brand} on PC — activate ESP, soft aim & radar step by step. Setup guide at narakacheats.org. Check {antiCheat} status before your first match.',
-		supportTitle: 'Naraka Cheats Support | License & Setup Help',
+			'Install {brand} on PC — activate ESP, soft aim & radar step by step. Setup guide at deltaforcecheats.org. Check {antiCheat} status before your first match.',
+		supportTitle: 'Delta Force Cheats Support | License & Setup Help',
 		supportDescription:
-			'Support for license delivery, ESP setup & billing on PC. Email {email} with your order ID. Fast help at narakacheats.org/support before you play.',
-		faqTitle: 'Naraka Bladepoint Cheats FAQ | ESP, Aimbot & NEAC',
+			'Support for license delivery, ESP setup & billing on PC. Email {email} with your order ID. Fast help at deltaforcecheats.org/support before you play.',
+		faqTitle: 'Delta Force Cheats FAQ | ESP, Aimbot & ACE',
 		faqDescription:
-			'FAQ for Naraka Bladepoint cheats — delivery, setup, ranked & Showdown use, {antiCheat} updates & pricing on PC. Answers at narakacheats.org before you buy.',
-		reviewsTitle: 'Naraka Cheats Reviews | Bladepoint Hacks & Cheats',
+			'FAQ for Delta Force cheats — delivery, setup, Operations & Warfare use, {antiCheat} updates & pricing on PC. Answers at deltaforcecheats.org before you buy.',
+		reviewsTitle: 'Delta Force Cheats Reviews | Hacks & Cheats',
 		reviewsDescription:
-			'Real buyer reviews for Naraka cheats and Naraka Bladepoint hacks — ESP, soft aim, radar & {antiCheat} maintenance on PC. See license holder feedback at narakacheats.org.',
-		blogTitle: 'Naraka Blog | Guides & Patch Tips | {brand}',
+			'Real buyer reviews for Delta Force cheats and Delta Force hacks — ESP, soft aim, radar & {antiCheat} maintenance on PC. See license holder feedback at deltaforcecheats.org.',
+		blogTitle: 'Delta Force Blog | Guides & Patch Tips | {brand}',
 		blogDescription:
-			'Naraka guides — ranked tips, ESP & aimbot notes, hero tiers & {antiCheat} updates for PC. Read patch notes and buyer guides at narakacheats.org/blog.',
+			'Delta Force guides — ranked tips, ESP & aimbot notes, operator tiers & {antiCheat} updates for PC. Read patch notes and buyer guides at deltaforcecheats.org/blog.',
 	},
 
 	/** On-page marketing copy (tokens allowed) */
 	copy: {
 		tagline: 'Undetected {primaryKeyword} — ESP, aimbot, and radar for PC',
 		summary: '{brand} is an undetected {game} cheats package for Windows PC. Includes ESP, soft aim, and radar, with {antiCheat} maintenance after patches.',
-		heroLede: 'Undetected ESP, soft aim, and radar for Naraka on Windows PC.',
-		blogLabel: 'Naraka Intel',
+		heroLede: 'Undetected ESP, soft aim, and radar for Delta Force on Windows PC.',
+		blogLabel: 'Delta Force Intel',
 		ctaBuy: 'Get Access',
 		ctaBuyShort: 'Buy',
 		featuresIntro: 'Everything included in one license for {game} on Windows PC.',
 		storeIntro: 'Pick a plan. Same features on both. Instant delivery after payment.',
 		statusIntro: 'Check here after a {game} or {antiCheat} patch before you queue.',
-		previewIntro: '{brand} for Naraka — ESP wallhack, soft aim, 2D radar, and NEAC rebuilds after patches.',
+		previewIntro: '{brand} for Delta Force — ESP wallhack, soft aim, 2D radar, and ACE rebuilds after patches.',
 		setupIntro: 'Install {brand} on Windows PC after you buy. Follow these short steps.',
 		supportIntro: 'Need help with {brand}? Email {email} with your order ID.',
 		faqIntro: 'Short answers about delivery, setup, updates, and refunds.',
 		reviewsIntro:
-			'Real feedback on Naraka cheats and Naraka Bladepoint hacks — ESP, soft aim, radar, and support from {brand} buyers.',
+			'Real feedback on Delta Force cheats and Delta Force hacks — ESP, soft aim, radar, and support from {brand} buyers.',
 		chipEsp: 'ESP / wallhack',
 		chipAim: 'Soft aim',
 		chipRadar: '2D radar',
@@ -177,47 +177,47 @@ export const brand = {
 		blogImageTitle: '{brand} blog',
 		blogImageCaption: 'Tips and updates for {primaryKeyword}',
 		reviewsImageTitle: '{brand} reviews',
-		reviewsImageCaption: 'Naraka cheats & Naraka Bladepoint hacks — what buyers say about {primaryKeyword}',
+		reviewsImageCaption: 'Delta Force cheats & Delta Force hacks — what buyers say about {primaryKeyword}',
 		images: [
 			{
-				src: '/images/naraka-screenshot-01.webp',
-				title: 'Naraka ESP loot and item detection',
-				caption: 'Naraka ESP wallhack with distance-tagged loot boxes and weapons',
+				src: '/images/delta-force-screenshot-01.webp',
+				title: 'Delta Force ESP loot and item detection',
+				caption: 'Delta Force ESP wallhack with distance-tagged loot boxes and weapons',
 			},
 			{
-				src: '/images/naraka-screenshot-02.webp',
-				title: 'Naraka wallhack ESP overlay',
-				caption: 'Naraka wallhack ESP with loot tags visible through walls',
+				src: '/images/delta-force-screenshot-02.webp',
+				title: 'Delta Force wallhack ESP overlay',
+				caption: 'Delta Force wallhack ESP with loot tags visible through walls',
 			},
 			{
-				src: '/images/naraka-screenshot-03.webp',
-				title: 'Naraka cheats in-match view',
-				caption: 'Naraka gameplay session with cheats running on Windows PC',
+				src: '/images/delta-force-screenshot-03.webp',
+				title: 'Delta Force cheats in-match view',
+				caption: 'Delta Force gameplay session with cheats running on Windows PC',
 			},
 			{
-				src: '/images/naraka-screenshot-04.webp',
-				title: 'Naraka ESP player tracking',
-				caption: 'Naraka ESP showing enemy names, health, and distance through the map',
+				src: '/images/delta-force-screenshot-04.webp',
+				title: 'Delta Force ESP player tracking',
+				caption: 'Delta Force ESP showing enemy names, health, and distance through the map',
 			},
 			{
-				src: '/images/naraka-screenshot-05.webp',
-				title: 'Naraka ESP threat markers',
-				caption: 'Naraka ESP distance markers for players and loot in live matches',
+				src: '/images/delta-force-screenshot-05.webp',
+				title: 'Delta Force ESP threat markers',
+				caption: 'Delta Force ESP distance markers for players and loot in live matches',
 			},
 			{
-				src: '/images/naraka-screenshot-06.webp',
-				title: 'Naraka cheats combat ESP',
-				caption: 'Naraka cheats ESP active during a live Naraka match',
+				src: '/images/delta-force-screenshot-06.webp',
+				title: 'Delta Force cheats combat ESP',
+				caption: 'Delta Force cheats ESP active during a live Delta Force match',
 			},
 			{
-				src: '/images/naraka-screenshot-07.webp',
-				title: 'Naraka wallhack player ESP',
-				caption: 'Naraka wallhack ESP with player outlines and distance tags',
+				src: '/images/delta-force-screenshot-07.webp',
+				title: 'Delta Force wallhack player ESP',
+				caption: 'Delta Force wallhack ESP with player outlines and distance tags',
 			},
 			{
-				src: '/images/naraka-screenshot-08.webp',
-				title: 'Naraka ESP and loot ESP gameplay',
-				caption: 'Naraka ESP loot tags and wallhack overlay during ranked gameplay',
+				src: '/images/delta-force-screenshot-08.webp',
+				title: 'Delta Force ESP and loot ESP gameplay',
+				caption: 'Delta Force ESP loot tags and wallhack overlay during ranked gameplay',
 			},
 		],
 	},
@@ -246,9 +246,9 @@ export function seoTitle(topic: string): string {
 export function seoDescription(template: string): string {
 	let text = fillBrandTokens(template).trim();
 	if (text.length < 140) {
-		const pad = text.toLowerCase().includes('narakacheats.org')
-			? ' Windows PC license with NEAC maintenance after patches.'
-			: ' Compare plans and guides at narakacheats.org.';
+		const pad = text.toLowerCase().includes('deltaforcecheats.org')
+			? ' Windows PC license with ACE maintenance after patches.'
+			: ' Compare plans and guides at deltaforcecheats.org.';
 		text = `${text.replace(/[.…]+$/, '')}.${pad}`;
 	}
 	if (text.length <= 160) return text;

@@ -94,8 +94,8 @@ function main() {
 			issues.push({ rel, kind: 'og-description-mismatch' });
 		}
 
-		if (/\bneac \| neac\b/i.test(title) || /\bneac: neac\b/i.test(desc)) {
-			issues.push({ rel, kind: 'broken-neac-meta' });
+		if (/\bace \| ace\b/i.test(title) || /\bace: ace\b/i.test(desc)) {
+			issues.push({ rel, kind: 'broken-ace-meta' });
 		}
 	}
 
@@ -105,7 +105,7 @@ function main() {
 	const smPath = path.join(distDir, 'sitemap-en.xml');
 	if (fs.existsSync(smPath)) {
 		const sm = fs.readFileSync(smPath, 'utf8');
-		for (const m of sm.matchAll(/<loc>https:\/\/narakacheats\.org([^<]*)<\/loc>/g)) {
+		for (const m of sm.matchAll(/<loc>https:\/\/deltaforcecheats\.org([^<]*)<\/loc>/g)) {
 			const urlPath = m[1] || '/';
 			const fp = htmlPath(urlPath.endsWith('/') ? urlPath : `${urlPath}/`);
 			if (!fs.existsSync(path.join(distDir, fp))) continue;

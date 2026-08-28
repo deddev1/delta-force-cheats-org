@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Final pass: fix remaining Naraka references in src/. */
+/** Final pass: fix remaining Delta Force references in src/. */
 import { readFile, writeFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -8,27 +8,27 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', 's
 const REMOVE_PAGE_IDS = ['hacks', 'cheat-download', 'mod-menu', 'soft-aim', 'best-cheats', 'aimbot-hack', 'esp-hack', 'unlock-all'];
 
 const REPLACEMENTS = [
-	['narakaImages', 'narakaImages'],
-	["from '../data/naraka'", "from '../data/naraka'"],
-	["from './naraka'", "from './naraka'"],
-	['/undetected-naraka-cheats/', '/undetected-naraka-cheats/'],
-	['/naraka-wallhack/', '/naraka-wallhack/'],
-	['/naraka-radar-hack/', '/naraka-radar-hack/'],
-	['/neac-bypass/', '/neac-bypass/'],
-	['/naraka-cheats-2026/', '/naraka-cheats-2026/'],
-	['/naraka-aimbot/', '/naraka-aimbot/'],
-	['/naraka-esp/', '/naraka-esp/'],
-	['/naraka-cheats/', '/naraka-esp/'],
-	['Naraka Cheats', 'Naraka Cheats'],
-	['naraka cheats', 'naraka cheats'],
-	['thefinals wallhack', 'Naraka wallhack'],
-	['naraka radar', 'Naraka radar'],
-	['Naraka Aimbot', 'Naraka Aimbot'],
-	['Naraka ESP', 'Naraka ESP'],
-	['Naraka's, 'Naraka's],
-	['NEAC', 'NEAC'],
-	['neac', 'neac'],
-	['narakacheats.org', 'narakacheats.org'],
+	['deltaForceImages', 'deltaForceImages'],
+	["from '../data/delta-force'", "from '../data/delta-force'"],
+	["from './delta-force'", "from './delta-force'"],
+	['/undetected-delta-force-cheats/', '/undetected-delta-force-cheats/'],
+	['/delta-force-wallhack/', '/delta-force-wallhack/'],
+	['/delta-force-radar-hack/', '/delta-force-radar-hack/'],
+	['/ace-bypass/', '/ace-bypass/'],
+	['/delta-force-cheats-2026/', '/delta-force-cheats-2026/'],
+	['/delta-force-aimbot/', '/delta-force-aimbot/'],
+	['/delta-force-esp/', '/delta-force-esp/'],
+	['/delta-force-cheats/', '/delta-force-esp/'],
+	['Delta Force Cheats', 'Delta Force Cheats'],
+	['delta force cheats', 'delta force cheats'],
+	['thefinals wallhack', 'Delta Force wallhack'],
+	['delta force radar', 'Delta Force radar'],
+	['Delta Force Aimbot', 'Delta Force Aimbot'],
+	['Delta Force ESP', 'Delta Force ESP'],
+	['Delta Force's, 'Delta Force's],
+	['ACE', 'ACE'],
+	['ace', 'ace'],
+	['deltaforcecheats.org', 'deltaforcecheats.org'],
 	['operatorEsp', 'playerEsp'],
 	['extractFight', 'raidFight'],
 	['alMazrah', 'raidMap'],

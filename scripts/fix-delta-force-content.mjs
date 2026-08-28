@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
- * Second-pass cleanup: remove Isle gameplay leftovers after adapt-naraka.mjs
- * Run: node scripts/fix-naraka-content.mjs
+ * Second-pass cleanup: remove Isle gameplay leftovers after adapt-delta-force.mjs
+ * Run: node scripts/fix-delta-force-content.mjs
  */
 import { readFile, writeFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
@@ -13,34 +13,34 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const REPLACEMENTS = [
 	// Brand leftovers
 	['THE ISLE HACKS', 'RUST CHEATS'],
-	['The Isle Hacks', 'Naraka Cheats'],
-	['Isle Hacks', 'Naraka Cheats'],
-	['Isle Hack Shops', 'Naraka Cheat Shops'],
-	['Isle Hack Shop', 'Naraka Cheat Shop'],
-	['Isle Hack', 'Naraka Cheat'],
-	['Isle wallhack', 'Naraka wallhack'],
-	['Isle radar', 'Naraka radar'],
-	['Isle Wiki', 'Naraka Wiki'],
-	['Isle Intel', 'Naraka Intel'],
-	['Isle ESP', 'Naraka ESP'],
-	['Isle Aimbot', 'Naraka Aimbot'],
-	['Isle cheats', 'Naraka cheats'],
-	['Isle cheat', 'Naraka cheat'],
-	['Isle hacks', 'Naraka cheats'],
-	['Isle hack', 'Naraka cheat'],
-	['Isle esp', 'Naraka ESP'],
-	['Isle aimbot', 'Naraka Aimbot'],
-	['Two-Week Isle Hack Comparison Test', 'Two-Week Naraka Cheat Comparison Test'],
-	['Typical Budget Isle Hack Shops', 'Typical Budget Naraka Cheat Shops'],
+	['The Isle Hacks', 'Delta Force Cheats'],
+	['Isle Hacks', 'Delta Force Cheats'],
+	['Isle Hack Shops', 'Delta Force Cheat Shops'],
+	['Isle Hack Shop', 'Delta Force Cheat Shop'],
+	['Isle Hack', 'Delta Force Cheat'],
+	['Isle wallhack', 'Delta Force wallhack'],
+	['Isle radar', 'Delta Force radar'],
+	['Isle Wiki', 'Delta Force Wiki'],
+	['Isle Intel', 'Delta Force Intel'],
+	['Isle ESP', 'Delta Force ESP'],
+	['Isle Aimbot', 'Delta Force Aimbot'],
+	['Isle cheats', 'Delta Force cheats'],
+	['Isle cheat', 'Delta Force cheat'],
+	['Isle hacks', 'Delta Force cheats'],
+	['Isle hack', 'Delta Force cheat'],
+	['Isle esp', 'Delta Force ESP'],
+	['Isle aimbot', 'Delta Force Aimbot'],
+	['Two-Week Isle Hack Comparison Test', 'Two-Week Delta Force Cheat Comparison Test'],
+	['Typical Budget Isle Hack Shops', 'Typical Budget Delta Force Cheat Shops'],
 
 	// Broken doubles from partial migration
 	['PvP match matches', 'PvP matches'],
 	['raid match', 'raid'],
 	['raid matches', 'matches'],
-	['base matches and PvP matches', 'battle royale rounds and ranked matches'],
-	['base matches and PvP match matches', 'battle royale rounds and ranked matches'],
+	['base matches and PvP matches', 'Operations and Warfare matches'],
+	['base matches and PvP match matches', 'Operations and Warfare matches'],
 
-	// Isle survival mechanics → Naraka mechanics
+	// Isle survival mechanics → Delta Force mechanics
 	['herbivore and carnivore', 'solo farmers and matchers'],
 	['herbivore & carnivore', 'solo farmers & matchers'],
 	['herbivore-and-carnivore-matches', 'solo-farmer-and-raider-sessions'],
@@ -62,10 +62,10 @@ const REPLACEMENTS = [
 	['juvenile builds', 'starter kits'],
 	['juvenile or practice server', 'aim train or practice server'],
 	['spawn as a juvenile', 'spawn with a starter kit'],
-	['growth-run-aggressive', 'farming-run-aggressive'],
-	['growth-run strategies', 'farming-run strategies'],
-	['growth-run player', 'farming-run player'],
-	['growth-run meta', 'farming-run meta'],
+	['operations-aggressive', 'operations-aggressive'],
+	['operations strategies', 'operations strategies'],
+	['operations player', 'operations player'],
+	['operations meta', 'operations meta'],
 	['growth strategies', 'farming strategies'],
 	['growth aggression', 'farming aggression'],
 	['growth path', 'loot path'],
@@ -74,15 +74,15 @@ const REPLACEMENTS = [
 	['growth stat tables', 'weapon stat tables'],
 	['growth tiers', 'armor tiers'],
 	['growth timer', 'raid timer'],
-	['growth tools', 'melee combat tools'],
+	['growth tools', 'tactical combat tools'],
 	['growth instead', 'loot instead'],
 	['growth advantage', 'gear advantage'],
 	['growth goals', 'raid goals'],
 	['growth progress', 'raid progress'],
 	['growth run', 'farming run'],
 	['growth runs', 'farming runs'],
-	['Growth Runs', 'Farming Runs'],
-	['Growth Run', 'Farming Run'],
+	['Operationss', 'Farming Runs'],
+	['Operations', 'Farming Run'],
 	['farming run,', 'farming run,'],
 	['apex spawn rates', 'heli spawn rates'],
 	['apex markers', 'heli markers'],
@@ -97,11 +97,11 @@ const REPLACEMENTS = [
 	['nest routes', 'raid routes'],
 	['nest plans', 'raid plans'],
 	['nest plan', 'raid plan'],
-	['nest zones', 'combat zones'],
+	['nest zones', 'objectives and extraction points'],
 	['nest zone', 'compound zone'],
 	['nest fights', 'base fights'],
 	['nest fight', 'base fight'],
-	['nest markers', 'hero markers'],
+	['nest markers', 'operator markers'],
 	['nest awareness', 'base awareness'],
 	['nest cues', 'base cues'],
 	['nest before', 'extract before'],
@@ -112,7 +112,7 @@ const REPLACEMENTS = [
 	['carcass filters', 'loot filters'],
 	['carcass pins', 'loot pins'],
 	['carcass highlights', 'loot highlights'],
-	['carcass ESP', 'hero ESP'],
+	['carcass ESP', 'operator ESP'],
 	['carcass esp', 'loot esp'],
 	['Carcass ESP', 'Loot ESP'],
 	['carcass and water', 'loot and resources'],
@@ -152,13 +152,13 @@ const REPLACEMENTS = [
 	['survival queues', 'server queues'],
 	['survival queue', 'server queue'],
 	['survival flow', 'match flow'],
-	['survival tips', 'battle royale tips'],
+	['survival tips', 'tactical FPS tips'],
 	['survival load ins', 'raid sessions'],
 	['survival load in', 'raid session'],
 	['survival-game', 'survival'],
 	['survivalCombat', 'raidCombat'],
 	['survivalIsland', 'raidMap'],
-	['ESP markers for loot and bases in Naraka', 'ESP markers for loot and bases in Naraka'],
+	['ESP markers for loot and bases in Delta Force', 'ESP markers for loot and bases in Delta Force'],
 	['Gateway', 'Map'],
 	['Map river zones', 'monument river zones'],
 	['river banks', 'monument edges'],
@@ -211,7 +211,7 @@ const REPLACEMENTS = [
 	['main species', 'main loadout'],
 	['demote a species', 'demote a weapon'],
 	['Nest markers', 'Base markers'],
-	['nest markers', 'hero markers'],
+	['nest markers', 'operator markers'],
 	['Nest cues', 'Base cues'],
 	['nest cues', 'base cues'],
 	['Nest approaches', 'Base approaches'],
@@ -228,7 +228,7 @@ const REPLACEMENTS = [
 	['grown players', 'geared players'],
 
 	// Player tier list blog fixes
-	['Naraka player tier list for herbivore and carnivore matches', 'Naraka weapon tier list for PvP and farming matches'],
+	['Delta Force player tier list for herbivore and carnivore matches', 'Delta Force weapon tier list for PvP and farming matches'],
 	['player build comparison', 'weapon loadout comparison'],
 	['Players for Survival', 'Weapons for Raids'],
 	['What Wins Sessions', 'What Wins Raids'],
@@ -237,17 +237,17 @@ const REPLACEMENTS = [
 	['Sessions', 'Raids'],
 
 	// Misc cleanup
-	['an Naraka's, 'a Naraka's],
-	['what-is-an-naraka-wallhack', 'what-is-a-naraka-wallhack'],
-	['NEAC Anti-Cheat', 'NEAC'],
-	['24 Entertainment service health', 'Naraka server status'],
-	['24 Entertainment ships', 'Facepunch ships'],
-	['24 Entertainment (${EXT.finals})', 'Facepunch (${EXT.finals})'],
+	['an Delta Force's, 'a Delta Force's],
+	['what-is-an-delta-force-wallhack', 'what-is-a-delta-force-wallhack'],
+	['ACE Anti-Cheat', 'ACE'],
+	['Team Jade service health', 'Delta Force server status'],
+	['Team Jade ships', 'Facepunch ships'],
+	['Team Jade (${EXT.finals})', 'Facepunch (${EXT.finals})'],
 ];
 
 const TEXT_EXTENSIONS = new Set(['.ts', '.tsx', '.js', '.mjs', '.astro', '.json', '.md', '.mdc', '.txt']);
 const TARGET_DIRS = ['src', 'scripts', 'public', 'functions'];
-const SKIP_FILES = new Set(['adapt-tarkov.mjs', 'adapt-theisle.mjs', 'adapt-naraka.mjs', 'fix-naraka-content.mjs']);
+const SKIP_FILES = new Set(['adapt-tarkov.mjs', 'adapt-theisle.mjs', 'adapt-delta-force.mjs', 'fix-delta-force-content.mjs']);
 
 async function walk(dir, files = []) {
 	const entries = await readdir(dir, { withFileTypes: true });

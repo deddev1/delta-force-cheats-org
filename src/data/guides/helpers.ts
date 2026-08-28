@@ -60,8 +60,8 @@ export function absoluteGuideUrl(slug?: string): string {
 	return slug ? `${siteConfig.url}/guides/${slug}/` : base;
 }
 
-export function isNarakaGuide(guide: Pick<GuideDefinition, 'game'>): boolean {
-	return guide.game.toLowerCase() === 'naraka';
+export function isDeltaForceGuide(guide: Pick<GuideDefinition, 'game'>): boolean {
+	return guide.game.toLowerCase() === 'delta force';
 }
 
 export type GuideSitemapEntry = {
@@ -89,12 +89,12 @@ export function getGuidesSitemapEntries(): GuideSitemapEntry[] {
 
 	const posts = getAllGuides()
 		.filter((guide) => !LEGACY_GUIDE_SLUGS.has(guide.slug))
-		.filter((guide) => isNarakaGuide(guide))
+		.filter((guide) => isDeltaForceGuide(guide))
 		.map((guide) => ({
 		path: guide.canonicalPath,
 		lastmod: guide.updated,
 		changefreq: 'monthly' as const,
-		priority: isNarakaGuide(guide) ? 0.7 : 0.45,
+		priority: isDeltaForceGuide(guide) ? 0.7 : 0.45,
 		images: guide.imageUrl
 			? [
 					{

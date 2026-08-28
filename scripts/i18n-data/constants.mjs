@@ -6,39 +6,39 @@ export const LOCALES = [
 ];
 
 export const PAGE_IDS = [
-	'home', 'naraka-esp', 'naraka-aimbot', 'features', 'pricing', 'setup',
-	'updates', 'faq', 'support', 'undetected', 'wallhack', 'radar', 'neac',
+	'home', 'delta-force-esp', 'delta-force-aimbot', 'features', 'pricing', 'setup',
+	'updates', 'faq', 'support', 'undetected', 'wallhack', 'radar', 'ace',
 	'cheats-2026', 'hacks', 'cheat-download', 'mod-menu', 'soft-aim', 'best-cheats',
 	'aimbot-hack', 'esp-hack', 'unlock-all', 'privacy', 'refund', 'terms',
 ];
 
-/** Hero image per page — simple naraka cheats keyword filenames. */
+/** Hero image per page — simple delta force cheats keyword filenames. */
 export const HERO_IMAGES = {
-	home: '/images/naraka-cheats-hero-1199w.webp',
-	'naraka-esp': '/images/naraka-cheats-radar.webp',
-	'naraka-aimbot': '/images/naraka-cheats-aimbot.webp',
-	features: '/images/naraka-cheats-aimbot-view.webp',
-	pricing: '/images/naraka-cheats-session.webp',
-	setup: '/images/naraka-cheats-radar.webp',
-	updates: '/images/naraka-cheats-esp.webp',
-	faq: '/images/naraka-cheats-aimbot-view.webp',
-	support: '/images/naraka-cheats-session.webp',
-	undetected: '/images/naraka-cheats-wallhack.webp',
-	wallhack: '/images/naraka-cheats-wallhack.webp',
-	radar: '/images/naraka-cheats-radar.webp',
-	neac: '/images/naraka-cheats-aimbot.webp',
-	'cheats-2026': '/images/naraka-cheats-esp.webp',
-	hacks: '/images/naraka-cheats-combat.webp',
-	'cheat-download': '/images/naraka-cheats-session.webp',
-	'mod-menu': '/images/naraka-cheats-radar.webp',
-	'soft-aim': '/images/naraka-cheats-aimbot-view.webp',
-	'best-cheats': '/images/naraka-cheats-esp.webp',
-	'aimbot-hack': '/images/naraka-cheats-aimbot-view.webp',
-	'esp-hack': '/images/naraka-cheats-wallhack.webp',
-	'unlock-all': '/images/naraka-cheats-radar.webp',
-	privacy: '/images/naraka-cheats-aimbot.webp',
-	refund: '/images/naraka-cheats-session.webp',
-	terms: '/images/naraka-cheats-aimbot-view.webp',
+	home: '/images/delta-force-cheats-hero-1199w.webp',
+	'delta-force-esp': '/images/delta-force-cheats-radar.webp',
+	'delta-force-aimbot': '/images/delta-force-cheats-aimbot.webp',
+	features: '/images/delta-force-cheats-aimbot-view.webp',
+	pricing: '/images/delta-force-cheats-session.webp',
+	setup: '/images/delta-force-cheats-radar.webp',
+	updates: '/images/delta-force-cheats-esp.webp',
+	faq: '/images/delta-force-cheats-aimbot-view.webp',
+	support: '/images/delta-force-cheats-session.webp',
+	undetected: '/images/delta-force-cheats-wallhack.webp',
+	wallhack: '/images/delta-force-cheats-wallhack.webp',
+	radar: '/images/delta-force-cheats-radar.webp',
+	ace: '/images/delta-force-cheats-aimbot.webp',
+	'cheats-2026': '/images/delta-force-cheats-esp.webp',
+	hacks: '/images/delta-force-cheats-combat.webp',
+	'cheat-download': '/images/delta-force-cheats-session.webp',
+	'mod-menu': '/images/delta-force-cheats-radar.webp',
+	'soft-aim': '/images/delta-force-cheats-aimbot-view.webp',
+	'best-cheats': '/images/delta-force-cheats-esp.webp',
+	'aimbot-hack': '/images/delta-force-cheats-aimbot-view.webp',
+	'esp-hack': '/images/delta-force-cheats-wallhack.webp',
+	'unlock-all': '/images/delta-force-cheats-radar.webp',
+	privacy: '/images/delta-force-cheats-aimbot.webp',
+	refund: '/images/delta-force-cheats-session.webp',
+	terms: '/images/delta-force-cheats-aimbot-view.webp',
 };
 
 export const TS_HEADER = `import type { LocaleCode } from './locales';
@@ -70,7 +70,7 @@ export type LocaleUi = {
 \t\theaderArt: string; hacksPackage: string; matchFight: string; battleRoyale: string; matchMap: string;
 \t};
 };
-export type PageId = 'home' | 'naraka-esp' | 'naraka-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'neac' | 'cheats-2026' | 'hacks' | 'cheat-download' | 'mod-menu' | 'soft-aim' | 'best-cheats' | 'aimbot-hack' | 'esp-hack' | 'unlock-all' | 'privacy' | 'refund' | 'terms';
+export type PageId = 'home' | 'delta-force-esp' | 'delta-force-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'ace' | 'cheats-2026' | 'hacks' | 'cheat-download' | 'mod-menu' | 'soft-aim' | 'best-cheats' | 'aimbot-hack' | 'esp-hack' | 'unlock-all' | 'privacy' | 'refund' | 'terms';
 `;
 
 /** Clamp meta strings to SEO limits without ugly ellipsis. */
@@ -86,9 +86,9 @@ export function clampDesc(s) {
 	const MIN = 140;
 	const MAX = 160;
 	if (text.length < MIN) {
-		const pad = text.toLowerCase().includes('narakacheats.org')
-			? ' Windows PC license with NEAC maintenance after patches.'
-			: ' Compare plans and guides at narakacheats.org.';
+		const pad = text.toLowerCase().includes('deltaforcecheats.org')
+			? ' Windows PC license with ACE maintenance after patches.'
+			: ' Compare plans and guides at deltaforcecheats.org.';
 		text = `${text.replace(/[.…]+$/, '')}.${pad}`;
 	}
 	if (text.length <= MAX) return text;
@@ -110,7 +110,7 @@ export function stripZadeyoFromMeta(text) {
 		.replace(/\s*Zadeyo delivery\.?/gi, ' instant digital delivery.')
 		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
 		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy on Zadeyo/g, 'Buy Naraka Cheats')
+		.replace(/Buy on Zadeyo/g, 'Buy Delta Force Cheats')
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 }
@@ -132,20 +132,22 @@ export function section(h2, ...args) {
 
 /** Authoritative external citation helpers (open in new tab). */
 export const EXT = {
+	game:
+		'<a href="https://store.steampowered.com/app/2507950/Delta_Force/" target="_blank" rel="noopener noreferrer">Delta Force</a>',
 	activision:
-		'<a href="https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/" target="_blank" rel="noopener noreferrer">Naraka</a>',
+		'<a href="https://store.steampowered.com/app/2507950/Delta_Force/" target="_blank" rel="noopener noreferrer">Delta Force</a>',
 	rust:
-		'<a href="https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/" target="_blank" rel="noopener noreferrer">Naraka</a>',
+		'<a href="https://store.steampowered.com/app/2507950/Delta_Force/" target="_blank" rel="noopener noreferrer">Delta Force</a>',
 	finals:
-		'<a href="https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/" target="_blank" rel="noopener noreferrer">Naraka</a>',
-	naraka:
-		'<a href="https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/" target="_blank" rel="noopener noreferrer">Naraka</a>',
+		'<a href="https://store.steampowered.com/app/2507950/Delta_Force/" target="_blank" rel="noopener noreferrer">Delta Force</a>',
+	game:
+		'<a href="https://store.steampowered.com/app/2507950/Delta_Force/" target="_blank" rel="noopener noreferrer">Delta Force</a>',
 	valorant:
-		'<a href="https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/" target="_blank" rel="noopener noreferrer">Naraka</a>',
+		'<a href="https://store.steampowered.com/app/2507950/Delta_Force/" target="_blank" rel="noopener noreferrer">Delta Force</a>',
 	status:
-		'<a href="https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/" target="_blank" rel="noopener noreferrer">Naraka on Steam</a>',
+		'<a href="https://store.steampowered.com/app/2507950/news/" target="_blank" rel="noopener noreferrer">Delta Force patch notes</a>',
 	eac:
-		'<a href="https://www.naraka.com/en/" target="_blank" rel="noopener noreferrer">NEAC</a>',
-	neac:
-		'<a href="https://www.naraka.com/en/" target="_blank" rel="noopener noreferrer">NEAC</a>',
+		'<a href="https://www.pcgamingwiki.com/wiki/Delta_Force_(2024)#Anti-cheat" target="_blank" rel="noopener noreferrer">ACE anti-cheat</a>',
+	ace:
+		'<a href="https://www.pcgamingwiki.com/wiki/Delta_Force_(2024)#Anti-cheat" target="_blank" rel="noopener noreferrer">ACE anti-cheat</a>',
 };

@@ -13,8 +13,8 @@ function L(label: string): string {
 /** Topics rival {game} cheat sites cover — mapped to our canonical pages. */
 const TOPIC_LINKS = {
 	overview: { kind: 'page' as const, pageId: 'home' as const, labelKey: 'internalLinks.overview', label: L('{brand} overview') },
-	esp: { kind: 'page' as const, pageId: 'naraka-esp' as const, labelKey: 'internalLinks.esp', label: L('{game} ESP & wallhack') },
-	aimbot: { kind: 'page' as const, pageId: 'naraka-aimbot' as const, labelKey: 'internalLinks.aimbot', label: L('{game} aimbot & soft aim') },
+	esp: { kind: 'page' as const, pageId: 'delta-force-esp' as const, labelKey: 'internalLinks.esp', label: L('{game} ESP & wallhack') },
+	aimbot: { kind: 'page' as const, pageId: 'delta-force-aimbot' as const, labelKey: 'internalLinks.aimbot', label: L('{game} aimbot & soft aim') },
 	radar: { kind: 'page' as const, pageId: 'radar' as const, labelKey: 'internalLinks.radar', label: L('{game} radar hack') },
 	features: { kind: 'page' as const, pageId: 'features' as const, labelKey: 'internalLinks.features', label: L('Full {game} feature list') },
 	pricing: { kind: 'page' as const, pageId: 'pricing' as const, labelKey: 'internalLinks.pricing', label: 'Store & pricing' },
@@ -31,10 +31,10 @@ const TOPIC_LINKS = {
 		labelKey: 'internalLinks.undetected',
 		label: L('Undetected {game} cheats'),
 	},
-	neac: {
+	ace: {
 		kind: 'page' as const,
-		pageId: 'neac' as const,
-		labelKey: 'internalLinks.neac',
+		pageId: 'ace' as const,
+		labelKey: 'internalLinks.ace',
 		label: L('{antiCheat} bypass guide'),
 	},
 } satisfies Record<string, InternalLinkTarget>;
@@ -62,7 +62,7 @@ export const relatedLinksByPageId: Partial<Record<PageId, InternalLinkTarget[]>>
 		TOPIC_LINKS.setup,
 		TOPIC_LINKS.status,
 	],
-	'naraka-esp': [
+	'delta-force-esp': [
 		TOPIC_LINKS.overview,
 		TOPIC_LINKS.aimbot,
 		TOPIC_LINKS.radar,
@@ -72,7 +72,7 @@ export const relatedLinksByPageId: Partial<Record<PageId, InternalLinkTarget[]>>
 		TOPIC_LINKS.status,
 		TOPIC_LINKS.blog,
 	],
-	'naraka-aimbot': [
+	'delta-force-aimbot': [
 		TOPIC_LINKS.overview,
 		TOPIC_LINKS.esp,
 		TOPIC_LINKS.radar,
@@ -148,14 +148,14 @@ export const relatedLinksByPageId: Partial<Record<PageId, InternalLinkTarget[]>>
 	refund: [TOPIC_LINKS.pricing, TOPIC_LINKS.support, TOPIC_LINKS.faq],
 	terms: [TOPIC_LINKS.overview, TOPIC_LINKS.support, TOPIC_LINKS.faq],
 	undetected: [
-		TOPIC_LINKS.neac,
+		TOPIC_LINKS.ace,
 		TOPIC_LINKS.status,
 		TOPIC_LINKS.hacks,
 		TOPIC_LINKS.features,
 		TOPIC_LINKS.pricing,
 		TOPIC_LINKS.faq,
 	],
-	neac: [
+	ace: [
 		TOPIC_LINKS.undetected,
 		TOPIC_LINKS.status,
 		TOPIC_LINKS.hacks,
@@ -228,7 +228,7 @@ const blogCategoryLinks: Record<string, InternalLinkTarget[]> = {
 	],
 	Undetected: [
 		TOPIC_LINKS.undetected,
-		TOPIC_LINKS.neac,
+		TOPIC_LINKS.ace,
 		TOPIC_LINKS.hacks,
 		TOPIC_LINKS.status,
 		TOPIC_LINKS.setup,

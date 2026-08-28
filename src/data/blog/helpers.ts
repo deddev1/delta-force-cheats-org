@@ -1,5 +1,5 @@
 import { siteConfig } from '../site';
-import { narakaImages } from '../naraka';
+import { deltaForceImages } from '../delta-force';
 import { blogSitemapImageMeta } from '../brand-sitemap';
 import {
 	defaultLocale,
@@ -12,20 +12,20 @@ import type { BlogImageKey, BlogPostDefinition, BlogTranslation, ResolvedBlogPos
 import { blogPosts as rawBlogPosts } from './posts.generated';
 
 const imageMap: Record<BlogImageKey, string> = {
-	hero: narakaImages.espWallhack,
-	espWallhack: narakaImages.espWallhack,
-	aimbotCombat: narakaImages.aimbotCombat,
-	aimbotSkeleton: narakaImages.aimbotSkeleton,
-	squadFight: narakaImages.aimbotCombat,
-	headerArt: narakaImages.playerEsp,
-	hacksPackage: narakaImages.espWallhack,
-	playerEsp: narakaImages.playerEsp,
-	raidFight: narakaImages.aimbotCombat,
-	raidCombat: narakaImages.hacksCombat,
-	raidMapMap: narakaImages.espWallhack,
+	hero: deltaForceImages.espWallhack,
+	espWallhack: deltaForceImages.espWallhack,
+	aimbotCombat: deltaForceImages.aimbotCombat,
+	aimbotSkeleton: deltaForceImages.aimbotSkeleton,
+	squadFight: deltaForceImages.aimbotCombat,
+	headerArt: deltaForceImages.playerEsp,
+	hacksPackage: deltaForceImages.espWallhack,
+	playerEsp: deltaForceImages.playerEsp,
+	raidFight: deltaForceImages.aimbotCombat,
+	raidCombat: deltaForceImages.hacksCombat,
+	raidMapMap: deltaForceImages.espWallhack,
 };
 
-const FALLBACK_BLOG_IMAGE = narakaImages.espWallhack;
+const FALLBACK_BLOG_IMAGE = deltaForceImages.espWallhack;
 
 function expandTranslations(
 	translations: Partial<Record<LocaleCode, BlogTranslation>> & { en: BlogTranslation },
@@ -206,7 +206,7 @@ export function getBlogSitemapEntriesForLocale(locale: LocaleCode) {
 	for (const post of blogPosts) {
 		const t = post.translations[locale];
 		const imageSrc = getBlogImageSrc(post.imageKey);
-		const isProductPost = /Naraka Cheats|Aimbot|ESP|Undetected|Comparisons/i.test(post.category);
+		const isProductPost = /Delta Force Cheats|Aimbot|ESP|Undetected|Comparisons/i.test(post.category);
 		entries.push({
 			path: getBlogPostPath(locale, t.slug),
 			lastmod: post.updated,

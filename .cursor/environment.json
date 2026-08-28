@@ -1,10 +1,10 @@
 {
-  "name": "Naraka Cheats",
+  "name": "Delta Force Cheats",
   "install": "npm ci && npm run build",
   "start": "npm run localhost",
   "ports": [
     {
-      "name": "Naraka Cheats site",
+      "name": "Delta Force Cheats site",
       "port": 5173
     }
   ],

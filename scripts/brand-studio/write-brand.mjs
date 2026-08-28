@@ -71,32 +71,32 @@ const SITEMAP_TEXT_KEYS = [
 
 const DEFAULT_SITEMAP_IMAGES = [
 	{
-		src: '/images/naraka-esp-player-tags.webp',
+		src: '/images/delta-force-esp-player-tags.webp',
 		title: '{primaryKeyword} ESP',
 		caption: 'See players with {primaryKeyword}',
 	},
 	{
-		src: '/images/naraka-wallhack-skeleton.webp',
+		src: '/images/delta-force-wallhack-skeleton.webp',
 		title: '{primaryKeyword} wallhack',
 		caption: 'See through walls with {primaryKeyword}',
 	},
 	{
-		src: '/images/naraka-aimbot-sniper.webp',
+		src: '/images/delta-force-aimbot-sniper.webp',
 		title: '{primaryKeyword} aimbot',
 		caption: 'Aimbot in {primaryKeyword}',
 	},
 	{
-		src: '/images/naraka-aimbot-skeleton.webp',
+		src: '/images/delta-force-aimbot-skeleton.webp',
 		title: '{primaryKeyword} aimbot view',
 		caption: 'Aimbot bone view in {primaryKeyword}',
 	},
 	{
-		src: '/images/naraka-esp-radar.webp',
+		src: '/images/delta-force-esp-radar.webp',
 		title: '{primaryKeyword} radar',
 		caption: 'Radar map in {primaryKeyword}',
 	},
 	{
-		src: '/images/naraka-cheats-combat.webp',
+		src: '/images/delta-force-cheats-combat.webp',
 		title: '{primaryKeyword} in a fight',
 		caption: 'Fight view with {primaryKeyword}',
 	},
@@ -364,10 +364,10 @@ export function validateBrandPayload(body) {
 	const lifetime = price(b.lifetimePrice ?? b.lifetime);
 	const monthlyLabel = soft(b.monthlyLabel, 'Monthly', 40);
 	const lifetimeLabel = soft(b.lifetimeLabel, 'Lifetime', 40);
-	const logo = assetPath(b.logo ?? '/images/naraka-cheats-logo.webp');
-	const logoRaster = assetPath(b.logoRaster ?? '/images/naraka-cheats-logo.png');
-	const defaultOgImage = assetPath(b.defaultOgImage ?? '/images/naraka-cheats-combat.webp');
-	const heroImage = assetPath(b.heroImage ?? '/images/naraka-hero-banner.webp');
+	const logo = assetPath(b.logo ?? '/images/delta-force-cheats-logo.webp');
+	const logoRaster = assetPath(b.logoRaster ?? '/images/delta-force-cheats-logo.png');
+	const defaultOgImage = assetPath(b.defaultOgImage ?? '/images/delta-force-cheats-combat.webp');
+	const heroImage = assetPath(b.heroImage ?? '/images/delta-force-hero-banner.webp');
 	const logoAlt = soft(b.logoAlt, `${name || 'Brand'} logo`, 120);
 	const logoW = price(b.logoRasterWidth ?? 512) ?? 512;
 	const logoH = price(b.logoRasterHeight ?? 512) ?? 512;

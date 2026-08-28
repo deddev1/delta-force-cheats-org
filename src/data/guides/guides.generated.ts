@@ -496,7 +496,7 @@ export const guides: GuideDefinition[] = [
 			h2: "Performance, settings, and fair-play context",
 			paragraphs: [
 				"Stable FPS and clean audio matter in League of Legends. Cap background apps, use a sensible sensitivity, and keep drivers current so you are not fighting input lag during clutch moments. Small setting tweaks often produce bigger gains than switching gear every month.",
-				"League of Legends uses NEAC kernel driver on PC. Respect server rules, avoid sketchy downloads, and treat third-party tools as high-risk — policy changes and ban waves can land without warning after major patches."
+				"League of Legends uses ACE kernel driver on PC. Respect server rules, avoid sketchy downloads, and treat third-party tools as high-risk — policy changes and ban waves can land without warning after major patches."
 			]
 		},
 		{
@@ -1738,7 +1738,7 @@ export const guides: GuideDefinition[] = [
 			h2: "Performance, settings, and fair-play context",
 			paragraphs: [
 				"Stable FPS and clean audio matter in Hunt: Showdown. Cap background apps, use a sensible sensitivity, and keep drivers current so you are not fighting input lag during clutch moments. Small setting tweaks often produce bigger gains than switching gear every month.",
-				"Hunt: Showdown uses Easy Anti-Cheat with manual review. Respect server rules, avoid sketchy downloads, and treat third-party tools as high-risk — policy changes and ban waves can land without warning after major patches."
+				"Hunt: Warfare uses Easy Anti-Cheat with manual review. Respect server rules, avoid sketchy downloads, and treat third-party tools as high-risk — policy changes and ban waves can land without warning after major patches."
 			]
 		},
 		{
@@ -1784,7 +1784,7 @@ export const guides: GuideDefinition[] = [
 			h2: "Performance, settings, and fair-play context",
 			paragraphs: [
 				"Stable FPS and clean audio matter in League of Legends. Cap background apps, use a sensible sensitivity, and keep drivers current so you are not fighting input lag during clutch moments. Small setting tweaks often produce bigger gains than switching gear every month.",
-				"League of Legends uses NEAC kernel driver on PC. Respect server rules, avoid sketchy downloads, and treat third-party tools as high-risk — policy changes and ban waves can land without warning after major patches."
+				"League of Legends uses ACE kernel driver on PC. Respect server rules, avoid sketchy downloads, and treat third-party tools as high-risk — policy changes and ban waves can land without warning after major patches."
 			]
 		},
 		{
@@ -2060,7 +2060,7 @@ export const guides: GuideDefinition[] = [
 			h2: "Performance, settings, and fair-play context",
 			paragraphs: [
 				"Stable FPS and clean audio matter in Hunt: Showdown. Cap background apps, use a sensible sensitivity, and keep drivers current so you are not fighting input lag during clutch moments. Small setting tweaks often produce bigger gains than switching gear every month.",
-				"Hunt: Showdown uses Easy Anti-Cheat with manual review. Respect server rules, avoid sketchy downloads, and treat third-party tools as high-risk — policy changes and ban waves can land without warning after major patches."
+				"Hunt: Warfare uses Easy Anti-Cheat with manual review. Respect server rules, avoid sketchy downloads, and treat third-party tools as high-risk — policy changes and ban waves can land without warning after major patches."
 			]
 		},
 		{
@@ -2612,7 +2612,7 @@ export const guides: GuideDefinition[] = [
 			h2: "Performance, settings, and fair-play context",
 			paragraphs: [
 				"Stable FPS and clean audio matter in League of Legends. Cap background apps, use a sensible sensitivity, and keep drivers current so you are not fighting input lag during clutch moments. Small setting tweaks often produce bigger gains than switching gear every month.",
-				"League of Legends uses NEAC kernel driver on PC. Respect server rules, avoid sketchy downloads, and treat third-party tools as high-risk — policy changes and ban waves can land without warning after major patches."
+				"League of Legends uses ACE kernel driver on PC. Respect server rules, avoid sketchy downloads, and treat third-party tools as high-risk — policy changes and ban waves can land without warning after major patches."
 			]
 		},
 		{

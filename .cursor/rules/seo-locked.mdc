@@ -65,12 +65,12 @@ Do **not** invent a new SEO architecture, title pattern, or dense paragraph styl
 ## Bad vs good
 
 ```text
-❌ BAD H1: Ultimate Undetected Naraka Cheats Feature Control List 2026
+❌ BAD H1: Ultimate Undetected Delta Force Cheats Feature Control List 2026
 ✅ GOOD H1: Features
 
-❌ BAD intro: Naraka Cheats is the undetected naraka cheats package also searched as naraka cheats…
-✅ GOOD intro: Everything included in one license for Naraka on Windows PC.
+❌ BAD intro: Delta Force Cheats is the undetected delta force cheats package also searched as delta force cheats…
+✅ GOOD intro: Everything included in one license for Delta Force on Windows PC.
 
-❌ BAD: Hardcode "Naraka Cheats" in Hero.astro
+❌ BAD: Hardcode "Delta Force Cheats" in Hero.astro
 ✅ GOOD: {siteConfig.name}
 ```

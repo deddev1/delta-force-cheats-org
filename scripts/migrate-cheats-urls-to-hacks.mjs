@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Migrate URL slugs from naraka-cheats → naraka-cheats (paths + sitemaps).
+ * Migrate URL slugs from delta-force-cheats → delta-force-cheats (paths + sitemaps).
  * Generates 301 redirects in functions/path-redirects.json from old routing slugs.
  * Run: node scripts/migrate-cheats-urls-to-hacks.mjs
  */
@@ -19,90 +19,90 @@ const SKIP_DIRS = new Set([
 	'tmp',
 	'.astro',
 	'the-finals-cheats-org',
-	'naraka-cheats-org-audit',
+	'delta-force-cheats-org-audit',
 ]);
 const SKIP_FILES = new Set(['package-lock.json', 'migrate-cheats-urls-to-hacks.mjs']);
 
 /** Ordered — longest / most specific first. Image asset names are excluded via guard. */
 const SLUG_REPLACEMENTS = [
-	['undetected-naraka-cheats-eac', 'undetected-naraka-cheats-eac'],
-	['undetected-naraka-cheats', 'undetected-naraka-cheats'],
-	['unentdeckte-naraka-cheats', 'unentdeckte-naraka-cheats'],
-	['buy-undetected-naraka-cheats-windows-pc', 'buy-undetected-naraka-cheats-windows-pc'],
-	['neac-anti-cheat-and-naraka-cheats', 'neac-anti-cheat-and-naraka-cheats'],
-	['are-naraka-cheats-undetected-in-2026', 'are-naraka-cheats-undetected-in-2026'],
-	['what-are-naraka-cheats', 'what-are-naraka-cheats'],
-	['does-naraka-cheats-include-radar-hack', 'does-naraka-cheats-include-radar-hack'],
-	['naraka-cheats-vs-ghostware-features-pricing', 'naraka-cheats-vs-ghostware-features-pricing'],
-	['naraka-cheats-vs-cheatvault-comparison', 'naraka-cheats-vs-cheatvault-comparison'],
-	['elitefn-vs-naraka-cheats-two-week-test', 'elitefn-vs-naraka-cheats-two-week-test'],
-	['naraka-cheats-complete-guide-2026', 'naraka-cheats-complete-guide-2026'],
-	['naraka-cheats-2026-whats-new', 'naraka-cheats-2026-whats-new'],
-	['naraka-cheats-buyers-guide', 'naraka-cheats-buyers-guide'],
-	['best-naraka-cheats', 'best-naraka-cheats'],
-	['beste-naraka-cheats', 'beste-naraka-cheats'],
-	['basta-naraka-cheats', 'basta-naraka-cheats'],
-	['nejlepsi-naraka-cheats', 'nejlepsi-naraka-cheats'],
-	['naraka-cheats-2026', 'naraka-cheats-2026'],
-	['naraka-cheats-funktionen', 'naraka-cheats-funktionen'],
-	['naraka-cheats-functies', 'naraka-cheats-functies'],
-	['naraka-cheats-funkce', 'naraka-cheats-funkce'],
-	['naraka-cheats-funktioner', 'naraka-cheats-funktioner'],
-	['naraka-cheats-features', 'naraka-cheats-features'],
-	['naraka-cheats-preise', 'naraka-cheats-preise'],
-	['naraka-cheats-prijzen', 'naraka-cheats-prijzen'],
-	['naraka-cheats-priser', 'naraka-cheats-priser'],
-	['naraka-cheats-pricing', 'naraka-cheats-pricing'],
-	['naraka-cheats-ceny', 'naraka-cheats-ceny'],
-	['naraka-cheats-installation', 'naraka-cheats-installation'],
-	['naraka-cheats-installatie', 'naraka-cheats-installatie'],
-	['naraka-cheats-instalace', 'naraka-cheats-instalace'],
-	['naraka-cheats-setup', 'naraka-cheats-setup'],
-	['naraka-cheats-updates', 'naraka-cheats-updates'],
-	['naraka-cheats-uppdateringar', 'naraka-cheats-uppdateringar'],
-	['naraka-cheats-aktualizace', 'naraka-cheats-aktualizace'],
-	['naraka-cheats-faq', 'naraka-cheats-faq'],
-	['naraka-cheats-support', 'naraka-cheats-support'],
-	['naraka-cheats-podpora', 'naraka-cheats-podpora'],
-	['niewykrywalne-cheats-naraka', 'niewykrywalne-cheats-naraka'],
-	['najlepsze-cheats-naraka', 'najlepsze-hacks-valorant'],
-	['melhores-cheats-naraka', 'melhores-hacks-valorant'],
-	['cele-mai-bune-cheats-naraka', 'cele-mai-bune-hacks-valorant'],
-	['cheats-naraka-indetectaveis', 'cheats-naraka-indetectaveis'],
-	['cheats-naraka-nedetectabile', 'cheats-naraka-nedetectabile'],
-	['cheats-naraka-2026', 'hacks-valorant-2026'],
-	['hacks-cheats-naraka', 'hacks-valorant'],
-	['faq-cheats-naraka', 'faq-hacks-valorant'],
-	['functii-cheats-naraka', 'functii-hacks-valorant'],
-	['preturi-cheats-naraka', 'preturi-hacks-valorant'],
-	['actualizari-cheats-naraka', 'actualizari-hacks-valorant'],
-	['instalare-cheats-naraka', 'instalare-hacks-valorant'],
-	['suport-cheats-naraka', 'suport-hacks-valorant'],
-	['recursos-cheats-naraka', 'recursos-cheats-naraka'],
-	['precos-cheats-naraka', 'precos-hacks-valorant'],
-	['atualizacoes-cheats-naraka', 'atualizacoes-hacks-valorant'],
-	['instalacao-cheats-naraka', 'instalacao-hacks-valorant'],
-	['suporte-cheats-naraka', 'suporte-hacks-valorant'],
-	['download-cheats-naraka', 'download-hacks-valorant'],
-	['menu-mod-cheats-naraka', 'menu-mod-hacks-valorant'],
-	['meniu-mod-cheats-naraka', 'meniu-mod-hacks-valorant'],
-	['soft-aim-cheats-naraka', 'soft-aim-hacks-valorant'],
-	['aimbot-hack-cheats-naraka', 'aimbot-hack-hacks-valorant'],
-	['esp-hack-cheats-naraka', 'esp-hack-hacks-valorant'],
-	['unlock-all-cheats-naraka', 'unlock-all-hacks-valorant'],
-	['wallhack-cheats-naraka', 'wallhack-hacks-valorant'],
-	['radar-hack-cheats-naraka', 'radar-hack-hacks-valorant'],
-	['descarcare-cheats-naraka', 'descarcare-hacks-valorant'],
-	['cheats-naraka-esp', 'hacks-naraka-esp'],
-	['cheats-naraka-aimbot', 'hacks-naraka-aimbot'],
-	['neac-bypass-cheats', 'neac-bypass-hacks'],
-	['/naraka-cheats/', '/naraka-cheats/'],
-	['/naraka-cheats', '/naraka-cheats'],
-	["'naraka-cheats'", "'naraka-cheats'"],
-	['"naraka-cheats"', '"naraka-cheats"'],
+	['undetected-delta-force-cheats-eac', 'undetected-delta-force-cheats-eac'],
+	['undetected-delta-force-cheats', 'undetected-delta-force-cheats'],
+	['unentdeckte-delta-force-cheats', 'unentdeckte-delta-force-cheats'],
+	['buy-undetected-delta-force-cheats-windows-pc', 'buy-undetected-delta-force-cheats-windows-pc'],
+	['ace-anti-cheat-and-delta-force-cheats', 'ace-anti-cheat-and-delta-force-cheats'],
+	['are-delta-force-cheats-undetected-in-2026', 'are-delta-force-cheats-undetected-in-2026'],
+	['what-are-delta-force-cheats', 'what-are-delta-force-cheats'],
+	['does-delta-force-cheats-include-radar-hack', 'does-delta-force-cheats-include-radar-hack'],
+	['delta-force-cheats-vs-ghostware-features-pricing', 'delta-force-cheats-vs-ghostware-features-pricing'],
+	['delta-force-cheats-vs-cheatvault-comparison', 'delta-force-cheats-vs-cheatvault-comparison'],
+	['elitefn-vs-delta-force-cheats-two-week-test', 'elitefn-vs-delta-force-cheats-two-week-test'],
+	['delta-force-cheats-complete-guide-2026', 'delta-force-cheats-complete-guide-2026'],
+	['delta-force-cheats-2026-whats-new', 'delta-force-cheats-2026-whats-new'],
+	['delta-force-cheats-buyers-guide', 'delta-force-cheats-buyers-guide'],
+	['best-delta-force-cheats', 'best-delta-force-cheats'],
+	['beste-delta-force-cheats', 'beste-delta-force-cheats'],
+	['basta-delta-force-cheats', 'basta-delta-force-cheats'],
+	['nejlepsi-delta-force-cheats', 'nejlepsi-delta-force-cheats'],
+	['delta-force-cheats-2026', 'delta-force-cheats-2026'],
+	['delta-force-cheats-funktionen', 'delta-force-cheats-funktionen'],
+	['delta-force-cheats-functies', 'delta-force-cheats-functies'],
+	['delta-force-cheats-funkce', 'delta-force-cheats-funkce'],
+	['delta-force-cheats-funktioner', 'delta-force-cheats-funktioner'],
+	['delta-force-cheats-features', 'delta-force-cheats-features'],
+	['delta-force-cheats-preise', 'delta-force-cheats-preise'],
+	['delta-force-cheats-prijzen', 'delta-force-cheats-prijzen'],
+	['delta-force-cheats-priser', 'delta-force-cheats-priser'],
+	['delta-force-cheats-pricing', 'delta-force-cheats-pricing'],
+	['delta-force-cheats-ceny', 'delta-force-cheats-ceny'],
+	['delta-force-cheats-installation', 'delta-force-cheats-installation'],
+	['delta-force-cheats-installatie', 'delta-force-cheats-installatie'],
+	['delta-force-cheats-instalace', 'delta-force-cheats-instalace'],
+	['delta-force-cheats-setup', 'delta-force-cheats-setup'],
+	['delta-force-cheats-updates', 'delta-force-cheats-updates'],
+	['delta-force-cheats-uppdateringar', 'delta-force-cheats-uppdateringar'],
+	['delta-force-cheats-aktualizace', 'delta-force-cheats-aktualizace'],
+	['delta-force-cheats-faq', 'delta-force-cheats-faq'],
+	['delta-force-cheats-support', 'delta-force-cheats-support'],
+	['delta-force-cheats-podpora', 'delta-force-cheats-podpora'],
+	['niewykrywalne-cheats-delta-force', 'niewykrywalne-cheats-delta-force'],
+	['najlepsze-cheats-delta-force', 'najlepsze-hacks-valorant'],
+	['melhores-cheats-delta-force', 'melhores-hacks-valorant'],
+	['cele-mai-bune-cheats-delta-force', 'cele-mai-bune-hacks-valorant'],
+	['cheats-delta-force-indetectaveis', 'cheats-delta-force-indetectaveis'],
+	['cheats-delta-force-nedetectabile', 'cheats-delta-force-nedetectabile'],
+	['cheats-delta-force-2026', 'hacks-valorant-2026'],
+	['hacks-cheats-delta-force', 'hacks-valorant'],
+	['faq-cheats-delta-force', 'faq-hacks-valorant'],
+	['functii-cheats-delta-force', 'functii-hacks-valorant'],
+	['preturi-cheats-delta-force', 'preturi-hacks-valorant'],
+	['actualizari-cheats-delta-force', 'actualizari-hacks-valorant'],
+	['instalare-cheats-delta-force', 'instalare-hacks-valorant'],
+	['suport-cheats-delta-force', 'suport-hacks-valorant'],
+	['recursos-cheats-delta-force', 'recursos-cheats-delta-force'],
+	['precos-cheats-delta-force', 'precos-hacks-valorant'],
+	['atualizacoes-cheats-delta-force', 'atualizacoes-hacks-valorant'],
+	['instalacao-cheats-delta-force', 'instalacao-hacks-valorant'],
+	['suporte-cheats-delta-force', 'suporte-hacks-valorant'],
+	['download-cheats-delta-force', 'download-hacks-valorant'],
+	['menu-mod-cheats-delta-force', 'menu-mod-hacks-valorant'],
+	['meniu-mod-cheats-delta-force', 'meniu-mod-hacks-valorant'],
+	['soft-aim-cheats-delta-force', 'soft-aim-hacks-valorant'],
+	['aimbot-hack-cheats-delta-force', 'aimbot-hack-hacks-valorant'],
+	['esp-hack-cheats-delta-force', 'esp-hack-hacks-valorant'],
+	['unlock-all-cheats-delta-force', 'unlock-all-hacks-valorant'],
+	['wallhack-cheats-delta-force', 'wallhack-hacks-valorant'],
+	['radar-hack-cheats-delta-force', 'radar-hack-hacks-valorant'],
+	['descarcare-cheats-delta-force', 'descarcare-hacks-valorant'],
+	['cheats-delta-force-esp', 'hacks-delta-force-esp'],
+	['cheats-delta-force-aimbot', 'hacks-delta-force-aimbot'],
+	['ace-bypass-cheats', 'ace-bypass-hacks'],
+	['/delta-force-cheats/', '/delta-force-cheats/'],
+	['/delta-force-cheats', '/delta-force-cheats'],
+	["'delta-force-cheats'", "'delta-force-cheats'"],
+	['"delta-force-cheats"', '"delta-force-cheats"'],
 ];
 
-const IMAGE_ASSET_PREFIX = '/images/naraka-cheats';
+const IMAGE_ASSET_PREFIX = '/images/delta-force-cheats';
 
 function applySlugReplacements(text) {
 	let out = text;
@@ -112,7 +112,7 @@ function applySlugReplacements(text) {
 			.split('\n')
 			.map((line) => {
 				// Never rewrite static image asset filenames.
-				if (line.includes('/images/naraka-cheats')) {
+				if (line.includes('/images/delta-force-cheats')) {
 					return line;
 				}
 				return line.split(from).join(to);
@@ -178,10 +178,10 @@ function shouldProcess(file) {
 }
 
 const DIR_RENAMES = [
-	['src/pages/naraka-cheats', 'src/pages/naraka-cheats'],
-	['src/pages/best-naraka-cheats', 'src/pages/best-naraka-cheats'],
-	['src/pages/undetected-naraka-cheats', 'src/pages/undetected-naraka-cheats'],
-	['src/pages/naraka-cheats-2026', 'src/pages/naraka-cheats-2026'],
+	['src/pages/delta-force-cheats', 'src/pages/delta-force-cheats'],
+	['src/pages/best-delta-force-cheats', 'src/pages/best-delta-force-cheats'],
+	['src/pages/undetected-delta-force-cheats', 'src/pages/undetected-delta-force-cheats'],
+	['src/pages/delta-force-cheats-2026', 'src/pages/delta-force-cheats-2026'],
 ];
 
 // --- Parse routing before migration ---
@@ -205,8 +205,8 @@ for (const file of files) {
 // Fix duplicate check in routing.ts
 let routing = await readFile(ROUTING, 'utf8');
 routing = routing.replace(
-	"if (withSlash === '/naraka-cheats/' || withSlash === '/naraka-cheats/')",
-	"if (withSlash === '/naraka-cheats/' || withSlash === '/naraka-cheats/')",
+	"if (withSlash === '/delta-force-cheats/' || withSlash === '/delta-force-cheats/')",
+	"if (withSlash === '/delta-force-cheats/' || withSlash === '/delta-force-cheats/')",
 );
 await writeFile(ROUTING, routing, 'utf8');
 

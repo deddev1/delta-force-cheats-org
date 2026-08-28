@@ -207,7 +207,7 @@ const REPLACEMENTS = [
 	['eac-anti-cheat-and-isle-hacks', 'eac-anti-cheat-and-rust-cheats'],
 	['buy-undetected-isle-hacks-windows-pc', 'buy-undetected-rust-cheats-windows-pc'],
 	['isle-soft-aim-review', 'rust-soft-aim-review'],
-	['isle-esp-growth-run-review', 'rust-esp-farming-run-review'],
+	['isle-esp-operations-review', 'rust-esp-operations-review'],
 	['isle-cloud-dma-review', 'rust-cloud-dma-review'],
 	['isle-hack-setup-review', 'rust-cheat-setup-review'],
 	['isle-carcass-esp-review', 'rust-loot-esp-review'],

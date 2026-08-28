@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Ensures every sitemap page URL uses the canonical apex from brand.ts (narakacheats.org).
+ * Ensures every sitemap page URL uses the canonical apex from brand.ts (deltaforcecheats.org).
  * Run after build: node scripts/validate-sitemap-canonical-domain.mjs
  */
 import { readFileSync, readdirSync, statSync } from 'node:fs';

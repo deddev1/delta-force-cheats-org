@@ -1,5 +1,5 @@
 {
-	"name": "naraka-cheats",
+	"name": "delta-force-cheats",
 	"type": "module",
 	"version": "1.0.0",
 	"engines": {
@@ -19,10 +19,10 @@
 		"dev:status": "astro dev status",
 		"dev:logs": "astro dev logs",
 		"optimize:images": "node scripts/optimize-responsive-images.mjs",
-		"fetch:images": "node scripts/fetch-naraka-images.mjs",
-		"fetch:hero": "node scripts/fetch-naraka-hero.mjs",
+		"fetch:images": "node scripts/fetch-delta-force-images.mjs",
+		"fetch:hero": "node scripts/fetch-delta-force-hero.mjs",
 		"fetch:steam-hero": "node scripts/fetch-steam-hero.mjs",
-		"fetch:screenshots": "node scripts/import-naraka-screenshots.mjs",
+		"fetch:screenshots": "node scripts/import-delta-force-screenshots.mjs",
 		"generate:brand": "node scripts/generate-brand-assets.mjs",
 		"preview": "astro preview --host 0.0.0.0 --port 3000",
 		"preview:4321": "astro preview --host 0.0.0.0 --port 4321",
@@ -30,7 +30,7 @@
 		"generate:i18n": "node scripts/generate-i18n-content.mjs && node scripts/generate-locale-translations.mjs",
 		"postinstall": "node scripts/ensure-dist-for-workers-ci.mjs",
 		"deploy": "npm run build && wrangler deploy",
-		"pages:deploy": "wrangler pages deploy dist --project-name=narakacheats",
+		"pages:deploy": "wrangler pages deploy dist --project-name=deltaforcecheats",
 		"astro": "astro"
 	},
 	"dependencies": {

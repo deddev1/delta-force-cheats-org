@@ -9,17 +9,17 @@ const imagesDir = path.resolve('public/images');
 const publicDir = path.resolve('public');
 
 /**
- * Naraka gallery shots — filenames include primary SEO keywords
+ * Delta Force gallery shots — filenames include primary SEO keywords
  * (rust, cheats, esp, aimbot, wallhack, survival, etc.)
  */
 const KEYWORD_ASSETS = [
-	{ file: 'the-naraka-cheats-hero.webp', url: `${CDN_GALLERY}/rust-gameplay-screenshots-2024_s2qs.1400.jpg` },
-	{ file: 'naraka-cheats-cover.webp', url: `${CDN_B}/rust-survival-chapter-5-season-1-screenshot-a-1920x_xkzh.1400.jpg` },
+	{ file: 'the-delta-force-cheats-hero.webp', url: `${CDN_GALLERY}/rust-gameplay-screenshots-2024_s2qs.1400.jpg` },
+	{ file: 'delta-force-cheats-cover.webp', url: `${CDN_B}/rust-survival-chapter-5-season-1-screenshot-a-1920x_xkzh.1400.jpg` },
 	{ file: 'rust-loadout-builder.webp', url: `${CDN_B}/rust-survival-chapter-5-season-1-screenshot-b-1920x_8z8k.1400.jpg` },
-	{ file: 'the-naraka-cheats-aimbot-combat.webp', url: `${CDN_B}/rust-survival-chapter-5-season-1-screenshot-c-1920x_vu5r.1400.jpg` },
+	{ file: 'the-delta-force-cheats-aimbot-combat.webp', url: `${CDN_B}/rust-survival-chapter-5-season-1-screenshot-c-1920x_vu5r.1400.jpg` },
 	{ file: 'rust-pack-fight.webp', url: `${CDN_B}/rust-survival-chapter-5-season-1-screenshot-d-1920x_mzsk.1400.jpg` },
-	{ file: 'the-naraka-cheats-esp-wallhack.webp', url: `${CDN_B}/rust-survival-chapter-5-season-1-train-1920x1080-a1_1nkx.1400.jpg` },
-	{ file: 'naraka-cheats-package.webp', url: 'https://sm.ign.com/t/ign_latam/gallery/f/rust-c/rust-chapter-5-underground-images_5h3j.1400.jpg' },
+	{ file: 'the-delta-force-cheats-esp-wallhack.webp', url: `${CDN_B}/rust-survival-chapter-5-season-1-train-1920x1080-a1_1nkx.1400.jpg` },
+	{ file: 'delta-force-cheats-package.webp', url: 'https://sm.ign.com/t/ign_latam/gallery/f/rust-c/rust-chapter-5-underground-images_5h3j.1400.jpg' },
 	{ file: 'rust-header-art.webp', url: 'https://sm.ign.com/t/ign_in/screenshot/default/rust-unreal-engine-5-1-scree-3_bcxh.1400.jpg' },
 	{ file: 'rust-survival-combat.webp', url: `${CDN_A}/screenshot-7105-1725916496016_j9dr.1400.jpg` },
 	{ file: 'rust-reboot-van-fight.webp', url: `${CDN_A}/screenshot-6960-1725916496015_vbtg.1400.jpg` },
@@ -33,13 +33,13 @@ const LEGACY_PATTERNS = [
 	/^rust-extract-fight/,
 	/^rust-operator-esp/,
 	/^rust-verdansk-combat/,
-	/^rust-growth-run-mode/,
+	/^rust-operations-mode/,
 	/^rust-al-mazrah-map/,
 ];
 
 async function fetchWebp(url) {
 	const res = await fetch(url, {
-		headers: { 'User-Agent': 'Mozilla/5.0 (compatible; NarakaCheatsSite/1.0)' },
+		headers: { 'User-Agent': 'Mozilla/5.0 (compatible; DeltaForceCheatsSite/1.0)' },
 	});
 	if (!res.ok) throw new Error(`Failed to fetch ${url}: ${res.status}`);
 	const input = Buffer.from(await res.arrayBuffer());
@@ -63,7 +63,7 @@ async function generateBrandAssets(heroBuffer) {
 		.webp({ quality: 88 })
 		.toBuffer();
 
-	await writeFile(path.join(imagesDir, 'the-naraka-cheats-logo.webp'), logoBuffer);
+	await writeFile(path.join(imagesDir, 'the-delta-force-cheats-logo.webp'), logoBuffer);
 
 	const iconSizes = [
 		{ name: 'favicon-16x16.png', size: 16 },
@@ -93,7 +93,7 @@ for (const asset of KEYWORD_ASSETS) {
 		const dest = path.join(imagesDir, asset.file);
 		await writeFile(dest, webp);
 		console.log(`Saved ${asset.file} (${webp.length} bytes)`);
-		if (asset.file === 'the-naraka-cheats-hero.webp') heroBuffer = webp;
+		if (asset.file === 'the-delta-force-cheats-hero.webp') heroBuffer = webp;
 	} catch (err) {
 		console.warn(`Skip ${asset.file}: ${err.message}`);
 	}
@@ -104,4 +104,4 @@ if (heroBuffer) {
 	console.log('Generated keyword logo + favicons from hero art.');
 }
 
-console.log(`Done — attempted ${KEYWORD_ASSETS.length} keyword-named Naraka images.`);
+console.log(`Done — attempted ${KEYWORD_ASSETS.length} keyword-named Delta Force images.`);

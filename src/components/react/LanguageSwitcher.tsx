@@ -53,7 +53,7 @@ export default function LanguageSwitcher({ currentLocale, locales, hrefForLocale
 									aria-current={isCurrent ? 'page' : undefined}
 									data-locale={locale.code}
 									onClick={() => {
-										document.cookie = `nc_locale=${locale.code};path=/;max-age=31536000;SameSite=Lax`;
+										document.cookie = `dfc_locale=${locale.code};path=/;max-age=31536000;SameSite=Lax`;
 									}}
 								>
 									<span className="lang-switcher__native">{locale.nativeName}</span>

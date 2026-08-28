@@ -7,4 +7,4 @@ Disallow: /__brand/
 Disallow: /__brand
 
 # Primary sitemap for Google Search Console — index covers EN, locale, and image sitemaps.
-Sitemap: https://narakacheats.org/sitemap.xml
+Sitemap: https://deltaforcecheats.org/sitemap.xml

@@ -18,7 +18,7 @@ export function rustScreenshotAlt(n: number): string {
 }
 
 /** Screenshots used across product pages. Hero uses brand.ts heroImage — not these. */
-export const narakaImages = {
+export const deltaForceImages = {
 	hero: screenshotSrc(1),
 	espWallhack: screenshotSrc(2),
 	aimbotCombat: screenshotSrc(3),

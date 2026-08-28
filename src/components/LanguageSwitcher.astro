@@ -172,7 +172,7 @@ const currentMeta = locales.find((l) => l.code === currentLocale)!;
 		link.addEventListener('click', () => {
 			const code = link.getAttribute('data-locale');
 			if (code) {
-				document.cookie = `nc_locale=${code};path=/;max-age=31536000;SameSite=Lax`;
+				document.cookie = `dfc_locale=${code};path=/;max-age=31536000;SameSite=Lax`;
 			}
 		});
 	});

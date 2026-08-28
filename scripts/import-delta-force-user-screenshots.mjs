@@ -1,6 +1,6 @@
 /**
- * Import user-provided Naraka gameplay screenshots (local PNGs).
- * Writes /images/naraka-screenshot-01.webp … 08.webp + -480w / -960w variants
+ * Import user-provided Delta Force gameplay screenshots (local PNGs).
+ * Writes /images/delta-force-screenshot-01.webp … 08.webp + -480w / -960w variants
  * and legacy feature aliases. Does not touch hero assets.
  */
 import { copyFile, mkdir, writeFile } from 'node:fs/promises';
@@ -23,7 +23,7 @@ const USER_SOURCES = [
 	},
 	{
 		file: 'b1cd963b-a712-4f90-bad0-cdd0fe1756eb.png',
-		label: 'Naraka third-person gameplay on Windows PC',
+		label: 'Delta Force third-person gameplay on Windows PC',
 	},
 	{
 		file: 'fa6b50d9-f928-4111-af7b-55c6d7859393.png',
@@ -36,18 +36,18 @@ const CONTENT_WIDTHS = [480, 960];
 const WEBP = { quality: 82, effort: 6, smartSubsample: true };
 
 const LEGACY_MAP = {
-	'naraka-screenshot-01': ['naraka-cheats-esp.webp', 'naraka-esp-player-tags.webp'],
-	'naraka-screenshot-02': ['naraka-cheats-wallhack.webp', 'naraka-cheats-session.webp'],
-	'naraka-screenshot-03': ['naraka-cheats-aimbot.webp', 'naraka-cheats-combat.webp'],
-	'naraka-screenshot-04': [
-		'naraka-cheats-aimbot-view.webp',
-		'naraka-aimbot-skeleton.webp',
-		'naraka-aimbot-sniper.webp',
+	'delta-force-screenshot-01': ['delta-force-cheats-esp.webp', 'delta-force-esp-player-tags.webp'],
+	'delta-force-screenshot-02': ['delta-force-cheats-wallhack.webp', 'delta-force-cheats-session.webp'],
+	'delta-force-screenshot-03': ['delta-force-cheats-aimbot.webp', 'delta-force-cheats-combat.webp'],
+	'delta-force-screenshot-04': [
+		'delta-force-cheats-aimbot-view.webp',
+		'delta-force-aimbot-skeleton.webp',
+		'delta-force-aimbot-sniper.webp',
 	],
-	'naraka-screenshot-05': ['naraka-cheats-radar.webp', 'naraka-esp-radar.webp'],
-	'naraka-screenshot-06': ['naraka-extract-fight.webp', 'naraka-growth-run-combat.webp'],
-	'naraka-screenshot-07': ['naraka-growth-run-mode.webp'],
-	'naraka-screenshot-08': [],
+	'delta-force-screenshot-05': ['delta-force-cheats-radar.webp', 'delta-force-esp-radar.webp'],
+	'delta-force-screenshot-06': ['delta-force-extract-fight.webp', 'delta-force-operations-combat.webp'],
+	'delta-force-screenshot-07': ['delta-force-operations-mode.webp'],
+	'delta-force-screenshot-08': [],
 };
 
 async function encodeWebp(input, width, options = WEBP) {
@@ -80,12 +80,12 @@ async function writeScreenshotSet(pngPath, baseName) {
 }
 
 await mkdir(imagesDir, { recursive: true });
-await mkdir(path.join(ROOT, 'scripts/assets/naraka-screenshots'), { recursive: true });
+await mkdir(path.join(ROOT, 'scripts/assets/delta-force-screenshots'), { recursive: true });
 
 const sourcePaths = [];
 for (let i = 0; i < USER_SOURCES.length; i += 1) {
 	const src = path.join(assetsDir, USER_SOURCES[i].file);
-	const saved = path.join(ROOT, 'scripts/assets/naraka-screenshots', `source-${i + 1}.png`);
+	const saved = path.join(ROOT, 'scripts/assets/delta-force-screenshots', `source-${i + 1}.png`);
 	await copyFile(src, saved);
 	sourcePaths.push(saved);
 	console.log(`✓ staged ${USER_SOURCES[i].file}`);
@@ -96,7 +96,7 @@ const canonicalBySlot = {};
 
 for (let n = 1; n <= SCREENSHOT_COUNT; n += 1) {
 	const num = String(n).padStart(2, '0');
-	const base = `naraka-screenshot-${num}`;
+	const base = `delta-force-screenshot-${num}`;
 	const sourceIndex = (n - 1) % USER_SOURCES.length;
 	const png = sourcePaths[sourceIndex];
 
@@ -114,7 +114,7 @@ for (let n = 1; n <= SCREENSHOT_COUNT; n += 1) {
 	}
 }
 
-const reviewsCanonical = canonicalBySlot['naraka-screenshot-04'];
+const reviewsCanonical = canonicalBySlot['delta-force-screenshot-04'];
 await writeFile(path.join(imagesDir, 'reviews-banner.webp'), reviewsCanonical);
 for (const width of CONTENT_WIDTHS) {
 	const webp = await encodeWebp(sourcePaths[3], width);

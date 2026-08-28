@@ -14,9 +14,9 @@ export const crawlPhotoPool = Array.from({ length: PRODUCT_SCREENSHOT_COUNT }, (
  * Prefer compressed WebP screenshots so Google can fetch them quickly.
  */
 export const pageImageSrcById: Record<PageId, string> = {
-	home: '/images/naraka-cheats-hero-1199w.webp',
-	'naraka-esp': shot(1),
-	'naraka-aimbot': shot(3),
+	home: '/images/delta-force-cheats-hero-1199w.webp',
+	'delta-force-esp': shot(1),
+	'delta-force-aimbot': shot(3),
 	features: shot(4),
 	pricing: shot(2),
 	setup: shot(5),
@@ -26,7 +26,7 @@ export const pageImageSrcById: Record<PageId, string> = {
 	undetected: shot(6),
 	wallhack: shot(2),
 	radar: shot(5),
-	neac: shot(3),
+	ace: shot(3),
 	'cheats-2026': shot(1),
 	hacks: shot(3),
 	'cheat-download': shot(8),

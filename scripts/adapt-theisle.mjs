@@ -229,7 +229,7 @@ const REPLACEMENTS = [
 	['battleye-anti-cheat-and-tarkov-cheats', 'eac-anti-cheat-and-isle-hacks'],
 	['buy-undetected-tarkov-cheats-windows-pc', 'buy-undetected-isle-hacks-windows-pc'],
 	['tarkov-soft-aim-review', 'isle-soft-aim-review'],
-	['tarkov-esp-scav-run-review', 'isle-esp-growth-run-review'],
+	['tarkov-esp-scav-run-review', 'isle-esp-operations-review'],
 	['tarkov-cloud-dma-review', 'isle-cloud-dma-review'],
 	['tarkov-cheat-setup-review', 'isle-hack-setup-review'],
 	['tarkov-loot-esp-review', 'isle-carcass-esp-review'],

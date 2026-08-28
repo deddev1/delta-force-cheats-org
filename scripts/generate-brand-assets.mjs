@@ -19,12 +19,12 @@ async function squareLogoBuffer(size) {
 
 async function generateSiteLogo() {
 	const logoPng = await squareLogoBuffer(512);
-	await writeFile(path.join(imagesDir, 'naraka-cheats-logo.png'), logoPng);
-	console.log('Wrote public/images/naraka-cheats-logo.png (512×512)');
+	await writeFile(path.join(imagesDir, 'delta-force-cheats-logo.png'), logoPng);
+	console.log('Wrote public/images/delta-force-cheats-logo.png (512×512)');
 
 	const logoWebp = await sharp(logoPng).webp({ quality: 90, effort: 6 }).toBuffer();
-	await writeFile(path.join(imagesDir, 'naraka-cheats-logo.webp'), logoWebp);
-	console.log('Wrote public/images/naraka-cheats-logo.webp');
+	await writeFile(path.join(imagesDir, 'delta-force-cheats-logo.webp'), logoWebp);
+	console.log('Wrote public/images/delta-force-cheats-logo.webp');
 }
 
 async function generateFavicons(logoBuffer) {
@@ -57,9 +57,9 @@ async function generateFavicons(logoBuffer) {
 
 async function generateWebManifest() {
 	const manifest = {
-		name: 'Naraka Cheats',
-		short_name: 'Naraka Cheats',
-		description: 'Undetected naraka cheats — ESP, aimbot, radar and for PC',
+		name: 'Delta Force Cheats',
+		short_name: 'Delta Force Cheats',
+		description: 'Undetected delta force cheats — ESP, aimbot, radar and for PC',
 		start_url: '/',
 		display: 'standalone',
 		background_color: '#0a0612',

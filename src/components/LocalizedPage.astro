@@ -6,7 +6,7 @@ import type { LocaleCode } from '../data/i18n/locales';
 import { getLocalizedFaqs } from '../data/localized-faq';
 import { productInfo, siteConfig } from '../data/site';
 import { absoluteFaqUrl, getFaqPath } from '../data/faq';
-import { narakaImages } from '../data/naraka';
+import { deltaForceImages } from '../data/delta-force';
 import { getT } from '../i18n/server';
 import { getPageCrawlImage, absoluteImageUrl } from '../data/page-images';
 import { screenshotImageObjects } from '../data/product-images';
@@ -49,7 +49,7 @@ const introEditByPage: Partial<Record<PageId, string>> = {
 const introEdit = introEditByPage[pageId];
 const gallery = [
 	{ src: crawl.src, alt: page.imageAlt || crawl.caption },
-	...narakaImages.product.slice(0, 2).map((img) => ({
+	...deltaForceImages.product.slice(0, 2).map((img) => ({
 		src: img.src,
 		alt: img.alt,
 		url: 'url' in img ? img.url : absoluteImageUrl(img.src),
@@ -105,15 +105,15 @@ const eyebrowByPage: Partial<Record<PageId, string>> = {
 	pricing: ui.nav.pricing,
 	updates: ui.nav.updates,
 	hacks: t('nav.preview'),
-	'naraka-esp': ui.nav.esp,
-	'naraka-aimbot': ui.nav.aimbot,
+	'delta-force-esp': ui.nav.esp,
+	'delta-force-aimbot': ui.nav.aimbot,
 	radar: t('categoryRow.radar'),
 	setup: ui.nav.setup,
 	faq: ui.nav.faq,
 	support: t('common.support'),
 	undetected: t('categoryRow.undetected'),
 	wallhack: t('categoryRow.wallhack'),
-	neac: 'NEAC',
+	ace: 'ACE',
 	'cheats-2026': '2026',
 	'cheat-download': t('common.readGuide'),
 	'mod-menu': 'Mod Menu',

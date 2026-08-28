@@ -4,13 +4,13 @@ type Props = {
 	className?: string;
 };
 
-/** NC monogram mark — Naraka Cheats. */
-export default function BrandLogo({ alt = 'Naraka Cheats logo', className }: Props) {
+/** NC monogram mark — Delta Force Cheats. */
+export default function BrandLogo({ alt = 'Delta Force Cheats logo', className }: Props) {
 	return (
 		<img
 			className={className}
-			src="/images/naraka-cheats-logo-mark.webp"
-			srcSet="/images/naraka-cheats-logo-mark.webp 128w, /images/naraka-cheats-logo.webp 512w"
+			src="/images/delta-force-cheats-logo-mark.webp"
+			srcSet="/images/delta-force-cheats-logo-mark.webp 128w, /images/delta-force-cheats-logo.webp 512w"
 			sizes="40px"
 			width={40}
 			height={40}

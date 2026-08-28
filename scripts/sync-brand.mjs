@@ -28,9 +28,9 @@ function readBrand() {
 	};
 	const name = str('name');
 	const url = str('url').replace(/\/$/, '');
-	if (/valorantcheats\.org/i.test(url)) {
+	if (/valorantcheats\.org|narakacheats\.org/i.test(url)) {
 		throw new Error(
-			`brand.ts url is ${url} — must be https://narakacheats.org. Run: node scripts/rebrand-naraka-cheats.mjs`,
+			`brand.ts url is ${url} — must be https://deltaforcecheats.org. Run: node scripts/adapt-delta-force.mjs`,
 		);
 	}
 	return {

@@ -207,7 +207,7 @@ const GAME_PROFILES = {
 		genre: 'MOBA',
 		setting: 'Summoners Rift with five roles and objective timers',
 		mechanics: ['wave management', 'vision control', 'teamfight positioning'],
-		antiCheat: 'NEAC kernel driver on PC',
+		antiCheat: 'ACE kernel driver on PC',
 	},
 	'Call of Duty: Warzone': {
 		genre: 'battle royale',

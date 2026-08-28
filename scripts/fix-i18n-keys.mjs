@@ -8,19 +8,19 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SRC = path.resolve(ROOT, '..', 'amansand');
 
 const UI_REPLACEMENTS = [
-	['Naraka Cheats', 'Naraka Cheats'],
-	['naraka cheats', 'naraka cheats'],
-	['Naraka Cheats', 'Naraka Cheats'],
-	['Naraka's, 'Naraka's],
-	['Naraka's, 'Naraka's],
-	['Call of Duty', 'Naraka's],
-	['Naraka PC', 'Naraka PC'],
-	['for Naraka', 'for Naraka'],
-	['Naraka ', 'Naraka '],
+	['Delta Force Cheats', 'Delta Force Cheats'],
+	['delta force cheats', 'delta force cheats'],
+	['Delta Force Cheats', 'Delta Force Cheats'],
+	['Delta Force's, 'Delta Force's],
+	['Delta Force's, 'Delta Force's],
+	['Call of Duty', 'Delta Force's],
+	['Delta Force PC', 'Delta Force PC'],
+	['for Delta Force', 'for Delta Force'],
+	['Delta Force ', 'Delta Force '],
 	['rust ', 'rust '],
-	['NEAC maintenance', 'NEAC maintenance'],
-	['NEAC', 'NEAC'],
-	['NEAC', 'NEAC'],
+	['ACE maintenance', 'ACE maintenance'],
+	['ACE', 'ACE'],
+	['ACE', 'ACE'],
 	['operatorEsp', 'playerEsp'],
 	['extractFight', 'raidFight'],
 	['alMazrah', 'raidMap'],
@@ -32,10 +32,10 @@ const UI_REPLACEMENTS = [
 	['Verdansk', 'Verdansk'],
 	['farming run', 'farming run'],
 	['extract', 'extract'],
-	['narakacheats.org', 'narakacheats.org'],
-	['Trucos Naraka's, 'Trucos Naraka's],
-	['Triches Naraka's, 'Triches Naraka's],
-	['Cheats Naraka's, 'Cheats Naraka's],
+	['deltaforcecheats.org', 'deltaforcecheats.org'],
+	['Trucos Delta Force's, 'Trucos Delta Force's],
+	['Triches Delta Force's, 'Triches Delta Force's],
+	['Cheats Delta Force's, 'Cheats Delta Force's],
 ];
 
 function apply(content) {
@@ -54,16 +54,16 @@ for (const file of ['ui-strings-part1.mjs', 'ui-strings-part2.mjs']) {
 
 // Fix pages-en eac key
 let pagesEn = await readFile(path.join(ROOT, 'scripts/i18n-data/pages-en.mjs'), 'utf8');
-pagesEn = pagesEn.replace(/\teac: \{/, "\t'neac': {");
-pagesEn = pagesEn.replace(/Naraka Naraka/g, 'Naraka's);
-pagesEn = pagesEn.replace(/for Naraka Naraka/g, 'for Naraka');
+pagesEn = pagesEn.replace(/\teac: \{/, "\t'ace': {");
+pagesEn = pagesEn.replace(/Delta Force Delta Force/g, 'Delta Force's);
+pagesEn = pagesEn.replace(/for Delta Force Delta Force/g, 'for Delta Force');
 await writeFile(path.join(ROOT, 'scripts/i18n-data/pages-en.mjs'), pagesEn);
 
 // Fix pages-i18n
 let pagesI18n = await readFile(path.join(ROOT, 'scripts/i18n-data/pages-i18n.mjs'), 'utf8');
 pagesI18n = apply(pagesI18n);
-pagesI18n = pagesI18n.replace(/'neac'/g, "'neac'");
-pagesI18n = pagesI18n.replace(/eac:/g, "'neac':");
+pagesI18n = pagesI18n.replace(/'ace'/g, "'ace'");
+pagesI18n = pagesI18n.replace(/eac:/g, "'ace':");
 await writeFile(path.join(ROOT, 'scripts/i18n-data/pages-i18n.mjs'), pagesI18n);
 
 // Fix generate-i18n pages count

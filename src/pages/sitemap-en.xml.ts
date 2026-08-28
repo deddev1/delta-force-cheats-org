@@ -14,8 +14,8 @@ export const prerender = true;
 
 const defaultSitemapImage = {
 	url: new URL(defaultCrawlImageSrc, siteConfig.url).href,
-	title: `${siteConfig.name} — Naraka cheats`,
-	caption: 'Naraka Cheats ESP, aimbot, and radar for Windows PC',
+	title: `${siteConfig.name} — Delta Force cheats`,
+	caption: 'Delta Force Cheats ESP, aimbot, and radar for Windows PC',
 };
 
 /** English page urlset (listed under sitemap.xml index). */

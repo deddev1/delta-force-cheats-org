@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
- * Rename /images/naraka-cheats-* assets → /images/naraka-cheats-* and update references.
- * Run: node scripts/rename-naraka-cheats-images.mjs
+ * Rename /images/delta-force-cheats-* assets → /images/delta-force-cheats-* and update references.
+ * Run: node scripts/rename-delta-force-cheats-images.mjs
  */
 import { readFile, writeFile, rename, readdir, stat } from 'node:fs/promises';
 import path from 'node:path';
@@ -17,7 +17,7 @@ const SKIP_DIRS = new Set([
 	'tmp',
 	'.astro',
 	'the-finals-cheats-org',
-	'naraka-cheats-org-audit',
+	'delta-force-cheats-org-audit',
 ]);
 
 async function walk(dir, files = []) {
@@ -32,10 +32,10 @@ async function walk(dir, files = []) {
 }
 
 // 1. Rename image files on disk
-const imageFiles = (await readdir(IMAGES)).filter((f) => f.includes('naraka-cheats'));
+const imageFiles = (await readdir(IMAGES)).filter((f) => f.includes('delta-force-cheats'));
 let renamed = 0;
 for (const file of imageFiles) {
-	const next = file.replace(/naraka-cheats/g, 'naraka-cheats');
+	const next = file.replace(/delta-force-cheats/g, 'delta-force-cheats');
 	if (next === file) continue;
 	await rename(path.join(IMAGES, file), path.join(IMAGES, next));
 	renamed++;
@@ -43,20 +43,20 @@ for (const file of imageFiles) {
 }
 
 // 2. Update text references
-const FROM = '/images/naraka-cheats-';
-const TO = '/images/naraka-cheats-';
+const FROM = '/images/delta-force-cheats-';
+const TO = '/images/delta-force-cheats-';
 let updated = 0;
 for (const file of await walk(ROOT)) {
 	if (file.startsWith(IMAGES)) continue;
 	if (/\.(png|jpg|jpeg|webp|gif|ico|woff2?|mp4)$/i.test(file)) continue;
 	const text = await readFile(file, 'utf8');
-	if (!text.includes(FROM) && !text.includes('naraka-cheats-hero') && !text.includes('naraka-cheats-logo')) {
+	if (!text.includes(FROM) && !text.includes('delta-force-cheats-hero') && !text.includes('delta-force-cheats-logo')) {
 		continue;
 	}
 	const next = text
 		.replaceAll(FROM, TO)
-		.replaceAll("'naraka-cheats-hero'", "'naraka-cheats-hero'")
-		.replaceAll("'naraka-cheats-logo'", "'naraka-cheats-logo'");
+		.replaceAll("'delta-force-cheats-hero'", "'delta-force-cheats-hero'")
+		.replaceAll("'delta-force-cheats-logo'", "'delta-force-cheats-logo'");
 	if (next !== text) {
 		await writeFile(file, next, 'utf8');
 		updated++;
@@ -64,4 +64,4 @@ for (const file of await walk(ROOT)) {
 	}
 }
 
-console.log(`\nrename-naraka-cheats-images: ${renamed} file(s) renamed, ${updated} reference file(s) updated`);
+console.log(`\nrename-delta-force-cheats-images: ${renamed} file(s) renamed, ${updated} reference file(s) updated`);
