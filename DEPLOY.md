@@ -88,7 +88,7 @@ Cloudflare CNAME flattening handles apex records automatically.
    - **Target:** `https://deltaforcecheats.org/${1}`
    - **Status:** 301
 
-The deployed `functions/_middleware.js` also enforces apex canonical host, legacy domain redirects (`deltaforcecheats.org`, `.net`, `.com`), and legacy path redirects.
+The deployed `functions/_middleware.js` (Pages legacy) enforces `www` → apex, legacy competitor-domain redirects, and legacy path redirects. The canonical apex must **not** be listed as a legacy host (that breaks `/sitemap.xml` with a redirect loop).
 
 ### SSL / HTTPS
 

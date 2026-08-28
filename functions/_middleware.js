@@ -4,10 +4,8 @@ const CANONICAL_ORIGIN = 'https://deltaforcecheats.org';
 const APEX_HOST = 'deltaforcecheats.org';
 const WWW_HOST = 'www.deltaforcecheats.org';
 
-/** Legacy domains → canonical apex (301). */
+/** Legacy domains → canonical apex (301). Apex + www are handled separately — never list them here. */
 const LEGACY_HOSTS = new Set([
-	'deltaforcecheats.org',
-	'www.deltaforcecheats.org',
 	'rustcheats.co',
 	'www.rustcheats.co',
 	'bestrustcheats.com',
