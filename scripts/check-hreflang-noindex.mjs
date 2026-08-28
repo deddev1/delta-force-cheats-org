@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Ensures hreflang annotations only reference indexable URLs.
+ * Ensures hreflang clusters only include indexable URLs and reciprocal return links.
  * Run after `npm run build`.
  */
 import fs from 'node:fs';
@@ -12,6 +12,7 @@ const DIST = path.join(ROOT, 'dist');
 
 const HREFLANG_LINK_RE =
 	/<link[^>]+rel=["']alternate["'][^>]+hreflang=["']([^"']+)["'][^>]+href=["']([^"']+)["'][^>]*>/gi;
+const CANONICAL_RE = /<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)["'][^>]*>/i;
 
 function walkHtml(dir, files = []) {
 	if (!fs.existsSync(dir)) return files;
@@ -31,6 +32,14 @@ function fileToPathname(file) {
 	return rel.endsWith('/') ? rel : `${rel}/`;
 }
 
+function normalizeHref(href) {
+	try {
+		return new URL(href).href.replace(/\/$/, '/');
+	} catch {
+		return null;
+	}
+}
+
 function extractHreflangLinks(html) {
 	const links = [];
 	let m;
@@ -39,6 +48,13 @@ function extractHreflangLinks(html) {
 		links.push({ hreflang: m[1], href: m[2] });
 	}
 	return links;
+}
+
+function pathnameFromHref(href) {
+	let targetPath = new URL(href).pathname;
+	if (!targetPath.endsWith('/')) targetPath = `${targetPath}/`;
+	if (targetPath === '/404.html/') targetPath = '/404.html';
+	return targetPath;
 }
 
 function main() {
@@ -51,36 +67,70 @@ function main() {
 	for (const file of walkHtml(DIST)) {
 		const html = fs.readFileSync(file, 'utf8');
 		const pathname = fileToPathname(file);
+		const canonical = html.match(CANONICAL_RE)?.[1] ?? null;
 		const noindex = /noindex/i.test(html);
 		pages.set(pathname, {
 			file: path.relative(ROOT, file),
 			noindex,
+			canonical,
+			canonicalNorm: canonical ? normalizeHref(canonical) : null,
 			hreflang: extractHreflangLinks(html),
 		});
 	}
 
 	const noindexPaths = new Set([...pages.entries()].filter(([, p]) => p.noindex).map(([p]) => p));
+	const byCanonical = new Map();
+	for (const [pathname, meta] of pages) {
+		if (meta.canonicalNorm) byCanonical.set(meta.canonicalNorm, pathname);
+	}
 
 	const issues = [];
 
-	for (const [fromPath, meta] of pages) {
+	for (const [, meta] of pages) {
 		if (meta.noindex && meta.hreflang.length > 0) {
 			issues.push(`${meta.file}: noindex page must not emit hreflang (${meta.hreflang.length} link(s))`);
 		}
-		if (meta.noindex) continue;
+	}
+
+	for (const [fromPath, meta] of pages) {
+		if (meta.noindex || meta.hreflang.length === 0) continue;
+
 		for (const { hreflang, href } of meta.hreflang) {
-			let targetPath;
-			try {
-				targetPath = new URL(href).pathname;
-			} catch {
+			const targetNorm = normalizeHref(href);
+			if (!targetNorm) {
 				issues.push(`${meta.file}: invalid hreflang href ${href}`);
 				continue;
 			}
-			if (!targetPath.endsWith('/')) targetPath = `${targetPath}/`;
-			if (targetPath === '/404.html/') targetPath = '/404.html';
+
+			const targetPath = pathnameFromHref(href);
 			if (noindexPaths.has(targetPath)) {
+				issues.push(`${meta.file}: hreflang=${hreflang} points at noindex URL ${targetPath}`);
+				continue;
+			}
+
+			const returnPath = byCanonical.get(targetNorm);
+			if (!returnPath) {
+				issues.push(`${meta.file}: hreflang=${hreflang} target not built in dist (${href})`);
+				continue;
+			}
+
+			const returnPage = pages.get(returnPath);
+			if (returnPage.noindex) {
+				issues.push(`${meta.file}: hreflang=${hreflang} return URL ${targetPath} is noindex`);
+				continue;
+			}
+
+			if (!meta.canonicalNorm) {
+				issues.push(`${meta.file}: missing canonical for hreflang return-link check`);
+				continue;
+			}
+
+			const hasReturn = returnPage.hreflang.some(
+				(link) => normalizeHref(link.href) === meta.canonicalNorm,
+			);
+			if (!hasReturn) {
 				issues.push(
-					`${meta.file}: hreflang=${hreflang} points at noindex URL ${targetPath}`,
+					`${meta.file}: noindex return risk — ${returnPath} lacks hreflang back to ${fromPath}`,
 				);
 			}
 		}
@@ -89,9 +139,7 @@ function main() {
 	for (const name of fs.readdirSync(DIST).filter((f) => f.startsWith('sitemap') && f.endsWith('.xml'))) {
 		const xml = fs.readFileSync(path.join(DIST, name), 'utf8');
 		for (const m of xml.matchAll(/hreflang="([^"]+)"[^>]*href="([^"]+)"/g)) {
-			const targetPath = new URL(m[2]).pathname.endsWith('/')
-				? new URL(m[2]).pathname
-				: `${new URL(m[2]).pathname}/`;
+			const targetPath = pathnameFromHref(m[2]);
 			if (noindexPaths.has(targetPath)) {
 				issues.push(`${name}: sitemap hreflang=${m[1]} points at noindex URL ${targetPath}`);
 			}
@@ -105,8 +153,10 @@ function main() {
 		process.exit(1);
 	}
 
-	console.log(`✓ ${pages.size} HTML pages — no hreflang links on noindex pages`);
+	const noindexCount = noindexPaths.size;
+	console.log(`✓ ${pages.size} HTML pages — ${noindexCount} intentional noindex, none emit hreflang`);
 	console.log('✓ No indexable page or sitemap hreflang targets a noindex URL');
+	console.log('✓ All hreflang return links resolve to indexable pages');
 }
 
 main();
