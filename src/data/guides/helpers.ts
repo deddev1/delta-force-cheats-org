@@ -87,11 +87,15 @@ export type GuideSitemapEntry = {
 	images: { url: string; title: string; caption: string }[];
 };
 
-/** Guides hub + posts for sitemap-en.xml (omits legacy-brand competitor pages). */
-const LEGACY_GUIDE_SLUGS = new Set([
+/** Legacy competitor slugs — noindex + omitted from sitemaps (old brand in URL). */
+export const LEGACY_GUIDE_SLUGS = new Set([
 	'the-finals-thefinalscheats-org-guide',
 	'the-finals-thefinalscheats-net-guide',
 ]);
+
+export function isLegacyGuideSlug(slug: string): boolean {
+	return LEGACY_GUIDE_SLUGS.has(slug);
+}
 
 export function getGuidesSitemapEntries(): GuideSitemapEntry[] {
 	const hub: GuideSitemapEntry = {
@@ -104,12 +108,11 @@ export function getGuidesSitemapEntries(): GuideSitemapEntry[] {
 
 	const posts = getAllGuides()
 		.filter((guide) => !LEGACY_GUIDE_SLUGS.has(guide.slug))
-		.filter((guide) => isDeltaForceGuide(guide))
 		.map((guide) => ({
 		path: guide.canonicalPath,
 		lastmod: guide.updated,
 		changefreq: 'monthly' as const,
-		priority: isDeltaForceGuide(guide) ? 0.7 : 0.45,
+		priority: 0.55,
 		images: guide.imageUrl
 			? [
 					{

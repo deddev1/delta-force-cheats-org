@@ -1,15 +1,6 @@
 ---
-import { defaultLocale, isLocaleCode, localeCodes } from '../../../data/i18n/locales';
-
+/** Locale blog lives on English URLs only — 301s in functions/locale-blog-redirects.json. */
 export function getStaticPaths() {
-	return localeCodes
-		.filter((code) => code !== defaultLocale)
-		.map((lang) => ({ params: { lang } }));
+	return [];
 }
-
-if (!isLocaleCode(Astro.params.lang ?? '')) {
-	return Astro.redirect('/blog/', 301);
-}
-
-return Astro.redirect('/blog/', 301);
 ---

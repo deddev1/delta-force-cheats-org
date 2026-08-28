@@ -1,9 +1,12 @@
 import cannibalRedirects from '../functions/cannibal-redirects.json';
+import localeBlogRedirects from '../functions/locale-blog-redirects.json';
 import pathRedirects from '../functions/path-redirects.json';
 
 export const PATH_REDIRECTS = pathRedirects as Record<string, string>;
 
 export const CANNIBAL_REDIRECTS = cannibalRedirects as Record<string, string>;
+
+export const LOCALE_BLOG_REDIRECTS = localeBlogRedirects as Record<string, string>;
 
 export function isBrandStudioPath(pathname: string): boolean {
 	return (
@@ -31,6 +34,7 @@ export function resolvePathRedirect(pathname: string): string | null {
 	return (
 		PATH_REDIRECTS[pathname] ??
 		CANNIBAL_REDIRECTS[pathname] ??
+		LOCALE_BLOG_REDIRECTS[pathname] ??
 		xmlTrailingSlashRedirect(pathname) ??
 		trailingSlashRedirect(pathname)
 	);

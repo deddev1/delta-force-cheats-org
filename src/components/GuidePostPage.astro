@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from './Navbar.astro';
 import SiteFooter from './SiteFooter.astro';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
-import { absoluteGuideUrl, getGuidesBasePath, isDeltaForceGuide } from '../data/guides/helpers';
+import { absoluteGuideUrl, getGuidesBasePath, isLegacyGuideSlug } from '../data/guides/helpers';
 import type { ResolvedGuide } from '../data/guides/types';
 import { siteConfig } from '../data/site';
 import { getLocalizedPath, getSelfHreflangAlternates } from '../data/i18n/routing';
@@ -34,8 +34,7 @@ const articleBodyText = [
 const wordCount = countWords(articleBodyText);
 const articleUrl = absoluteGuideUrl(guide.slug);
 const hreflangAlternates = getSelfHreflangAlternates(guide.canonicalPath);
-const guideNoindex = !isDeltaForceGuide(guide);
-
+const guideNoindex = isLegacyGuideSlug(guide.slug);
 const articleSchema = {
 	'@type': 'Article',
 	'@id': `${articleUrl}#article`,

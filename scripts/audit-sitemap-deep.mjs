@@ -59,7 +59,11 @@ function htmlPathFor(urlPath) {
 
 const REDIRECT_MAP = (() => {
 	const map = new Map();
-	for (const file of ['functions/path-redirects.json', 'functions/cannibal-redirects.json']) {
+	for (const file of [
+		'functions/path-redirects.json',
+		'functions/cannibal-redirects.json',
+		'functions/locale-blog-redirects.json',
+	]) {
 		try {
 			const json = JSON.parse(readFileSync(path.join(ROOT, file), 'utf8'));
 			for (const [from, to] of Object.entries(json)) map.set(from, to);

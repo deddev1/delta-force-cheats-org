@@ -56,7 +56,7 @@ const BLOG_PAGES = 18; // /blog/ index + 17 posts
 const REVIEW_PAGES = 11; // /reviews/ index + 10 review detail pages
 const FAQ_PAGES = 26; // standalone FAQ answer pages in sitemap-en.xml
 const FAQ_HTML_PAGES = 27; // built /faq/{slug}/ HTML (one legacy slug omitted from sitemap)
-const GUIDE_SITEMAP_PAGES = 1; // /guides/ hub only (competitor guide posts are noindex)
+const GUIDE_SITEMAP_PAGES = 96; // /guides/ hub + 95 indexable game guides (2 legacy slugs omitted)
 const GUIDE_HTML_PAGES = 98; // /guides/ hub + 97 posts (all built)
 const STANDALONE_PAGES = 3; // /about/ /compare/ /write-for-us/ (included in ENGLISH_HTML_PRODUCT below)
 /** Product pages in sitemap — excludes cannibal EN URLs that 301 to stronger pillars */
@@ -74,8 +74,8 @@ const TOTAL_PAGES = ENGLISH_PAGES + I18N_URLS;
 const ENGLISH_HTML_PRODUCT = 27; // home + 18 sitemap product + 3 standalone + 6 redirect stubs
 const ENGLISH_HTML_PAGES =
 	ENGLISH_HTML_PRODUCT + BLOG_PAGES + REVIEW_PAGES + FAQ_HTML_PAGES + GUIDE_HTML_PAGES;
-/** Locale HTML = product pages + blog redirect stubs (index + 17 posts) that are omitted from sitemaps */
-const LOCALE_BLOG_REDIRECT_PAGES = 18;
+/** Locale blog HTML redirect stubs removed — Worker 301s via locale-blog-redirects.json */
+const LOCALE_BLOG_REDIRECT_PAGES = 0;
 const TOTAL_HTML_PAGES =
 	ENGLISH_HTML_PAGES + I18N_LOCALES * (PRODUCT_PAGES_PER_LOCALE + LOCALE_BLOG_REDIRECT_PAGES);
 const HREFLANG_PER_URL = 23;
@@ -542,9 +542,10 @@ async function main() {
 	const htmlSet = new Set(htmlPaths);
 	const missingFromSitemap = [...htmlSet].filter((p) => {
 		if (sitemapPaths.has(p) || REDIRECT_ONLY_PATHS.has(p) || SITEMAP_OMIT_PATHS.has(p)) return false;
-		// Locale blog stubs 301 to EN — intentionally omitted from sitemaps
+		// Locale blog 301s are Worker-only (no HTML stubs in dist)
 		if (/^\/[a-z]{2}\/blog(\/|$)/.test(p)) return false;
-		// Competitor guide posts are noindex — omitted from sitemaps by design
+		// Legacy guide slugs stay noindex and out of sitemaps
+		if (SITEMAP_OMIT_PATHS.has(p)) return false;
 		if (/^\/guides\/[^/]+\/$/.test(p)) {
 			const rel = p === '/' ? 'index.html' : `${p.slice(1)}index.html`;
 			try {

@@ -60,6 +60,10 @@ const ALLOWLIST_INDEXABLE = new Set([
 	'guides/index.html', // hub lists competitor guide titles by design
 ]);
 
+const ALLOWLIST_INDEXABLE_PREFIXES = [
+	'guides/', // game guide posts intentionally mention other titles
+];
+
 const WARN_ONLY_PREFIXES = [
 	'blog/', // legacy Valorant copy — tracked for a follow-up pass
 ];
@@ -106,8 +110,15 @@ function main() {
     }
   }
 
+function isAllowlistedIndexable(file) {
+	if (ALLOWLIST_INDEXABLE.has(file)) return true;
+	return ALLOWLIST_INDEXABLE_PREFIXES.some(
+		(prefix) => file.startsWith(prefix) && file !== 'guides/index.html',
+	);
+}
+
   const indexableLegacy = legacyHits.filter(
-    (h) => !h.noindex && !ALLOWLIST_INDEXABLE.has(h.file),
+    (h) => !h.noindex && !isAllowlistedIndexable(h.file),
   );
   const warnLegacy = indexableLegacy.filter((h) =>
     WARN_ONLY_PREFIXES.some((p) => h.file.startsWith(p)),
