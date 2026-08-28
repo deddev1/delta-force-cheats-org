@@ -4,8 +4,8 @@
   "description": "Undetected delta force cheats — ESP, aimbot, and radar for PC",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0B0D0C",
-  "theme_color": "#0B0D0C",
+  "background_color": "#08090A",
+  "theme_color": "#08090A",
   "icons": [
     {
       "src": "/favicon.png",

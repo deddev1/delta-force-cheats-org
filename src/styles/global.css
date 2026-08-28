@@ -5,29 +5,30 @@
 	--font-sans: "Inter Variable", "Inter", ui-sans-serif, system-ui, sans-serif;
 	--font-display: "Syne Variable", "Syne", ui-sans-serif, sans-serif;
 
-	/* Delta Force dark canvas — tactical charcoal + gold accent */
-	--bg: #090a0b;
-	--bg-panel: #16191c;
-	--bg-elevated: #101214;
-	--bg-hover: #1c2023;
-	--line: #292d30;
-	--line-soft: #1f2225;
-	--line-strong: #353a3e;
-	--ink: #f5f5f2;
-	--ink-heading: #f5f5f2;
-	--ink-secondary: #a7acae;
-	--ink-muted: #73797d;
-	--ink-faint: #5c6165;
-	--link: #c8a84e;
+	/* Delta Force — charcoal canvas + gold accent, high readability */
+	--bg: #08090a;
+	--bg-panel: #141618;
+	--bg-elevated: #0e0f11;
+	--bg-hover: #1a1d20;
+	--line: #303438;
+	--line-soft: #25282b;
+	--line-strong: #3a3e42;
+	--ink: #e6e6e6;
+	--ink-heading: #ffffff;
+	--ink-secondary: #c4c7c9;
+	--ink-muted: #aeb3b6;
+	--ink-faint: #949a9e;
+	--link: #d6a93a;
+	--price: #ffd15c;
 
 	/* Brand accent — tactical gold */
-	--magenta: #c8a84e;
-	--magenta-soft: #e0c264;
-	--magenta-deep: #a08840;
+	--magenta: #d6a93a;
+	--magenta-soft: #f0c75e;
+	--magenta-deep: #b89230;
 	--accent: var(--magenta);
-	--accent-hover: #e0c264;
-	--ok: #79a85b;
-	--warn: #c8a84e;
+	--accent-hover: #f0c75e;
+	--ok: #8bc34a;
+	--warn: #d6a93a;
 	--error: #d45b52;
 
 	/* Legacy aliases */
@@ -48,7 +49,7 @@
 
 	--accent-orange: #ff6b2c;
 	--accent-coral: #ff6b2c;
-	--accent-amber: #e0c264;
+	--accent-amber: var(--price);
 	--accent-magenta: var(--magenta);
 	--accent-violet: var(--magenta-deep);
 	--accent-indigo: var(--magenta);
@@ -337,7 +338,7 @@
 
 	.g2a-badge--new {
 		background: color-mix(in srgb, var(--ok) 16%, transparent);
-		color: #b8d4a3;
+		color: #c5e1a5;
 		border: 1px solid color-mix(in srgb, var(--ok) 30%, transparent);
 	}
 

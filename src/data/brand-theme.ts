@@ -54,7 +54,7 @@ export const themeDefaults: BrandThemeInput = {
 
 export const themePresets: { id: string; label: string; accent: string; bg: string }[] = [
 	{ id: 'magenta', label: 'Magenta', accent: '#c026d3', bg: '#08090a' },
-	{ id: 'delta-force', label: 'Delta Force', accent: '#C8A84E', bg: '#090A0B' },
+	{ id: 'delta-force', label: 'Delta Force', accent: '#D6A93A', bg: '#08090A' },
 	{ id: 'fortnite', label: 'Fortnite', accent: '#2b9dff', bg: '#0a0e17' },
 	{ id: 'apex', label: 'Apex', accent: '#ff6b2c', bg: '#0c0d10' },
 	{ id: 'teal', label: 'Teal', accent: '#14b8a6', bg: '#071012' },
@@ -166,7 +166,9 @@ export function deriveBrandTheme(input: Partial<BrandThemeInput> = {}): BrandThe
 	const bgPanel = normalizeHex(input.panel) ?? panelAuto;
 	const bgElevated =
 		normalizeHex(input.elevated) ?? (deepIsDarkSurface ? deepIn! : mixHex(bg, '#ffffff', 0.07));
-	const bgHover = mixHex(bgElevated, '#ffffff', 0.06);
+	const bgHover = normalizeHex(input.panel)
+		? mixHex(bgPanel, '#ffffff', 0.042)
+		: mixHex(bgElevated, '#ffffff', 0.06);
 	const lineSoft = normalizeHex(input.line) ? mixHex(input.line!, bg, 0.45) : mixHex(bg, '#ffffff', 0.08);
 	const line = normalizeHex(input.line) ?? mixHex(bg, '#ffffff', 0.12);
 	const lineStrong = normalizeHex(input.line) ? mixHex(input.line!, '#ffffff', 0.22) : mixHex(bg, '#ffffff', 0.18);
@@ -198,8 +200,8 @@ export function deriveBrandTheme(input: Partial<BrandThemeInput> = {}): BrandThe
 		inkMuted,
 		inkFaint,
 		link,
-		ok: '#79A85B',
-		warn: '#C8A84E',
+		ok: '#8BC34A',
+		warn: '#D6A93A',
 		error: '#D45B52',
 		toneVoid,
 	};
@@ -260,6 +262,7 @@ export function brandThemeCssMap(theme: BrandThemeResolved = brandTheme): Record
 		'--ink-muted': theme.inkMuted,
 		'--ink-faint': theme.inkFaint,
 		'--link': theme.link,
+		'--price': '#FFD15C',
 		'--magenta': theme.accent,
 		'--magenta-soft': theme.accentSoft,
 		'--magenta-deep': theme.accentDeep,
